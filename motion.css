@@ -1,0 +1,11 @@
+/* Calm, responsive motion for the Haze interface. */
+@keyframes haze-enter{from{opacity:0;transform:translateY(12px) scale(.992)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes haze-glow{0%,100%{box-shadow:0 0 0 0 #49d5ed00}50%{box-shadow:0 0 28px 2px #49d5ed22}}
+@keyframes haze-shimmer{0%{background-position:150% 0}100%{background-position:-150% 0}}
+.view>.page-head,.view>.stats,.view>.dashboard-grid,.view>.panel,.view>.item-grid,.view>.content-groups,.view>.trade-grid,.view>.table-wrap,.view>.tutorial-grid,.view>.compare-picker,.view>.compare-grid{animation:haze-enter .42s cubic-bezier(.2,.8,.2,1) both}
+.view>.stats{animation-delay:.04s}.view>.dashboard-grid,.view>.item-grid,.view>.content-groups,.view>.trade-grid,.view>.table-wrap{animation-delay:.08s}
+.item-card,.quick-cats button,.rank-list button,.compare-picker button,.nav-item,.primary,.secondary,.top-action,.icon-btn{transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease,border-color .18s ease,color .18s ease}
+.item-card{overflow:hidden}.item-card:hover{transform:translateY(-5px);box-shadow:0 20px 36px #02070eb0;border-color:#49d5ed88}.item-card:hover .item-art{transform:scale(1.08) rotate(-1deg)}.item-art,.detail-art{transition:transform .32s cubic-bezier(.2,.8,.2,1),filter .25s ease}.item-card:hover .item-art{filter:saturate(1.12) brightness(1.08)}
+.primary:hover,.secondary:hover,.top-action:hover{transform:translateY(-2px);box-shadow:0 12px 26px #0a92ba45}.primary{animation:haze-glow 3.4s ease-in-out infinite}.quick-cats button:hover,.rank-list button:hover,.compare-picker button:hover{transform:translateY(-2px)}.nav-item:hover{transform:translateX(3px)}
+#toast.show{animation:haze-enter .22s ease both}.detail-head .detail-art{animation:haze-enter .42s cubic-bezier(.2,.8,.2,1) both}.item-grid .item-card:nth-child(2n){animation-delay:.03s}.item-grid .item-card:nth-child(3n){animation-delay:.06s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
