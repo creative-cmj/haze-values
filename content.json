@@ -354,6 +354,22 @@
       ]
     },
     {
+      "id": "haze-atlas-dragon-forms-skins-guide",
+      "name": "Dragon — Forms & Skins Guide",
+      "category": "Fruits",
+      "description": "# Dragon Forms & Skins\n\n## Full Form\n\n1. Equip **Dragon**.\n2. Reach **125 Dragon Mastery**.\n3. Use **E: Transformation** to enter Dragon's Full Form.\n\n## Hybrid Form\n\n- Dragon's regular **N: Hybrid Mode** unlocks at **150 Dragon Mastery**.\n- To unlock the separate **Dragon Hybrid Form skills**: kill **1,000 NPCs** on **Land of the Gods** (or obtain a guaranteed Dragon Trumpet from the Land of the Gods chest), blow the **Dragon Trumpet**, defeat the **Dragon Hybrid Boss**, then take its guaranteed **Dragon Heart** to the **Sea 3 Poneglyph**. Repeat for each Hybrid skill.\n\n## Dragon Skins\n\n- Skin NPCs are on the tall pillar behind **Flower Capital** and on a pillar at the center of the **Sea 3** island.\n- Talk to **Boat** to spin one of **15 regular colors** for **25 Gems**.\n- Talk to **Haze Dude** for special skins: **Twilight Striped** (10M$), **Inferno Flame** (Saturn's Ring + Ancient Blade Relic), **Nebula Plasma** (Shrine Relic + 2 Seabeast Hearts), **Pearl Ghost** (Prismatic Shard), **Magma Lava** (1,000 Gems), or **Black Abyss** (Abyssal Eye).",
+      "source": "https://trello.com/c/qV4qI0wT/113-dragon",
+      "lastChecked": "2026-07-20T01:13:26.786Z",
+      "image": "trello-content-images/trello-6293e05745e7775989c833d4-0.png",
+      "tradable": false,
+      "released": true,
+      "valueId": null,
+      "notTradableReason": "Guide entry",
+      "images": [
+        "trello-content-images/trello-6293e05745e7775989c833d4-0.png"
+      ]
+    },
+    {
       "id": "trello-6a50d3c886c9941706515f37",
       "name": "Dragon - Hybrid Form",
       "category": "Fruits",
