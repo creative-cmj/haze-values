@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://creative-cmj.github.io/haze-values/sitemap.xml
