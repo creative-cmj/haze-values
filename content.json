@@ -3156,7 +3156,7 @@
       "id": "trello-6a156d8aaf8551683e67dcc4",
       "name": "Red Emperor (Unreleased)",
       "category": "Bosses",
-      "description": "",
+      "description": "## Spawn timing\n\nOfficial Trello Sea Events timing: **every 4 hours or less**.\n\n🚧 Unreleased.",
       "source": "https://trello.com/c/evYjnORM/384-red-emperor-unreleased",
       "lastChecked": "2026-07-20T01:13:26.786Z",
       "image": "generated-art/npc-bosses.png",
@@ -3170,7 +3170,7 @@
       "id": "trello-6a156d71e6b56b5be39e0f12",
       "name": "Saturn (Unreleased)",
       "category": "Bosses",
-      "description": "",
+      "description": "## Spawn timing\n\nOfficial Trello lists the **Pirate Raid every 1 hour 15 minutes**; defeating the pirates raiding Egghead is required to spawn Saturn.\n\n🚧 Unreleased.",
       "source": "https://trello.com/c/5B4EBNx1/381-saturn-unreleased",
       "lastChecked": "2026-07-20T01:13:26.786Z",
       "image": "generated-art/npc-bosses.png",
@@ -3184,7 +3184,7 @@
       "id": "trello-6a156d6c429929e5bf5b9eec",
       "name": "Ghostship (Unreleased)",
       "category": "Bosses",
-      "description": "",
+      "description": "## Spawn timing\n\nAppears during the **storm window every 2 hours 35 minutes**. The storm lasts **10 minutes**.\n\nRequires a Green Ghost Altar and a 20-point fruit sacrifice to summon.\n\n🚧 Unreleased.",
       "source": "https://trello.com/c/mS15iUSX/379-ghostship-unreleased",
       "lastChecked": "2026-07-20T01:13:26.786Z",
       "image": "generated-art/npc-bosses.png",
@@ -3198,7 +3198,7 @@
       "id": "trello-6a156d69603228f398f66184",
       "name": "Cthulhu (Unreleased)",
       "category": "Bosses",
-      "description": "",
+      "description": "## Spawn timing\n\nCan be summoned during the **storm window every 2 hours 35 minutes** with a Prismatic Shard. The storm lasts **10 minutes**.\n\nCthulhu does not despawn on a normal timer after being summoned.\n\n🚧 Unreleased.",
       "source": "https://trello.com/c/vG68BGyf/378-cthulhu-unreleased",
       "lastChecked": "2026-07-20T01:13:26.786Z",
       "image": "generated-art/npc-bosses.png",
@@ -3231,14 +3231,15 @@
       "description": "## **Sea 1 Seabeast**\n\n- Spawns in rocky pillars every 30M-2H\n- Drops Seabeast Core - used to craft Seabeast Armor v1 by talking to Legendary Blacksmith in sea 1\n- 50% Chance to drop SeaBeast Hammer V1\n\n‌\n\n## Sea 2-3 Seabeast\n\n- Spawns anywhere with water every 20M-1H\n- Drops Seabeast Heart (25%) material\n- Drops Seabeast Hammer V2 - 3.5% chance\n- Blade Fragment (10%) SEA 3 ONLY\n\n###",
       "source": "https://trello.com/c/YxHCYcKs/315-seabeast",
       "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "trello-content-images/trello-66157d63fa6d583dbb16d87f-0.png",
+      "image": "trello-content-images/trello-66157d63fa6d583dbb16d87f-1.png",
       "tradable": false,
       "released": true,
       "valueId": null,
       "notTradableReason": "Not listed as a tradable value-list item",
       "images": [
-        "trello-content-images/trello-66157d63fa6d583dbb16d87f-0.png"
-      ]
+        "trello-content-images/trello-66157d63fa6d583dbb16d87f-1.png"
+      ],
+      "generatedImage": false
     },
     {
       "id": "trello-6587208df486c5b3985aa17c",
