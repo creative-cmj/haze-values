@@ -1126,6 +1126,22 @@
       "image": "trello-images/vanish-user.webp",
       "source": "User-provided image",
       "lastChecked": "2026-07-20T00:59:38.655Z"
+    },
+    "swords-bisento": {
+      "image": "trello-content-images/trello-625e7e9dc04d4d5e15d4b8b3-0.png",
+      "matchedCard": "official-trello-content-image"
+    },
+    "swords-ace": {
+      "image": "trello-content-images/trello-6a155c90d8d9998424a68f51-0.png",
+      "matchedCard": "official-trello-content-image"
+    },
+    "swords-3-sword-style": {
+      "image": "trello-content-images/trello-65058b5fc90c8be24902d1ed-0.png",
+      "matchedCard": "official-trello-content-image"
+    },
+    "swords-dual-dark-blade": {
+      "image": "trello-content-images/trello-6a1561e5c3d20de3c36e06e2-0.png",
+      "matchedCard": "official-trello-content-image"
     }
   },
   "unmatched": [
