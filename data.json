@@ -1,4 +1,8 @@
 {
+  "sync": {
+    "status": "Ready",
+    "changed": []
+  },
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "updatedAt": "2026-07-19T19:41:34.199462+00:00",
   "sheets": {
