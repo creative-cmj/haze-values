@@ -1,0 +1,13 @@
+{
+  "name": "haze-atlas-source-checker",
+  "private": true,
+  "engines": {"node": "20"},
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "serve": "firebase emulators:start --only functions"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.3.0"
+  }
+}
