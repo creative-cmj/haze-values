@@ -4242,7 +4242,7 @@
       "lastChecked": "2026-07-20T01:13:26.787Z",
       "image": "trello-content-images/trello-6a4167004cbd99c2a6f82b1b-0.png",
       "tradable": false,
-      "released": false,
+      "released": true,
       "valueId": null,
       "notTradableReason": "Not listed as a tradable value-list item",
       "images": [
