@@ -3402,76 +3402,6 @@
       ]
     },
     {
-      "id": "trello-625ad97f90a7a16e5a14c9b5",
-      "name": "Upcoming",
-      "category": "Fighting Styles",
-      "description": "",
-      "source": "https://trello.com/c/DVhZKDrk/63-upcoming",
-      "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "generated-art/races-styles.png",
-      "tradable": false,
-      "released": false,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "generatedImage": true
-    },
-    {
-      "id": "trello-634aa37f1435c8014002d7ad",
-      "name": "blackleg",
-      "category": "Fighting Styles",
-      "description": "",
-      "source": "https://trello.com/c/3Uu74AU0/137-blackleg",
-      "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "generated-art/races-styles.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "generatedImage": true
-    },
-    {
-      "id": "trello-634aa3830ab305016b0ee56f",
-      "name": "fishman",
-      "category": "Races",
-      "description": "",
-      "source": "https://trello.com/c/2jAVFJ8K/139-fishman",
-      "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "generated-art/races-styles.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "generatedImage": true
-    },
-    {
-      "id": "trello-634aa7a7f0fa3403576e3c13",
-      "name": "cyborg",
-      "category": "Races",
-      "description": "",
-      "source": "https://trello.com/c/DgSZR2Qb/140-cyborg",
-      "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "generated-art/races-styles.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "generatedImage": true
-    },
-    {
-      "id": "trello-639a7869c44ef60029a30063",
-      "name": "mink",
-      "category": "Races",
-      "description": "",
-      "source": "https://trello.com/c/aSLpiQT5/162-mink",
-      "lastChecked": "2026-07-20T01:13:26.786Z",
-      "image": "generated-art/races-styles.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "generatedImage": true
-    },
-    {
       "id": "trello-6a47ad5a5d9153f433d913a9",
       "name": "Data Reset Button",
       "category": "Misc Items",
@@ -4317,38 +4247,6 @@
       "notTradableReason": "Not listed as a tradable value-list item",
       "images": [
         "trello-content-images/trello-6a4167004cbd99c2a6f82b1b-0.png"
-      ]
-    },
-    {
-      "id": "trello-6a439969823b77dac6a6cec4",
-      "name": "Fighting Styles V1",
-      "category": "Fighting Styles",
-      "description": "All v1 style trainers can be found in sea 1 starter island\n\n**V1 Obtainment:** (obtained in sea 1, 2, and 3)\n\n- _Blackleg - bought from Black Leg for 50k$_\n- _Fishman - bought from Hakkon for 450k$_\n- _Electro - bought from Carol for 450k$_\n- _Cyborg - bought from Cyborg Scientist for 800k$_\n- _Dragon Claw  - bought from Dragon Master for 150 Gems_\n\n#",
-      "source": "https://trello.com/c/GSM2E1b8/453-fighting-styles-v1",
-      "lastChecked": "2026-07-20T01:13:26.787Z",
-      "image": "trello-content-images/trello-6a439969823b77dac6a6cec4-0.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "images": [
-        "trello-content-images/trello-6a439969823b77dac6a6cec4-0.png"
-      ]
-    },
-    {
-      "id": "trello-6a1566915e92ca5f2ca8b27f",
-      "name": "Fighting Styles V2",
-      "category": "Fighting Styles",
-      "description": "**V2 Obtainment Requirements:**\n\n- Talk to “[Sage of Combat](https://trello.com/c/e9Xa1phd \"‌\")” NPC in Sea 3, he will evolve your style, or tell you if you’re lacking mastery, a material, or funds.\n- Must have 300 mastery on the v1 variant of each style\n- Must have a material tied to each style\n\n‌\n\nCyborg V2\n\n- 300 Mastery\n- 2 Saturn’s Ring (100% Saturn boss drop)\n- 5M$\n\nBlackleg V2\n\n- 300 Mastery\n- 2 Phantom Lantern (100% ghostship drop)\n- 5M$\n\nFishman V2\n\n- 300 Mastery\n- 2 Seabeast Heart (25% seabeast drop in sea 2-3)\n- 5M$\n\nElectro V2\n\n- 300 Mastery\n- 2 Raijin’s Core (100% enel drop)\n- 500 Gems\n\nDragon Claw V2\n\n- 300 Mastery\n- 2 Dragon Heart (100% dragon hybrid bossdrop)\n- 250 Gems\n\n‌\n\n**Titles -** _when a player unlocks v2 of each style they’ll receive this title_\n\n- Thunderlord - Electro v2\n- Steel Titan - Cyborg v2\n- Tidal Striker - Fishman v2\n- Leg of Fury - Blackleg v2\n- Dragonic Master - Dragon Claw v2\n\nadditional titles:\n\n- Title “Master of the Styles” - unlock 5 fighting styles (v1s)\n- Title “Grandmaster of the Styles” - Evolve 5 fighting styles\n\n---\n\nIn the future, we will add a “Galaxy Style”\n\nRequirement: Evolve all 5 styles in-game to their V2 form, and have 300+ mastery on all of them.",
-      "source": "https://trello.com/c/E8JLFeTs/364-fighting-styles-v2",
-      "lastChecked": "2026-07-20T01:13:26.787Z",
-      "image": "trello-content-images/trello-6a1566915e92ca5f2ca8b27f-0.png",
-      "tradable": false,
-      "released": true,
-      "valueId": null,
-      "notTradableReason": "Not listed as a tradable value-list item",
-      "images": [
-        "trello-content-images/trello-6a1566915e92ca5f2ca8b27f-0.png"
       ]
     },
     {
