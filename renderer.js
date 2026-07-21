@@ -11,7 +11,7 @@ function toast(message) { const e = $('#toast'); e.textContent = message; e.clas
 function saveFavorites() { put('haze-favorites', favorites); $('#favCount').textContent = favorites.length || ''; }
 function isFav(id) { return favorites.some(x => x.id === id); }
 function toggleFav(id) { const found = data.items.find(x => x.id === id); favorites = isFav(id) ? favorites.filter(x => x.id !== id) : [...favorites, { ...found, note: '', date: new Date().toISOString() }]; saveFavorites(); render(); toast(isFav(id) ? 'Added to favorites' : 'Removed from favorites'); }
-function filteredItems(category) { return data.items.filter(x => {
+function filteredItems(category) { const unique=[...data.items.reduce((map,item)=>{const previous=map.get(item.id);if(!previous||((previous.value==null||previous.valueText==='???')&&item.value!=null&&item.valueText!=='???'))map.set(item.id,item);return map},new Map()).values()];return unique.filter(x => {
  const q = query.toLowerCase(); const matches = !q || [x.name,x.category,x.rarity,x.demand,x.valueText,x.pvp,x.pve].join(' ').toLowerCase().includes(q);
  return matches && (!category || x.category.toLowerCase() === category) && (!filters.rarity || x.rarity === filters.rarity) && (!filters.demand || x.demand === filters.demand) && (!filters.min || x.value >= Number(filters.min)) && (!filters.max || x.value <= Number(filters.max)) && (!filters.favorites || isFav(x.id));
  }); }
