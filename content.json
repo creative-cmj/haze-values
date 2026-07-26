@@ -1,6 +1,6 @@
 {
   "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-  "lastChecked": "2026-07-20T01:13:26.787Z",
+  "lastChecked": "2026-07-26T05:51:46.330745+00:00",
   "entries": [
     {
       "id": "trello-63cd46f9472d6a004877d18f",
@@ -5026,6 +5026,22 @@
       "valueId": null,
       "notTradableReason": "Not listed as a tradable value-list item",
       "generatedImage": true
+    },
+    {
+      "id": "trello-6a64ae8125ea9d28f5228a6c",
+      "name": "Saturn",
+      "category": "Fruits",
+      "description": "## Z: Poisonous Slashes (Mastery 0)\n\n## X: Spider Barrage (Mastery 25)\n\n## C: Spider Cull [Heal] (Mastery 50)\n\n## V: Spatial Annihilation (Mastery 75)\n\n## E: Spider Transformation (Mastery 125)",
+      "source": "https://trello.com/c/0TKkhlfz/485-saturn",
+      "lastChecked": "2026-07-26T05:51:46.330745+00:00",
+      "image": "trello-images/fruits-saturn.png",
+      "images": [
+        "trello-images/fruits-saturn.png"
+      ],
+      "tradable": true,
+      "released": true,
+      "valueId": "fruits-saturn",
+      "notTradableReason": null
     }
   ]
 }

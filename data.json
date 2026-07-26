@@ -1,27 +1,6 @@
 {
-  "sync": {
-    "status": "Ready",
-    "changed": [
-      "OKUCHI: 50,000 → 45,000",
-      "PHOENIX: 40,000 → 35,000",
-      "ELECTRICITY: 28,000 → 65,000",
-      "DOUGH: 11,000 → 20,000",
-      "Night Necklace: 1,200,000 → ???",
-      "GPM: 800,000 → ???",
-      "Krampus Scythe: HIGH → ???",
-      "Dual Axe: MEDIUM → ???",
-      "Broom: 200,000 → ???",
-      "FRUIT NOTIFIER: 450,000 → 200,000",
-      "DARK BLADE: 350,000 → 180,000",
-      "VIP: 250,000 → 200,000",
-      "STRIKER BOAT: 120,000 → 100,000",
-      "DRAGON: 1,500,000 → 1,200,000",
-      "OKUCHI: 1,200,000 → 1,000,000",
-      "ELECTRICITY: 1,100,000 → 950,000"
-    ]
-  },
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
-  "updatedAt": "2026-07-22T16:57:35.725342+00:00",
+  "updatedAt": "2026-07-26T05:49:31.747954+00:00",
   "sheets": {
     "Overview": [
       [
@@ -67,7 +46,7 @@
       [
         "",
         "",
-        "",
+        "🔔 List Last Updated: 7/20/2026 2:00 AM EST",
         "",
         "",
         "",
@@ -86,18 +65,8 @@
       ],
       [
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      [
-        "",
         "All values displayed in the Value List are estimates based on real community trading activity, including current trade trends and item demand. The values are determined by analyzing trades made within the trading community and are intended to reflect general market opinions. They are not official prices or guaranteed values, and actual trade outcomes may vary depending on demand and market changes.\n",
-        "",
+        "\nhttps://discord.gg/dFthMP9bJB",
         "List founders: dark.9901 (Dark), kamal.t_t (Kamal), greenboy2009super (Sand), red_787677 (Red), .userr_01 (AZ), .developing. (Nova), rayan055963 (Stray)",
         "",
         "",
@@ -106,18 +75,8 @@
       ],
       [
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      [
-        "",
         "CONTENT:        \nFruits: Devil Fruit values, PvP/PvE ratings, demand\nSwords: Sword/weapon values, Dragon equivalence, PvP/PvE, demand\nAccessories: Accessory values, Dragon equivalence, stat bonuses, demand\nMisc Items: Fish, fishing rods, books, and other misc items\nGamepasses: Full-price gamepass values\nPerm Fruits (Robux): Permanent fruit purchase values via Robux",
-        "",
+        "^^^ Have any suggestions or feedback? Join the Value List Server to view changelogs, submit suggestions, and stay updated with future updates. ^^^\nWE DO GIVEAWAYS AS WELL",
         "",
         "",
         "",
@@ -273,16 +232,6 @@
         "",
         "",
         ""
-      ],
-      [
-        "",
-        "",
-        "🔔 List Last Updated: 7/10/2026 4:30PM EST",
-        "",
-        "",
-        "",
-        "",
-        ""
       ]
     ],
     "Tutorial": [
@@ -370,9 +319,31 @@
         "Dragon - Full Form"
       ],
       [
+        "SATURN",
+        "MYTHICAL",
+        "100,000",
+        "HIGH",
+        "DECENT",
+        "GOOD ",
+        "Saturn",
+        "N/A",
+        "Saturn"
+      ],
+      [
+        "ELECTRICITY",
+        "MYTHICAL",
+        "65,000",
+        "HIGH",
+        "GOOD (BASE) ",
+        "GOOD (BASE)",
+        "Electricity",
+        "N/A",
+        "Electricity"
+      ],
+      [
         "OKUCHI",
         "MYTHICAL",
-        "50,000",
+        "45,000",
         "HIGH",
         "GOOD (BASE) - GOOD (FULL FORM)",
         "DECENT (BASE) - GOOD (FULL FORM)",
@@ -394,7 +365,7 @@
       [
         "PHOENIX",
         "MYTHICAL",
-        "40,000",
+        "35,000",
         "HIGH",
         "GOOD (HYBIRD) - GOOD (FULL FORM)",
         "DECENT (HYBIRD) - DECENT (FULL FORM)",
@@ -425,17 +396,6 @@
         "Gum - Gear 5"
       ],
       [
-        "ELECTRICITY",
-        "MYTHICAL",
-        "28,000",
-        "HIGH",
-        "GOOD (BASE) ",
-        "GOOD (BASE)",
-        "Electricity",
-        "N/A",
-        "N/A"
-      ],
-      [
         "B Tier",
         "-----",
         "12k–20k",
@@ -445,6 +405,17 @@
         "Sources:",
         "Sources:",
         "Sources:"
+      ],
+      [
+        "DOUGH",
+        "MYTHICAL",
+        "20,000",
+        "LOW",
+        "DECENT",
+        "BAD",
+        "Dough",
+        "N/A",
+        "N/A"
       ],
       [
         "TREMOR",
@@ -478,17 +449,6 @@
         "Sources:",
         "Sources:",
         "Sources:"
-      ],
-      [
-        "DOUGH",
-        "MYTHICAL",
-        "11,000",
-        "LOW",
-        "DECENT",
-        "BAD",
-        "Dough",
-        "N/A",
-        "N/A"
       ],
       [
         "VENOM",
@@ -855,9 +815,9 @@
       [
         "Night Necklace",
         "MYTHICAL",
-        "1,200,000",
+        "1,000,000",
         "HIGH",
-        "12 DRAGONS",
+        "10 DRAGONS",
         "Best",
         "Good",
         "Night Necklace"
@@ -865,9 +825,9 @@
       [
         "GPM",
         "MYTHICAL",
-        "800,000",
+        "600,000",
         "HIGH",
-        "8 DRAGONS",
+        "6 DRAGONS",
         "Good",
         "Good",
         "GPM"
@@ -1781,6 +1741,7 @@
         "",
         "",
         "",
+        "",
         "Tradable Items",
         "",
         ""
@@ -1790,6 +1751,7 @@
         "Rarity",
         "Value",
         "Demand",
+        "Value In Dragons",
         "PvP",
         "PvE",
         "Links"
@@ -1799,6 +1761,7 @@
         "-----",
         "40k+",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1808,6 +1771,7 @@
         "COMMON",
         "200,000",
         "HIGH",
+        "2 DRAGONS",
         "-----",
         "-----",
         "-----"
@@ -1817,6 +1781,7 @@
         "-----",
         "30k–40k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1826,6 +1791,7 @@
         "-----",
         "20k–30k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1835,6 +1801,7 @@
         "-----",
         "12k–20k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1844,6 +1811,7 @@
         "-----",
         "8k–12k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1853,6 +1821,7 @@
         "-----",
         "4k–8k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1862,6 +1831,7 @@
         "-----",
         "1k–4k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1871,6 +1841,7 @@
         "-----",
         "0-4k",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1882,18 +1853,21 @@
         "",
         "",
         "",
-        ""
-      ],
-      [
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         ""
       ],
       [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
         "",
         "",
         "",
@@ -1907,6 +1881,7 @@
         "-----",
         "???",
         "-----",
+        "",
         "-----",
         "-----",
         "Sources:"
@@ -1916,6 +1891,7 @@
         "COMMON",
         "???",
         "???",
+        "",
         "-----",
         "-----",
         "-----"
@@ -1943,8 +1919,8 @@
       [
         "FRUIT NOTIFIER",
         "Region Based",
-        "450,000",
-        " 4 DRAGONS + ADDS",
+        "200,000",
+        " 2 DRAGONS",
         "MEDIUM",
         "FRUIT NOTIFIER",
         ""
@@ -1952,8 +1928,8 @@
       [
         "DARK BLADE",
         "Region Based",
-        "350,000",
-        "3 DRAGONS + ADDS",
+        "180,000",
+        "1 DRAGON + ADDS",
         "HIGH",
         "DARK BLADE",
         " "
@@ -1961,8 +1937,8 @@
       [
         "VIP",
         "Region Based",
-        "250,000",
-        "2 DRAGONS + ADDS",
+        "200,000",
+        "2 DRAGONS",
         "HIGH",
         "VIP",
         ""
@@ -1986,10 +1962,19 @@
         ""
       ],
       [
+        "FRUIT BAG",
+        "Region Based",
+        "100,000",
+        "1 DRAGON",
+        "HIGH",
+        "N/A",
+        ""
+      ],
+      [
         "STRIKER BOAT",
         "Region Based",
-        "120,000",
-        "1 DRAGON + SMALL ADDS",
+        "100,000",
+        "1 DRAGON ",
         "MEDIUM",
         "STRIKER BOAT",
         ""
@@ -2043,15 +2028,28 @@
       [
         "DRAGON",
         "MYTHICAL",
-        "1,500,000",
+        "1,200,000",
         "2,999 ROBUX",
-        "15 DRAGONS",
+        "12 DRAGONS",
         "HIGH",
         "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
         "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
         "Dragon",
         "Dragon - Hybird",
         "Dragon - Full Form"
+      ],
+      [
+        "SATURN",
+        "MYTHICAL",
+        "1,200,000",
+        "2,499 ROBUX",
+        "12 DRAGONS",
+        "HIGH",
+        "DECENT",
+        "GOOD",
+        "Saturn",
+        "N/A",
+        "Saturn"
       ],
       [
         "S Tier",
@@ -2069,9 +2067,9 @@
       [
         "OKUCHI",
         "MYTHICAL",
-        "1,200,000",
+        "1,000,000",
         "2,899 ROBUX",
-        "12 DRAGONS",
+        "10 DRAGONS",
         "HIGH",
         "GOOD (BASE) - GOOD (FULL FORM)",
         "DECENT (BASE) - GOOD (FULL FORM)",
@@ -2082,9 +2080,9 @@
       [
         "ELECTRICITY",
         "MYTHICAL",
-        "1,100,000",
+        "950,000",
         "2,499 ROBUX",
-        "11 DRAGONS",
+        "9 DRAGONS + ADDS",
         "HIGH",
         "DECENT (BASE) - GOOD (AWAKENED)",
         "GOOD (BASE) - GOOD (AWAKENED)",
@@ -2597,10 +2595,36 @@
       "valueText": "100,000",
       "value": 100000.0,
       "demand": "HIGH",
-      "dragons": "BAD (BASE) - GOOD (HYBRID) - GOOD (FULL FORM)",
-      "pvp": "BAD (BASE) - GOOD (HYBRID) - GOOD (FULL FORM)",
+      "dragons": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
+      "pvp": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pve": "Dragon",
       "sourceLabel": "Dragon - Hybird"
+    },
+    {
+      "id": "fruits-saturn",
+      "name": "SATURN",
+      "category": "Fruits",
+      "rarity": "MYTHICAL",
+      "valueText": "100,000",
+      "value": 100000.0,
+      "demand": "HIGH",
+      "dragons": "DECENT",
+      "pvp": "GOOD",
+      "pve": "Saturn",
+      "sourceLabel": "N/A"
+    },
+    {
+      "id": "fruits-electricity",
+      "name": "ELECTRICITY",
+      "category": "Fruits",
+      "rarity": "MYTHICAL",
+      "valueText": "65,000",
+      "value": 65000.0,
+      "demand": "HIGH",
+      "dragons": "GOOD (BASE)",
+      "pvp": "GOOD (BASE)",
+      "pve": "Electricity",
+      "sourceLabel": "N/A"
     },
     {
       "id": "fruits-okuchi",
@@ -2642,16 +2666,16 @@
       "sourceLabel": "Gum - Gear 4"
     },
     {
-      "id": "fruits-electricity",
-      "name": "ELECTRICITY",
+      "id": "fruits-dough",
+      "name": "DOUGH",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "65,000",
-      "value": 65000.0,
-      "demand": "HIGH",
-      "dragons": "GOOD (BASE)",
-      "pvp": "GOOD (BASE)",
-      "pve": "Electricity",
+      "valueText": "20,000",
+      "value": 20000.0,
+      "demand": "LOW",
+      "dragons": "DECENT",
+      "pvp": "BAD",
+      "pve": "Dough",
       "sourceLabel": "N/A"
     },
     {
@@ -2678,19 +2702,6 @@
       "dragons": "GOOD",
       "pvp": "BEST",
       "pve": "Darkness",
-      "sourceLabel": "N/A"
-    },
-    {
-      "id": "fruits-dough",
-      "name": "DOUGH",
-      "category": "Fruits",
-      "rarity": "MYTHICAL",
-      "valueText": "20,000",
-      "value": 20000.0,
-      "demand": "LOW",
-      "dragons": "DECENT",
-      "pvp": "BAD",
-      "pve": "Dough",
       "sourceLabel": "N/A"
     },
     {
@@ -3049,10 +3060,10 @@
       "name": "Night Necklace",
       "category": "Accessories",
       "rarity": "MYTHICAL",
-      "valueText": "???",
-      "value": null,
+      "valueText": "1,000,000",
+      "value": 1000000.0,
       "demand": "HIGH",
-      "dragons": "12 DRAGONS",
+      "dragons": "10 DRAGONS",
       "pvp": "Best",
       "pve": "Good",
       "sourceLabel": "Night Necklace"
@@ -3062,10 +3073,10 @@
       "name": "GPM",
       "category": "Accessories",
       "rarity": "MYTHICAL",
-      "valueText": "???",
-      "value": null,
+      "valueText": "600,000",
+      "value": 600000.0,
       "demand": "HIGH",
-      "dragons": "8 DRAGONS",
+      "dragons": "6 DRAGONS",
       "pvp": "Good",
       "pve": "Good",
       "sourceLabel": "GPM"
@@ -3530,7 +3541,7 @@
       "name": "Krampus Scythe",
       "category": "Swords",
       "rarity": "MYTHICAL",
-      "valueText": "???",
+      "valueText": "HIGH",
       "value": null,
       "demand": "250,000",
       "dragons": "2 DRAGON + ADDS",
@@ -3543,7 +3554,7 @@
       "name": "Dual Axe",
       "category": "Swords",
       "rarity": "LEGENDARY",
-      "valueText": "???",
+      "valueText": "MEDIUM",
       "value": null,
       "demand": "150,000",
       "dragons": "1 DRAGON + ADDS",
@@ -3920,13 +3931,13 @@
       "name": "Broom",
       "category": "Misc Items",
       "rarity": "COMMON",
-      "valueText": "???",
-      "value": null,
+      "valueText": "200,000",
+      "value": 200000.0,
       "demand": "HIGH",
-      "dragons": "-----",
+      "dragons": "2 DRAGONS",
       "pvp": "-----",
       "pve": "-----",
-      "sourceLabel": ""
+      "sourceLabel": "-----"
     },
     {
       "id": "misc-items-broom",
@@ -3936,10 +3947,10 @@
       "valueText": "???",
       "value": null,
       "demand": "???",
-      "dragons": "-----",
+      "dragons": "",
       "pvp": "-----",
       "pve": "-----",
-      "sourceLabel": ""
+      "sourceLabel": "-----"
     },
     {
       "id": "gamepasses-fruit-notifier",
@@ -3948,7 +3959,7 @@
       "rarity": "Region Based",
       "valueText": "200,000",
       "value": 200000.0,
-      "demand": "4 DRAGONS + ADDS",
+      "demand": "2 DRAGONS",
       "dragons": "MEDIUM",
       "pvp": "FRUIT NOTIFIER",
       "pve": "",
@@ -3961,7 +3972,7 @@
       "rarity": "Region Based",
       "valueText": "180,000",
       "value": 180000.0,
-      "demand": "3 DRAGONS + ADDS",
+      "demand": "1 DRAGON + ADDS",
       "dragons": "HIGH",
       "pvp": "DARK BLADE",
       "pve": "",
@@ -3974,7 +3985,7 @@
       "rarity": "Region Based",
       "valueText": "200,000",
       "value": 200000.0,
-      "demand": "2 DRAGONS + ADDS",
+      "demand": "2 DRAGONS",
       "dragons": "HIGH",
       "pvp": "VIP",
       "pve": "",
@@ -4007,13 +4018,26 @@
       "sourceLabel": ""
     },
     {
+      "id": "gamepasses-fruit-bag",
+      "name": "FRUIT BAG",
+      "category": "Gamepasses",
+      "rarity": "Region Based",
+      "valueText": "100,000",
+      "value": 100000.0,
+      "demand": "1 DRAGON",
+      "dragons": "HIGH",
+      "pvp": "N/A",
+      "pve": "",
+      "sourceLabel": ""
+    },
+    {
       "id": "gamepasses-striker-boat",
       "name": "STRIKER BOAT",
       "category": "Gamepasses",
       "rarity": "Region Based",
       "valueText": "100,000",
       "value": 100000.0,
-      "demand": "1 DRAGON + SMALL ADDS",
+      "demand": "1 DRAGON",
       "dragons": "MEDIUM",
       "pvp": "STRIKER BOAT",
       "pve": "",
@@ -4053,10 +4077,23 @@
       "valueText": "1,200,000",
       "value": 1200000.0,
       "demand": "2,999 ROBUX",
-      "dragons": "15 DRAGONS",
+      "dragons": "12 DRAGONS",
       "pvp": "HIGH",
       "pve": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "sourceLabel": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)"
+    },
+    {
+      "id": "perm-fruits-robux-saturn",
+      "name": "SATURN",
+      "category": "Perm Fruits (Robux)",
+      "rarity": "MYTHICAL",
+      "valueText": "1,200,000",
+      "value": 1200000.0,
+      "demand": "2,499 ROBUX",
+      "dragons": "12 DRAGONS",
+      "pvp": "HIGH",
+      "pve": "DECENT",
+      "sourceLabel": "GOOD"
     },
     {
       "id": "perm-fruits-robux-okuchi",
@@ -4066,7 +4103,7 @@
       "valueText": "1,000,000",
       "value": 1000000.0,
       "demand": "2,899 ROBUX",
-      "dragons": "12 DRAGONS",
+      "dragons": "10 DRAGONS",
       "pvp": "HIGH",
       "pve": "GOOD (BASE) - GOOD (FULL FORM)",
       "sourceLabel": "DECENT (BASE) - GOOD (FULL FORM)"
@@ -4079,7 +4116,7 @@
       "valueText": "950,000",
       "value": 950000.0,
       "demand": "2,499 ROBUX",
-      "dragons": "11 DRAGONS",
+      "dragons": "9 DRAGONS + ADDS",
       "pvp": "HIGH",
       "pve": "DECENT (BASE) - GOOD (AWAKENED)",
       "sourceLabel": "GOOD (BASE) - GOOD (AWAKENED)"
@@ -4500,5 +4537,30 @@
       "pve": "BAD",
       "sourceLabel": "BAD"
     }
-  ]
+  ],
+  "sync": {
+    "status": "Updated",
+    "lastChecked": "2026-07-26T05:51:46.330745+00:00",
+    "lastUpdated": "2026-07-26T05:51:46.330745+00:00",
+    "changed": [
+      "DRAGON (Fruits): dragons updated, pvp updated",
+      "Added SATURN (Fruits)",
+      "Night Necklace (Accessories): valueText updated, demand updated, dragons updated",
+      "GPM (Accessories): valueText updated, demand updated, dragons updated",
+      "Krampus Scythe (Swords): valueText updated, demand updated, dragons updated",
+      "Dual Axe (Swords): valueText updated, demand updated, dragons updated",
+      "Broom (Misc Items): valueText updated, demand updated, dragons updated",
+      "Broom (Misc Items): dragons updated",
+      "FRUIT NOTIFIER (Gamepasses): demand updated",
+      "DARK BLADE (Gamepasses): demand updated",
+      "VIP (Gamepasses): demand updated",
+      "Added FRUIT BAG (Gamepasses)",
+      "STRIKER BOAT (Gamepasses): demand updated",
+      "DRAGON (Perm Fruits (Robux)): dragons updated",
+      "Added SATURN (Perm Fruits (Robux))",
+      "OKUCHI (Perm Fruits (Robux)): dragons updated",
+      "ELECTRICITY (Perm Fruits (Robux)): dragons updated"
+    ],
+    "sourceLastUpdated": "7/20/2026 2:00 AM EST"
+  }
 }

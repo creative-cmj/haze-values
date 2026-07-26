@@ -1,6 +1,6 @@
 {
   "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-  "checkedAt": "2026-07-19T23:05:40.620Z",
+  "checkedAt": "2026-07-26T05:51:46.330745+00:00",
   "items": {
     "fruits-dragon": {
       "title": "Dragon",
@@ -1142,6 +1142,15 @@
     "swords-dual-dark-blade": {
       "image": "trello-content-images/trello-6a1561e5c3d20de3c36e06e2-0.png",
       "matchedCard": "official-trello-content-image"
+    },
+    "fruits-saturn": {
+      "title": "Saturn",
+      "description": "## Z: Poisonous Slashes (Mastery 0)\n\n## X: Spider Barrage (Mastery 25)\n\n## C: Spider Cull [Heal] (Mastery 50)\n\n## V: Spatial Annihilation (Mastery 75)\n\n## E: Spider Transformation (Mastery 125)",
+      "list": "Devil Fruits",
+      "url": "https://trello.com/c/0TKkhlfz/485-saturn",
+      "image": "trello-images/fruits-saturn.png",
+      "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
+      "lastChecked": "2026-07-26T05:51:46.330745+00:00"
     }
   },
   "unmatched": [
