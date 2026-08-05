@@ -3,17 +3,22 @@ const { onSchedule } = require('firebase-functions/v2/scheduler');
 const { logger } = require('firebase-functions');
 const CHECKER_CONFIG = require('./checker-config.json');
 
-const ATLAS_URL = 'https://haze-atlas.web.app';
+const ATLAS_URL = process.env.HAZE_ATLAS_URL || 'https://creative-cmj.github.io/haze-values';
 const TRELLO_BOARD_URL = 'https://trello.com/b/nn8bpTB0.json';
 const SHEET_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub';
+const VAULTED_URL = 'https://haze-seas.vaultedvaluesx.com/value-list';
+const VAULTED_API = 'https://valuevaultx.com/_functions/api/haze-seas';
 const SHEETS = {
   Overview: '1077085569', Tutorial: '1764732080', Fruits: '1700828745',
   Accessories: '383264331', Swords: '1926500499', 'Misc Items': '1829965652',
-  Gamepasses: '1675626398', 'Perm Fruits (Robux)': '1519254710'
+  Gamepasses: '1675626398', 'Perm Fruits (Robux)': '1519254710',
+  'Tier List (PvE) [Fruit]': '1408297219', 'Tier List (PvP) [Fruit]': '752112998',
+  'Tier List (PvE) [Sword]': '342268962', 'Tier List (PvP) [Sword]': '1251714687'
 };
+const ITEM_SHEETS = new Set(['Fruits', 'Accessories', 'Swords', 'Misc Items', 'Gamepasses', 'Perm Fruits (Robux)']);
 
 async function fetchText(url) {
-  const response = await fetch(url, { headers: { 'user-agent': 'HazeAtlasSourceChecker/1.0' } });
+  const response = await fetch(url, { headers: { 'user-agent': 'HazeAtlasSourceChecker/2.0' } });
   if (!response.ok) throw new Error(`${response.status} while fetching ${url}`);
   return response.text();
 }
@@ -36,52 +41,120 @@ function parseCsv(text) {
   return rows.filter(row => row.some(value => String(value).trim()));
 }
 function slug(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
-function normalizeRow(row, category) {
-  const cells = [...row, '', '', '', '', '', '', '', ''].slice(0, 8).map(value => String(value || '').trim());
-  const [name, rarity, valueText, demand, dragons, pvp, pve, sourceLabel] = cells;
-  if (!name || rarity === '-----' || /^(top|[a-fs]) tier$/i.test(name) || name.toLowerCase().startsWith('sources')) return null;
-  return { id: `${slug(category)}-${slug(name)}`, name, category, rarity, valueText, demand, dragons, pvp, pve, sourceLabel };
+function header(value) { return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ''); }
+function numericValue(value) {
+  const clean = String(value || '').replace(/[^0-9.-]+/g, '');
+  if (!clean || ['-', '.', '-.'].includes(clean)) return null;
+  const number = Number(clean);
+  return Number.isFinite(number) ? Math.trunc(number) : null;
 }
 function sample(items, limit = 50) { return items.slice(0, limit); }
+function meaningful(value) { return !['', '???', '-----'].includes(String(value ?? '').trim()); }
+
+function parseSheetRows(category, csv) {
+  const rows = parseCsv(csv);
+  const firstColumnNames = new Set(['fruit', 'accessories', 'sword', 'items', 'gamepasses']);
+  const headerIndex = rows.findIndex(row => row.some(cell => ['value', 'demand'].includes(header(cell))) && row.some(cell => firstColumnNames.has(header(cell))));
+  if (headerIndex < 0) throw new Error(`Could not locate headers for ${category}`);
+  const positions = new Map(rows[headerIndex].map((cell, index) => [header(cell), index]).filter(([name]) => name));
+  const get = (row, ...names) => {
+    for (const name of names) {
+      const index = positions.get(name);
+      if (index !== undefined && index < row.length) return String(row[index] || '').trim();
+    }
+    return '';
+  };
+  return rows.slice(headerIndex + 1).flatMap(row => {
+    const name = get(row, 'fruit', 'accessories', 'sword', 'items', 'gamepasses');
+    const rarity = get(row, 'rarity');
+    if (!name || name === '???' || rarity === '-----' || /^(top|[a-fs]) tier$/i.test(name)) return [];
+    const valueText = get(row, 'value') || '???';
+    return [{
+      id: `${slug(category)}-${slug(name)}`, name, category, rarity,
+      valueText, value: numericValue(valueText), demand: get(row, 'demand') || '???',
+      dragons: get(row, 'valueindragons'), pvp: get(row, 'pvp'), pve: get(row, 'pve'),
+      sourceLabel: get(row, 'links'), robux: get(row, 'robuxcost', 'robux')
+    }];
+  });
+}
+
+function canonicalize(items) {
+  const result = new Map();
+  for (const item of items) {
+    const score = [item.value !== null, ['demand', 'dragons', 'pvp', 'pve', 'sourceLabel'].filter(field => meaningful(item[field])).length];
+    const previous = result.get(item.id);
+    const previousScore = previous ? [previous.value !== null, ['demand', 'dragons', 'pvp', 'pve', 'sourceLabel'].filter(field => meaningful(previous[field])).length] : null;
+    if (!previous || score[0] > previousScore[0] || (score[0] === previousScore[0] && score[1] > previousScore[1])) result.set(item.id, item);
+  }
+  return result;
+}
 
 async function runSourceCheck() {
+  const checkedAt = new Date().toISOString();
   const sheetEntries = Object.entries(SHEETS);
-  const [atlasContent, atlasData, trelloBoard, ...sheetCsv] = await Promise.all([
-    fetchJson(`${ATLAS_URL}/content.json`), fetchJson(`${ATLAS_URL}/data.json`), fetchJson(TRELLO_BOARD_URL),
+  const [atlasContent, atlasData, trelloBoard, vaultedRows, ...sheetCsv] = await Promise.all([
+    fetchJson(`${ATLAS_URL}/content.json?checked=${Date.now()}`),
+    fetchJson(`${ATLAS_URL}/data.json?checked=${Date.now()}`),
+    fetchJson(TRELLO_BOARD_URL), fetchJson(VAULTED_API),
     ...sheetEntries.map(([, gid]) => fetchText(`${SHEET_BASE}?gid=${gid}&single=true&output=csv`))
   ]);
 
   const atlasCardIds = new Set((atlasContent.entries || []).map(entry => String(entry.id || '').replace(/^trello-/, '')));
   const ignoredTrelloCards = new Set(CHECKER_CONFIG.ignoredTrelloCardIds || []);
-  const openCards = (trelloBoard.cards || []).filter(card => !card.closed && !ignoredTrelloCards.has(card.id));
+  const activeListIds = new Set((trelloBoard.lists || []).filter(list => !list.closed).map(list => list.id));
+  const openCards = (trelloBoard.cards || []).filter(card => !card.closed && activeListIds.has(card.idList) && !ignoredTrelloCards.has(card.id));
   const missingTrelloCards = openCards.filter(card => !atlasCardIds.has(card.id)).map(card => ({ id: card.id, name: card.name, url: `https://trello.com/c/${card.shortLink}` }));
 
-  const remoteItems = [];
+  const rawSheetItems = [];
   sheetCsv.forEach((csv, index) => {
     const category = sheetEntries[index][0];
-    if (category === 'Overview' || category === 'Tutorial') return;
-    parseCsv(csv).slice(2).forEach(row => { const item = normalizeRow(row, category); if (item) remoteItems.push(item); });
+    if (ITEM_SHEETS.has(category)) rawSheetItems.push(...parseSheetRows(category, csv));
   });
-  const localItems = new Map();
-  for (const item of atlasData.items || []) {
-    const previous = localItems.get(item.id);
-    if (!previous || (previous.valueText === '???' && item.valueText !== '???')) localItems.set(item.id, item);
+  const sheetItems = canonicalize(rawSheetItems);
+  const vaultedItems = new Map(vaultedRows.map(item => [`${slug(item.category)}-${slug(item.title)}`, item]));
+  const sourceIdMismatch = {
+    missingInGoogleSheet: [...vaultedItems.keys()].filter(id => !sheetItems.has(id)),
+    missingInVaultedValuesX: [...sheetItems.keys()].filter(id => !vaultedItems.has(id))
+  };
+
+  const expectedItems = new Map();
+  const sourceConflicts = [];
+  for (const [id, sheetItem] of sheetItems) {
+    const vaulted = vaultedItems.get(id);
+    if (!vaulted) continue;
+    const expected = { ...sheetItem };
+    if (Number.isFinite(vaulted.value) && vaulted.value >= 0) {
+      const value = Math.trunc(vaulted.value);
+      if (sheetItem.value !== value) sourceConflicts.push({ id, name: sheetItem.name, field: 'value', googleSheet: sheetItem.value, vaultedValuesX: value });
+      expected.value = value; expected.valueText = value.toLocaleString('en-US');
+    } else { expected.value = null; expected.valueText = '???'; }
+    if (String(vaulted.demand || '').trim()) expected.demand = String(vaulted.demand).toUpperCase();
+    if (String(vaulted.rarity || '').trim()) expected.rarity = String(vaulted.rarity).toUpperCase();
+    expectedItems.set(id, expected);
   }
-  const remoteById = new Map(remoteItems.map(item => [item.id, item]));
-  const missingValueItems = remoteItems.filter(item => !localItems.has(item.id));
-  const removedValueItems = [...localItems.values()].filter(item => !remoteById.has(item.id));
-  const changedValueItems = remoteItems.flatMap(remote => {
-    const local = localItems.get(remote.id);
+
+  const localItems = canonicalize(atlasData.items || []);
+  const missingValueItems = [...expectedItems.values()].filter(item => !localItems.has(item.id));
+  const removedValueItems = [...localItems.values()].filter(item => !expectedItems.has(item.id));
+  const compareFields = ['rarity', 'valueText', 'value', 'demand', 'dragons', 'pvp', 'pve', 'robux', 'sourceLabel'];
+  const changedValueItems = [...expectedItems.values()].flatMap(expected => {
+    const local = localItems.get(expected.id);
     if (!local) return [];
-    const changed = ['rarity', 'valueText', 'demand', 'dragons', 'pvp', 'pve'].filter(field => String(local[field] || '').trim() !== String(remote[field] || '').trim());
-    return changed.length ? [{ id: remote.id, name: remote.name, changed, live: Object.fromEntries(changed.map(field => [field, local[field] || ''])), source: Object.fromEntries(changed.map(field => [field, remote[field] || ''])) }] : [];
+    const changed = compareFields.filter(field => String(local[field] ?? '').trim() !== String(expected[field] ?? '').trim());
+    return changed.length ? [{ id: expected.id, name: expected.name, changed, atlas: Object.fromEntries(changed.map(field => [field, local[field] ?? ''])), expected: Object.fromEntries(changed.map(field => [field, expected[field] ?? ''])) }] : [];
   });
 
   return {
-    checkedAt: new Date().toISOString(),
-    sources: { trello: TRELLO_BOARD_URL, valueList: SHEET_BASE, atlas: ATLAS_URL },
+    checkedAt,
+    sources: { trello: TRELLO_BOARD_URL, googleSheet: SHEET_BASE, vaultedValuesX: VAULTED_URL, atlas: ATLAS_URL },
     trello: { openCards: openCards.length, ignoredCards: ignoredTrelloCards.size, atlasRecords: atlasCardIds.size, missingCount: missingTrelloCards.length, missing: sample(missingTrelloCards) },
-    valueList: { sourceRows: remoteItems.length, atlasRecords: localItems.size, missingCount: missingValueItems.length, removedCount: removedValueItems.length, changedCount: changedValueItems.length, missing: sample(missingValueItems), removed: sample(removedValueItems.map(item => ({ id: item.id, name: item.name }))), changed: sample(changedValueItems) }
+    valueList: {
+      googleSheetTabs: sheetEntries.length, googleSheetRawRows: rawSheetItems.length, googleSheetItems: sheetItems.size, vaultedItems: vaultedItems.size,
+      atlasRecords: localItems.size, sourceIdMismatch,
+      sourceConflictCount: sourceConflicts.length, sourceConflicts,
+      missingCount: missingValueItems.length, removedCount: removedValueItems.length, changedCount: changedValueItems.length,
+      missing: sample(missingValueItems), removed: sample(removedValueItems.map(item => ({ id: item.id, name: item.name }))), changed: sample(changedValueItems)
+    }
   };
 }
 
@@ -97,3 +170,5 @@ exports.scheduledSourceCheck = onSchedule({ region: 'us-central1', schedule: 'ev
 });
 
 exports.runSourceCheck = runSourceCheck;
+exports.parseCsv = parseCsv;
+exports.parseSheetRows = parseSheetRows;
