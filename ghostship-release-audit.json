@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-08-04T23:57:01.218616+00:00",
+  "scope": "All active official Trello cards that directly mention Ghostship or its spawn, drops, materials, rewards, titles, related NPCs, styles, or storm context.",
+  "cardsChecked": [
+    {
+      "id": "trello-6a155c6d0571d49c6874e633",
+      "name": "Titles",
+      "released": true,
+      "list": "Game Info"
+    },
+    {
+      "id": "trello-6a1560086810f13c34b8128d",
+      "name": "Sea Events",
+      "released": true,
+      "list": "Game Info"
+    },
+    {
+      "id": "trello-6a155b92468ee85a00d9dd2a",
+      "name": "Materials",
+      "released": true,
+      "list": "Game Info"
+    },
+    {
+      "id": "trello-6a1567d5b73110ec6caa3c7f",
+      "name": "Accessory Info",
+      "released": true,
+      "list": "Accessories"
+    },
+    {
+      "id": "trello-6a155b301748a2a076d35be3",
+      "name": "Dominus Messor",
+      "released": true,
+      "list": "Accessories"
+    },
+    {
+      "id": "trello-6a155d81ca341990050bcbcc",
+      "name": "Researcher Iris",
+      "released": true,
+      "list": "Misc NPCS"
+    },
+    {
+      "id": "trello-6a156736958cd1aa83e8f7d8",
+      "name": "Doran The Forge",
+      "released": true,
+      "list": "Misc NPCS"
+    },
+    {
+      "id": "trello-6a4948b1a9953adc6b93dc7c",
+      "name": "Wandering Merchant",
+      "released": true,
+      "list": "Misc NPCS"
+    },
+    {
+      "id": "trello-6a3814cb41912b955bb0387a",
+      "name": "Dragon skins",
+      "released": true,
+      "list": "Misc NPCS"
+    },
+    {
+      "id": "trello-6a156d8aaf8551683e67dcc4",
+      "name": "Red Emperor",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-6a156d6c429929e5bf5b9eec",
+      "name": "Ghostship",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-6a156d71e6b56b5be39e0f12",
+      "name": "Saturn",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-6a156d70b3e6a83ea5ce1061",
+      "name": "Raijin",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-6a156d7e531746861c9099ff",
+      "name": "Dragon Hybrid",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-66157d63fa6d583dbb16d87f",
+      "name": "SeaBeast",
+      "released": true,
+      "list": "Super Bosses"
+    },
+    {
+      "id": "trello-6a156aff49d747faeb57d928",
+      "name": "Cthulhu Boss (Unreleased)",
+      "released": false,
+      "list": "Sea Events"
+    },
+    {
+      "id": "trello-6a156b03383c337d1c7c1119",
+      "name": "Ghostship Boss",
+      "released": true,
+      "list": "Sea Events"
+    },
+    {
+      "id": "trello-6a1560a9fd49adf9dfe84203",
+      "name": "Wandering Merchant",
+      "released": true,
+      "list": "Sea Events"
+    },
+    {
+      "id": "trello-6a4167004cbd99c2a6f82b1b",
+      "name": "Storm",
+      "released": true,
+      "list": "Sea Events"
+    },
+    {
+      "id": "trello-6a150c940893c5fbab979724",
+      "name": "Black Leg V2",
+      "released": true,
+      "list": "Fighting Styles"
+    },
+    {
+      "id": "trello-6a1566915e92ca5f2ca8b27f",
+      "name": "Fighting Styles V2",
+      "released": true,
+      "list": "Fighting Styles"
+    }
+  ],
+  "missingLocalRecords": [],
+  "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
+  "status": "complete"
+}

@@ -1,0 +1,24 @@
+{
+  "updatedAt": "2026-08-04T00:00:00Z",
+  "sources": [
+    {
+      "id": "official-trello",
+      "name": "Haze Seas Official Trello",
+      "url": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
+      "role": "authoritative gameplay, items, requirements, descriptions, and official media"
+    },
+    {
+      "id": "haze-value-sheet",
+      "name": "Haze Seas published value spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pubhtml",
+      "role": "primary trade-value source"
+    },
+    {
+      "id": "vaulted-values-x",
+      "name": "Vaulted Values X — Haze Seas Value List",
+      "url": "https://haze-seas.vaultedvaluesx.com/value-list",
+      "role": "secondary market cross-check and feature reference; not a replacement for the primary spreadsheet"
+    }
+  ],
+  "conflictPolicy": "For trade-value conflicts, keep the published Google Sheet value in Haze Atlas and show Vaulted Values X only as a cross-check when that comparison is available. Trello remains authoritative for official gameplay facts."
+}

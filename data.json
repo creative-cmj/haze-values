@@ -1,6 +1,6 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
-  "updatedAt": "2026-07-26T05:49:31.747954+00:00",
+  "updatedAt": "2026-08-04T23:42:20.911645+00:00",
   "sheets": {
     "Overview": [
       [
@@ -2592,91 +2592,91 @@
       "name": "DRAGON",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
       "demand": "HIGH",
       "dragons": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pvp": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
-      "pve": "Dragon",
-      "sourceLabel": "Dragon - Hybird"
+      "pve": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
+      "sourceLabel": "Dragon"
     },
     {
       "id": "fruits-saturn",
       "name": "SATURN",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "100,000",
+      "valueText": "55,000",
       "value": 100000.0,
       "demand": "HIGH",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Saturn",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Saturn"
     },
     {
       "id": "fruits-electricity",
       "name": "ELECTRICITY",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "65,000",
+      "valueText": "60,000",
       "value": 65000.0,
       "demand": "HIGH",
       "dragons": "GOOD (BASE)",
       "pvp": "GOOD (BASE)",
-      "pve": "Electricity",
-      "sourceLabel": "N/A"
+      "pve": "GOOD (BASE)",
+      "sourceLabel": "Electricity"
     },
     {
       "id": "fruits-okuchi",
       "name": "OKUCHI",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "45,000",
+      "valueText": "35,000",
       "value": 45000.0,
       "demand": "HIGH",
       "dragons": "GOOD (BASE) - GOOD (FULL FORM)",
-      "pvp": "DECENT (BASE) - GOOD (FULL FORM)",
-      "pve": "Okuchi",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD (BASE) - GOOD (FULL FORM)",
+      "pve": "DECENT (BASE) - GOOD (FULL FORM)",
+      "sourceLabel": "Okuchi"
     },
     {
       "id": "fruits-phoenix",
       "name": "PHOENIX",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "35,000",
+      "valueText": "45,000",
       "value": 35000.0,
       "demand": "HIGH",
       "dragons": "GOOD (HYBIRD) - GOOD (FULL FORM)",
-      "pvp": "DECENT (HYBIRD) - DECENT (FULL FORM)",
-      "pve": "Phoenix",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD (HYBIRD) - GOOD (FULL FORM)",
+      "pve": "DECENT (HYBIRD) - DECENT (FULL FORM)",
+      "sourceLabel": "Phoenix"
     },
     {
       "id": "fruits-gum",
       "name": "GUM",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "30,000",
+      "valueText": "80,000",
       "value": 30000.0,
       "demand": "HIGH",
       "dragons": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
-      "pvp": "BAD (G2) - DECENT (G4) - GOOD (G5)",
-      "pve": "Gum",
-      "sourceLabel": "Gum - Gear 4"
+      "pvp": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
+      "pve": "BAD (G2) - DECENT (G4) - GOOD (G5)",
+      "sourceLabel": "Gum"
     },
     {
       "id": "fruits-dough",
       "name": "DOUGH",
       "category": "Fruits",
       "rarity": "MYTHICAL",
-      "valueText": "20,000",
+      "valueText": "15,000",
       "value": 20000.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "BAD",
-      "pve": "Dough",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "BAD",
+      "sourceLabel": "Dough"
     },
     {
       "id": "fruits-tremor",
@@ -2687,9 +2687,9 @@
       "value": 15000.0,
       "demand": "HIGH",
       "dragons": "DECENT",
-      "pvp": "BEST",
-      "pve": "Tremor",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "BEST",
+      "sourceLabel": "Tremor"
     },
     {
       "id": "fruits-darkness",
@@ -2700,9 +2700,9 @@
       "value": 15000.0,
       "demand": "HIGH",
       "dragons": "GOOD",
-      "pvp": "BEST",
-      "pve": "Darkness",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD",
+      "pve": "BEST",
+      "sourceLabel": "Darkness"
     },
     {
       "id": "fruits-venom",
@@ -2713,22 +2713,22 @@
       "value": 8500.0,
       "demand": "LOW",
       "dragons": "GOOD",
-      "pvp": "VERY GOOD",
-      "pve": "Venom",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD",
+      "pve": "VERY GOOD",
+      "sourceLabel": "Venom"
     },
     {
       "id": "fruits-magma",
       "name": "MAGMA",
       "category": "Fruits",
       "rarity": "LEGENDARY",
-      "valueText": "8,500",
+      "valueText": "10,000",
       "value": 8500.0,
       "demand": "MEDIUM",
       "dragons": "GOOD",
       "pvp": "GOOD",
-      "pve": "Magma",
-      "sourceLabel": "N/A"
+      "pve": "GOOD",
+      "sourceLabel": "Magma"
     },
     {
       "id": "fruits-wolf",
@@ -2739,9 +2739,9 @@
       "value": 8500.0,
       "demand": "MEDIUM",
       "dragons": "GOOD",
-      "pvp": "DECENT",
-      "pve": "Wolf",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "Wolf"
     },
     {
       "id": "fruits-leopard",
@@ -2752,9 +2752,9 @@
       "value": 8500.0,
       "demand": "MEDIUM",
       "dragons": "GOOD",
-      "pvp": "DECENT",
-      "pve": "Leopard",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "Leopard"
     },
     {
       "id": "fruits-shadow",
@@ -2765,9 +2765,9 @@
       "value": 7500.0,
       "demand": "MEDIUM",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Shadow",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Shadow"
     },
     {
       "id": "fruits-magnet",
@@ -2778,9 +2778,9 @@
       "value": 3500.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Magnet",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Magnet"
     },
     {
       "id": "fruits-soul",
@@ -2791,9 +2791,9 @@
       "value": 3000.0,
       "demand": "LOW",
       "dragons": "BAD",
-      "pvp": "DECENT",
-      "pve": "Soul",
-      "sourceLabel": "N/A"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Soul"
     },
     {
       "id": "fruits-light",
@@ -2805,8 +2805,8 @@
       "demand": "LOW",
       "dragons": "DECENT",
       "pvp": "DECENT",
-      "pve": "Light",
-      "sourceLabel": "N/A"
+      "pve": "DECENT",
+      "sourceLabel": "Light"
     },
     {
       "id": "fruits-ice",
@@ -2818,8 +2818,8 @@
       "demand": "LOW",
       "dragons": "DECENT",
       "pvp": "DECENT",
-      "pve": "Ice",
-      "sourceLabel": "N/A"
+      "pve": "DECENT",
+      "sourceLabel": "Ice"
     },
     {
       "id": "fruits-buddha",
@@ -2830,9 +2830,9 @@
       "value": 1000.0,
       "demand": "LOW",
       "dragons": "BAD",
-      "pvp": "VERY GOOD (BEGINNER)",
-      "pve": "Buddha",
-      "sourceLabel": "N/A"
+      "pvp": "BAD",
+      "pve": "VERY GOOD (BEGINNER)",
+      "sourceLabel": "Buddha"
     },
     {
       "id": "fruits-gas",
@@ -2843,9 +2843,9 @@
       "value": 1000.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Gas",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Gas"
     },
     {
       "id": "fruits-gravity",
@@ -2856,9 +2856,9 @@
       "value": 500.0,
       "demand": "LOW",
       "dragons": "BAD",
-      "pvp": "DECENT",
-      "pve": "Gravity",
-      "sourceLabel": "N/A"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Gravity"
     },
     {
       "id": "fruits-snow",
@@ -2869,9 +2869,9 @@
       "value": 500.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Snow",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Snow"
     },
     {
       "id": "fruits-string",
@@ -2882,9 +2882,9 @@
       "value": 500.0,
       "demand": "LOW",
       "dragons": "GOOD",
-      "pvp": "DECENT",
-      "pve": "String",
-      "sourceLabel": "N/A"
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "String"
     },
     {
       "id": "fruits-love",
@@ -2895,9 +2895,9 @@
       "value": 300.0,
       "demand": "LOW",
       "dragons": "BAD",
-      "pvp": "DECENT",
-      "pve": "Love",
-      "sourceLabel": "N/A"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Love"
     },
     {
       "id": "fruits-flame",
@@ -2909,8 +2909,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Flame",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Flame"
     },
     {
       "id": "fruits-operation",
@@ -2922,8 +2922,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Operation",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Operation"
     },
     {
       "id": "fruits-smoke",
@@ -2935,8 +2935,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Smoke",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Smoke"
     },
     {
       "id": "fruits-mammoth",
@@ -2948,8 +2948,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Mammoth",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Mammoth"
     },
     {
       "id": "fruits-sand",
@@ -2961,8 +2961,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Sand",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Sand"
     },
     {
       "id": "fruits-paw",
@@ -2973,9 +2973,9 @@
       "value": 100.0,
       "demand": "LOW",
       "dragons": "BAD",
-      "pvp": "DECENT",
-      "pve": "Paw",
-      "sourceLabel": "N/A"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Paw"
     },
     {
       "id": "fruits-barrier",
@@ -2986,9 +2986,9 @@
       "value": 150.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Barrier",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Barrier"
     },
     {
       "id": "fruits-spin",
@@ -3000,8 +3000,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Spin",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Spin"
     },
     {
       "id": "fruits-bomb",
@@ -3013,8 +3013,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Bomb",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Bomb"
     },
     {
       "id": "fruits-circus",
@@ -3025,9 +3025,9 @@
       "value": 50.0,
       "demand": "LOW",
       "dragons": "DECENT",
-      "pvp": "GOOD",
-      "pve": "Circus",
-      "sourceLabel": "N/A"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Circus"
     },
     {
       "id": "fruits-spike",
@@ -3039,8 +3039,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Spike",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Spike"
     },
     {
       "id": "fruits-vanish",
@@ -3052,8 +3052,8 @@
       "demand": "LOW",
       "dragons": "BAD",
       "pvp": "BAD",
-      "pve": "Vanish",
-      "sourceLabel": "N/A"
+      "pve": "BAD",
+      "sourceLabel": "Vanish"
     },
     {
       "id": "accessories-night-necklace",
@@ -3086,10 +3086,10 @@
       "name": "Night Necklace",
       "category": "Accessories",
       "rarity": "MYTHICAL",
-      "valueText": "???",
+      "valueText": "1,500,000",
       "value": null,
-      "demand": "???",
-      "dragons": "",
+      "demand": "HIGH",
+      "dragons": "11 DRAGONS",
       "pvp": "Best",
       "pve": "Good",
       "sourceLabel": "Night Necklace"
@@ -3129,8 +3129,8 @@
       "value": null,
       "demand": "???",
       "dragons": "",
-      "pvp": "???",
-      "pve": "???",
+      "pvp": "Decent",
+      "pve": "Bad",
       "sourceLabel": "Gravity Gauntlet"
     },
     {
@@ -3151,10 +3151,10 @@
       "name": "GPM",
       "category": "Accessories",
       "rarity": "MYTHICAL",
-      "valueText": "???",
+      "valueText": "700,000",
       "value": null,
-      "demand": "???",
-      "dragons": "",
+      "demand": "HIGH",
+      "dragons": "5 DRAGONS + ADDS",
       "pvp": "Good",
       "pve": "Good",
       "sourceLabel": "GPM"
@@ -3181,8 +3181,8 @@
       "value": null,
       "demand": "???",
       "dragons": "",
-      "pvp": "???",
-      "pve": "???",
+      "pvp": "Good",
+      "pve": "Bad",
       "sourceLabel": "SB Helmet V2"
     },
     {
@@ -3246,8 +3246,8 @@
       "value": null,
       "demand": "???",
       "dragons": "",
-      "pvp": "???",
-      "pve": "???",
+      "pvp": "Good",
+      "pve": "Decent",
       "sourceLabel": "SB Armor V2"
     },
     {
@@ -3606,10 +3606,10 @@
       "name": "Krampus Scythe",
       "category": "Swords",
       "rarity": "MYTHICAL",
-      "valueText": "???",
+      "valueText": "260,000",
       "value": null,
-      "demand": "???",
-      "dragons": "",
+      "demand": "HIGH",
+      "dragons": "2 DRAGON",
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Krampus Scythe"
@@ -3658,10 +3658,10 @@
       "name": "Dual Axe",
       "category": "Swords",
       "rarity": "LEGENDARY",
-      "valueText": "???",
+      "valueText": "150,000",
       "value": null,
-      "demand": "???",
-      "dragons": "",
+      "demand": "MEDIUM",
+      "dragons": "1 DRAGON + ADDS",
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Dual Axe"
@@ -3944,10 +3944,10 @@
       "name": "Broom",
       "category": "Misc Items",
       "rarity": "COMMON",
-      "valueText": "???",
+      "valueText": "200,000",
       "value": null,
-      "demand": "???",
-      "dragons": "",
+      "demand": "HIGH",
+      "dragons": "1 DRAGON + ADDS",
       "pvp": "-----",
       "pve": "-----",
       "sourceLabel": "-----"
@@ -3957,39 +3957,39 @@
       "name": "FRUIT NOTIFIER",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "200,000",
+      "valueText": "260,000",
       "value": 200000.0,
-      "demand": "2 DRAGONS",
-      "dragons": "MEDIUM",
+      "demand": "MEDIUM",
+      "dragons": "2 DRAGONS",
       "pvp": "FRUIT NOTIFIER",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "FRUIT NOTIFIER"
     },
     {
       "id": "gamepasses-dark-blade",
       "name": "DARK BLADE",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "180,000",
+      "valueText": "200,000",
       "value": 180000.0,
-      "demand": "1 DRAGON + ADDS",
-      "dragons": "HIGH",
+      "demand": "HIGH",
+      "dragons": "1 DRAGON + ADDS",
       "pvp": "DARK BLADE",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "DARK BLADE"
     },
     {
       "id": "gamepasses-vip",
       "name": "VIP",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "200,000",
+      "valueText": "260,000",
       "value": 200000.0,
-      "demand": "2 DRAGONS",
-      "dragons": "HIGH",
+      "demand": "HIGH",
+      "dragons": "2 DRAGONS",
       "pvp": "VIP",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "VIP"
     },
     {
       "id": "gamepasses-2x-money",
@@ -3998,11 +3998,11 @@
       "rarity": "Region Based",
       "valueText": "150,000",
       "value": 150000.0,
-      "demand": "1 DRAGON + ADDS",
-      "dragons": "HIGH",
+      "demand": "HIGH",
+      "dragons": "1 DRAGON + ADDS",
       "pvp": "2x MONEY",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "2x MONEY"
     },
     {
       "id": "gamepasses-increase-drop-rate",
@@ -4011,50 +4011,50 @@
       "rarity": "Region Based",
       "valueText": "150,000",
       "value": 150000.0,
-      "demand": "1 DRAGON + ADDS",
-      "dragons": "HIGH",
+      "demand": "HIGH",
+      "dragons": "1 DRAGON + ADDS",
       "pvp": "INCREASE DROP RATE",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "INCREASE DROP RATE"
     },
     {
       "id": "gamepasses-fruit-bag",
       "name": "FRUIT BAG",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "1 DRAGON",
-      "dragons": "HIGH",
+      "demand": "HIGH",
+      "dragons": "1 DRAGON",
       "pvp": "N/A",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "N/A"
     },
     {
       "id": "gamepasses-striker-boat",
       "name": "STRIKER BOAT",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "1 DRAGON",
-      "dragons": "MEDIUM",
+      "demand": "MEDIUM",
+      "dragons": "1 DRAGON",
       "pvp": "STRIKER BOAT",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "STRIKER BOAT"
     },
     {
       "id": "gamepasses-coffin-boat",
       "name": "COFFIN BOAT",
       "category": "Gamepasses",
       "rarity": "Region Based",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "1 DRAGON",
-      "dragons": "LOW",
+      "demand": "LOW",
+      "dragons": "1 DRAGON",
       "pvp": "COFFIN BOAT",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "COFFIN BOAT"
     },
     {
       "id": "gamepasses-custom-armament-color",
@@ -4063,37 +4063,37 @@
       "rarity": "Region Based",
       "valueText": "65,000",
       "value": 65000.0,
-      "demand": "NOT WORTH DRAGONS",
-      "dragons": "LOW",
+      "demand": "LOW",
+      "dragons": "NOT WORTH DRAGONS",
       "pvp": "N/A",
       "pve": "",
-      "sourceLabel": ""
+      "sourceLabel": "N/A"
     },
     {
       "id": "perm-fruits-robux-dragon",
       "name": "DRAGON",
       "category": "Perm Fruits (Robux)",
       "rarity": "MYTHICAL",
-      "valueText": "1,200,000",
+      "valueText": "1,300,000",
       "value": 1200000.0,
-      "demand": "2,999 ROBUX",
-      "dragons": "12 DRAGONS",
-      "pvp": "HIGH",
+      "demand": "HIGH",
+      "dragons": "10 DRAGONS",
+      "pvp": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pve": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
-      "sourceLabel": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)"
+      "sourceLabel": "Dragon"
     },
     {
       "id": "perm-fruits-robux-saturn",
       "name": "SATURN",
       "category": "Perm Fruits (Robux)",
       "rarity": "MYTHICAL",
-      "valueText": "1,200,000",
+      "valueText": "1,100,000",
       "value": 1200000.0,
-      "demand": "2,499 ROBUX",
-      "dragons": "12 DRAGONS",
-      "pvp": "HIGH",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "demand": "HIGH",
+      "dragons": "8 DRAGONS + ADDS",
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Saturn"
     },
     {
       "id": "perm-fruits-robux-okuchi",
@@ -4102,37 +4102,37 @@
       "rarity": "MYTHICAL",
       "valueText": "1,000,000",
       "value": 1000000.0,
-      "demand": "2,899 ROBUX",
-      "dragons": "10 DRAGONS",
-      "pvp": "HIGH",
-      "pve": "GOOD (BASE) - GOOD (FULL FORM)",
-      "sourceLabel": "DECENT (BASE) - GOOD (FULL FORM)"
+      "demand": "HIGH",
+      "dragons": "8 DRAGONS",
+      "pvp": "GOOD (BASE) - GOOD (FULL FORM)",
+      "pve": "DECENT (BASE) - GOOD (FULL FORM)",
+      "sourceLabel": "Okuchi"
     },
     {
       "id": "perm-fruits-robux-electricity",
       "name": "ELECTRICITY",
       "category": "Perm Fruits (Robux)",
       "rarity": "MYTHICAL",
-      "valueText": "950,000",
+      "valueText": "1,000,000",
       "value": 950000.0,
-      "demand": "2,499 ROBUX",
-      "dragons": "9 DRAGONS + ADDS",
-      "pvp": "HIGH",
-      "pve": "DECENT (BASE) - GOOD (AWAKENED)",
-      "sourceLabel": "GOOD (BASE) - GOOD (AWAKENED)"
+      "demand": "HIGH",
+      "dragons": "8 DRAGONS",
+      "pvp": "DECENT (BASE) - GOOD (AWAKENED)",
+      "pve": "GOOD (BASE) - GOOD (AWAKENED)",
+      "sourceLabel": "Electricity"
     },
     {
       "id": "perm-fruits-robux-gum",
       "name": "GUM",
       "category": "Perm Fruits (Robux)",
       "rarity": "MYTHICAL",
-      "valueText": "1,000,000",
+      "valueText": "1,200,000",
       "value": 1000000.0,
-      "demand": "2,499 ROBUX",
-      "dragons": "10 DRAGONS",
-      "pvp": "HIGH",
-      "pve": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
-      "sourceLabel": "BAD (G2) - DECENT (G4) - GOOD (G5)"
+      "demand": "HIGH",
+      "dragons": "9 DRAGONS",
+      "pvp": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
+      "pve": "BAD (G2) - DECENT (G4) - GOOD (G5)",
+      "sourceLabel": "Gum"
     },
     {
       "id": "perm-fruits-robux-phoenix",
@@ -4141,11 +4141,11 @@
       "rarity": "MYTHICAL",
       "valueText": "800,000",
       "value": 800000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "8 DRAGONS",
-      "pvp": "HIGH",
+      "demand": "HIGH",
+      "dragons": "6 DRAGONS",
+      "pvp": "GOOD (HYBIRD) - DECENT (FULL FORM)",
       "pve": "GOOD (HYBIRD) - DECENT (FULL FORM)",
-      "sourceLabel": "GOOD (HYBIRD) - DECENT (FULL FORM)"
+      "sourceLabel": "Phoenix"
     },
     {
       "id": "perm-fruits-robux-tremor",
@@ -4154,11 +4154,11 @@
       "rarity": "LEGENDARY",
       "valueText": "700,000",
       "value": 700000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "7 DRAGONS",
-      "pvp": "HIGH",
-      "pve": "DECENT",
-      "sourceLabel": "BEST"
+      "demand": "HIGH",
+      "dragons": "5 DRAGONS",
+      "pvp": "DECENT",
+      "pve": "BEST",
+      "sourceLabel": "Tremor"
     },
     {
       "id": "perm-fruits-robux-darkness",
@@ -4167,11 +4167,11 @@
       "rarity": "LEGENDARY",
       "valueText": "700,000",
       "value": 700000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "7 DRAGONS",
-      "pvp": "HIGH",
-      "pve": "GOOD",
-      "sourceLabel": "BEST"
+      "demand": "HIGH",
+      "dragons": "5 DRAGONS",
+      "pvp": "GOOD",
+      "pve": "BEST",
+      "sourceLabel": "Darkness"
     },
     {
       "id": "perm-fruits-robux-dough",
@@ -4180,11 +4180,11 @@
       "rarity": "MYTHICAL",
       "valueText": "900,000",
       "value": 900000.0,
-      "demand": "2,399 ROBUX",
-      "dragons": "9 DRAGONS",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "BAD"
+      "demand": "LOW",
+      "dragons": "7 DRAGONS",
+      "pvp": "DECENT",
+      "pve": "BAD",
+      "sourceLabel": "Dough"
     },
     {
       "id": "perm-fruits-robux-venom",
@@ -4193,11 +4193,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "LOW",
-      "pve": "GOOD",
-      "sourceLabel": "VERY GOOD"
+      "demand": "LOW",
+      "dragons": "5 DRAGONS",
+      "pvp": "GOOD",
+      "pve": "VERY GOOD",
+      "sourceLabel": "Venom"
     },
     {
       "id": "perm-fruits-robux-magma",
@@ -4206,11 +4206,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "MEDIUM",
+      "demand": "MEDIUM",
+      "dragons": "5 DRAGONS",
+      "pvp": "GOOD",
       "pve": "GOOD",
-      "sourceLabel": "GOOD"
+      "sourceLabel": "Magma"
     },
     {
       "id": "perm-fruits-robux-wolf",
@@ -4219,11 +4219,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "MEDIUM",
-      "pve": "GOOD",
-      "sourceLabel": "DECENT"
+      "demand": "MEDIUM",
+      "dragons": "5 DRAGONS",
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "Wolf"
     },
     {
       "id": "perm-fruits-robux-leopard",
@@ -4232,11 +4232,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "MEDIUM",
-      "pve": "GOOD",
-      "sourceLabel": "DECENT"
+      "demand": "MEDIUM",
+      "dragons": "5 DRAGONS",
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "Leopard"
     },
     {
       "id": "perm-fruits-robux-shadow",
@@ -4245,11 +4245,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "MEDIUM",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "demand": "MEDIUM",
+      "dragons": "5 DRAGONS",
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Shadow"
     },
     {
       "id": "perm-fruits-robux-magnet",
@@ -4258,11 +4258,11 @@
       "rarity": "LEGENDARY",
       "valueText": "600,000",
       "value": 600000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "6 DRAGONS",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "demand": "LOW",
+      "dragons": "5 DRAGONS",
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Magnet"
     },
     {
       "id": "perm-fruits-robux-soul",
@@ -4271,11 +4271,11 @@
       "rarity": "LEGENDARY",
       "valueText": "500,000",
       "value": 500000.0,
-      "demand": "1,999 ROBUX",
-      "dragons": "5 DRAGONS",
-      "pvp": "LOW",
-      "pve": "BAD",
-      "sourceLabel": "DECENT"
+      "demand": "LOW",
+      "dragons": "4 DRAGONS",
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Soul"
     },
     {
       "id": "perm-fruits-robux-light",
@@ -4284,11 +4284,11 @@
       "rarity": "RARE",
       "valueText": "300,000",
       "value": 300000.0,
-      "demand": "1,499 ROBUX",
-      "dragons": "3 DRAGONS",
-      "pvp": "LOW",
+      "demand": "LOW",
+      "dragons": "2 DRAGONS + ADDS",
+      "pvp": "DECENT",
       "pve": "DECENT",
-      "sourceLabel": "DECENT"
+      "sourceLabel": "Light"
     },
     {
       "id": "perm-fruits-robux-ice",
@@ -4297,24 +4297,24 @@
       "rarity": "RARE",
       "valueText": "400,000",
       "value": 400000.0,
-      "demand": "1,699 ROBUX",
-      "dragons": "4 DRAGONS",
-      "pvp": "LOW",
+      "demand": "LOW",
+      "dragons": "3 DRAGONS",
+      "pvp": "DECENT",
       "pve": "DECENT",
-      "sourceLabel": "DECENT"
+      "sourceLabel": "Ice"
     },
     {
       "id": "perm-fruits-robux-buddha",
       "name": "BUDDHA",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "899 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
-      "pve": "BAD",
-      "sourceLabel": "VERY GOOD (BEGINNER)"
+      "pvp": "BAD",
+      "pve": "VERY GOOD (BEGINNER)",
+      "sourceLabel": "Buddha"
     },
     {
       "id": "perm-fruits-robux-gas",
@@ -4323,11 +4323,11 @@
       "rarity": "RARE",
       "valueText": "300,000",
       "value": 300000.0,
-      "demand": "1,399 ROBUX",
-      "dragons": "3 DRAGONS",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "demand": "LOW",
+      "dragons": "2 DRAGONS + ADDS",
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Gas"
     },
     {
       "id": "perm-fruits-robux-gravity",
@@ -4336,37 +4336,37 @@
       "rarity": "RARE",
       "valueText": "400,000",
       "value": 400000.0,
-      "demand": "1,099 ROBUX",
-      "dragons": "4 DRAGONS",
-      "pvp": "LOW",
-      "pve": "BAD",
-      "sourceLabel": "DECENT"
+      "demand": "LOW",
+      "dragons": "3 DRAGONS",
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Gravity"
     },
     {
       "id": "perm-fruits-robux-snow",
       "name": "SNOW",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "699 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Snow"
     },
     {
       "id": "perm-fruits-robux-string",
       "name": "STRING",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "799 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
-      "pve": "GOOD",
-      "sourceLabel": "DECENT"
+      "pvp": "GOOD",
+      "pve": "DECENT",
+      "sourceLabel": "String"
     },
     {
       "id": "perm-fruits-robux-love",
@@ -4375,11 +4375,11 @@
       "rarity": "RARE",
       "valueText": "300,000",
       "value": 300000.0,
-      "demand": "1,299 ROBUX",
+      "demand": "LOW",
       "dragons": "3 DRAGONS",
-      "pvp": "LOW",
-      "pve": "BAD",
-      "sourceLabel": "DECENT"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Love"
     },
     {
       "id": "perm-fruits-robux-flame",
@@ -4388,11 +4388,11 @@
       "rarity": "RARE",
       "valueText": "300,000",
       "value": 300000.0,
-      "demand": "1,299 ROBUX",
+      "demand": "LOW",
       "dragons": "3 DRAGONS",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Flame"
     },
     {
       "id": "perm-fruits-robux-operation",
@@ -4401,63 +4401,63 @@
       "rarity": "RARE",
       "valueText": "200,000",
       "value": 200000.0,
-      "demand": "1,399 ROBUX",
-      "dragons": "2 DRAGONS",
-      "pvp": "LOW",
+      "demand": "LOW",
+      "dragons": "1 DRAGON + ADDS",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Operation"
     },
     {
       "id": "perm-fruits-robux-smoke",
       "name": "SMOKE",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "649 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Smoke"
     },
     {
       "id": "perm-fruits-robux-mammoth",
       "name": "MAMMOTH",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "999 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Mammoth"
     },
     {
       "id": "perm-fruits-robux-sand",
       "name": "SAND",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "699 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Sand"
     },
     {
       "id": "perm-fruits-robux-paw",
       "name": "PAW",
       "category": "Perm Fruits (Robux)",
       "rarity": "UNCOMMON",
-      "valueText": "100,000",
+      "valueText": "130,000",
       "value": 100000.0,
-      "demand": "699 ROBUX",
+      "demand": "LOW",
       "dragons": "1 DRAGON",
-      "pvp": "LOW",
-      "pve": "BAD",
-      "sourceLabel": "DECENT"
+      "pvp": "BAD",
+      "pve": "DECENT",
+      "sourceLabel": "Paw"
     },
     {
       "id": "perm-fruits-robux-barrier",
@@ -4466,11 +4466,11 @@
       "rarity": "COMMON",
       "valueText": "60,000",
       "value": 60000.0,
-      "demand": "1,399 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Barrier"
     },
     {
       "id": "perm-fruits-robux-spin",
@@ -4479,11 +4479,11 @@
       "rarity": "COMMON",
       "valueText": "45,000",
       "value": 45000.0,
-      "demand": "95 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Spin"
     },
     {
       "id": "perm-fruits-robux-bomb",
@@ -4492,11 +4492,11 @@
       "rarity": "COMMON",
       "valueText": "45,000",
       "value": 45000.0,
-      "demand": "55 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Bomb"
     },
     {
       "id": "perm-fruits-robux-circus",
@@ -4505,11 +4505,11 @@
       "rarity": "COMMON",
       "valueText": "45,000",
       "value": 45000.0,
-      "demand": "95 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
-      "pve": "DECENT",
-      "sourceLabel": "GOOD"
+      "pvp": "DECENT",
+      "pve": "GOOD",
+      "sourceLabel": "Circus"
     },
     {
       "id": "perm-fruits-robux-spike",
@@ -4518,11 +4518,11 @@
       "rarity": "COMMON",
       "valueText": "30,000",
       "value": 30000.0,
-      "demand": "35 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Spike"
     },
     {
       "id": "perm-fruits-robux-vanish",
@@ -4531,11 +4531,23 @@
       "rarity": "COMMON",
       "valueText": "45,000",
       "value": 45000.0,
-      "demand": "95 ROBUX",
+      "demand": "LOW",
       "dragons": "NOT WORTH DRAGONS",
-      "pvp": "LOW",
+      "pvp": "BAD",
       "pve": "BAD",
-      "sourceLabel": "BAD"
+      "sourceLabel": "Vanish"
+    },
+    {
+      "id": "swords-gryphon",
+      "name": "Gryphon",
+      "category": "Swords",
+      "rarity": "MYTHICAL",
+      "valueText": "???",
+      "demand": "???",
+      "dragons": "",
+      "pvp": "",
+      "pve": "",
+      "sourceLabel": "Gryphon"
     }
   ],
   "sync": {
