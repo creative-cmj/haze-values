@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "mediaGroups": [
+    {"id":"dragon","label":"Dragon","aliases":["Dragon","Dragon Full Form","Dragon Hybrid Form"]},
+    {"id":"gum","label":"Gum","aliases":["Gum","Gum Gear 2","Gum Gear 4","Gum Gear 5"]},
+    {"id":"phoenix","label":"Phoenix","aliases":["Phoenix","Phoenix Full Form"]},
+    {"id":"wolf","label":"Wolf","aliases":["Wolf","Wolf Full Form"]},
+    {"id":"okuchi","label":"Okuchi","aliases":["Okuchi","Okuchi Full Form"]},
+    {"id":"saturn","label":"Saturn","aliases":["Saturn","Saturn Spider Form"]},
+    {"id":"electricity","label":"Electricity","aliases":["Electricity","Electricity Raijin Form"]},
+    {"id":"leopard","label":"Leopard","aliases":["Leopard","Leopard Full Form"]},
+    {"id":"darkblade","label":"Darkblade","aliases":["Darkblade","Darkblade V2","Dual Dark Blade (Unreleased)"]},
+    {"id":"black-leg","label":"Black Leg","aliases":["Black Leg V1","Black Leg V2"]},
+    {"id":"electro","label":"Electro","aliases":["Electro V1","Electro V2"]},
+    {"id":"fishman","label":"Fishman","aliases":["Fishman V1","Fishman V2"]},
+    {"id":"dragon-claw","label":"Dragon Claw","aliases":["Dragon Claw V1","Dragon Claw V2"]},
+    {"id":"mace","label":"Mace","aliases":["Mace","Mace V2"]},
+    {"id":"golden-staff","label":"Golden Staff","aliases":["Golden Staff","Golden Staff V2"]}
+  ],
+  "releaseOverrides": [
+    {
+      "id":"trello-6a408e1c8be5d7ffb041a4fd",
+      "name":"Ghostship",
+      "status":"released",
+      "confirmedAt":"2026-08-04",
+      "reason":"Confirmed released by the project owner and supported by the current official Ghostship card with active spawn and reward instructions.",
+      "source":"https://trello.com/c/mS15iUSX"
+    },
+    {
+      "id":"trello-6a40a58353557104a7828744",
+      "name":"Ghostship Boss",
+      "status":"released",
+      "confirmedAt":"2026-08-04",
+      "reason":"Confirmed released by the project owner and supported by the current official boss card with behavior, drops and rewards.",
+      "source":"https://trello.com/c/sM9lkRzG"
+    },
+    {
+      "id":"trello-6a454f9401d90e50fc3f8878",
+      "name":"Cthulhu Boss",
+      "status":"unreleased",
+      "confirmedAt":"2026-08-04",
+      "reason":"The current official Trello card explicitly identifies this boss as unreleased.",
+      "source":"https://trello.com/c/o2K8C9Lc"
+    }
+  ]
+}
