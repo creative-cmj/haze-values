@@ -13,18 +13,20 @@
     getMastery: () => json('mastery-xp.json'),
     getTrelloDetails: () => json('trello-details.json'),
     getSyncMeta: () => json('sync-meta.json').catch(() => null),
+    getSourceAudit: () => json('source-audit.json').catch(() => null),
     /**
      * Reload deployed snapshots produced by the GitHub Actions sync workflow.
      * Does not scrape sources in the browser — Actions writes JSON to the repo,
      * Pages deploys it, then this re-fetches those files with a cache bust.
      */
     refresh: async () => {
-      const [data, content, mastery, trello, meta] = await Promise.all([
+      const [data, content, mastery, trello, meta, audit] = await Promise.all([
         json('data.json'),
         json('content.json'),
         json('mastery-xp.json'),
         json('trello-details.json'),
         json('sync-meta.json').catch(() => null),
+        json('source-audit.json').catch(() => null),
       ]);
       const checkedAt = new Date().toISOString();
       data.sync = {
@@ -36,7 +38,7 @@
         runUrl: data.sync?.runUrl || meta?.runUrl || null,
         clientReloadedAt: checkedAt,
       };
-      return { data, content, mastery, trello, meta };
+      return { data, content, mastery, trello, meta, audit };
     },
     openSource: () =>
       window.open(

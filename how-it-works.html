@@ -410,8 +410,10 @@
         <li>thumbnail / poster generators for web-friendly art</li>
       </ul>
       <p>
-        There is also an optional Firebase checker under <code>functions/</code> that
-        compares the published Atlas snapshots against Trello and the sheet for drift.
+        Source checks run in GitHub Actions alongside the scheduled sync. The workflow
+        compares the committed Atlas snapshot with the published value sources, writes
+        <code>sync-meta.json</code> and <code>source-audit.json</code>, and deploys the
+        updated static files through GitHub Pages.
       </p>
     </section>
 

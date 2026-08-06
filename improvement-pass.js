@@ -418,7 +418,7 @@
     const gradient = ctx.createLinearGradient(0, 0, 1200, 675); gradient.addColorStop(0, '#050c14'); gradient.addColorStop(1, '#102b3d'); ctx.fillStyle = gradient; ctx.fillRect(0, 0, 1200, 675);
     ctx.fillStyle = '#f4f8fb'; ctx.font = '800 48px Arial'; ctx.fillText('HAZE ATLAS TRADE', 55, 85); ctx.fillStyle = '#a1b3c2'; ctx.font = '20px Arial'; ctx.fillText('Raw + demand-weighted comparison', 57, 120);
     drawSide('YOUR OFFER', 'yours', 55); drawSide('THEIR OFFER', 'theirs', 675);
-    ctx.fillStyle = calc.result === 'Win' ? '#5fd49a' : calc.result === 'Loss' ? '#ff7f8f' : '#e6bd63'; ctx.font = '800 34px Arial'; ctx.textAlign = 'center'; ctx.fillText(calc.result.toUpperCase(), 600, 590); ctx.font = '18px Arial'; ctx.fillStyle = '#a1b3c2'; ctx.fillText(`Demand-adjusted gap ${calc.percentage >= 0 ? '+' : ''}${calc.percentage.toFixed(1)}% · haze-atlas.web.app`, 600, 626);
+    ctx.fillStyle = calc.result === 'Win' ? '#5fd49a' : calc.result === 'Loss' ? '#ff7f8f' : '#e6bd63'; ctx.font = '800 34px Arial'; ctx.textAlign = 'center'; ctx.fillText(calc.result.toUpperCase(), 600, 590); ctx.font = '18px Arial'; ctx.fillStyle = '#a1b3c2'; ctx.fillText(`Demand-adjusted gap ${calc.percentage >= 0 ? '+' : ''}${calc.percentage.toFixed(1)}% · creative-cmj.github.io/haze-values`, 600, 626);
     canvas.toBlob(blob => { if (!blob) return toast('Could not create the trade image'); const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'haze-atlas-trade.png'; link.click(); setTimeout(() => URL.revokeObjectURL(link.href), 500); toast('Discord trade image downloaded'); }, 'image/png');
   }
 

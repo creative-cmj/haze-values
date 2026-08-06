@@ -96,7 +96,8 @@ const groups=[
     ['compare','compare','Compare'],
     ['timers','clock','Boss timers'],
     ['ideas','trade','Trade ideas'],
-    ['history','clock','Trade history']
+    ['history','clock','Trade history'],
+    ['dataStatus','news','Data status']
   ]],
   ['you','You',[
     ['favorites','heart','Favorites',favCount],
