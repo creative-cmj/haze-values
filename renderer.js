@@ -22,6 +22,7 @@ function filteredItems(category) { const unique=normalizedItems(data.items);retu
  }); }
 function status(item) { const demand = String(item.demand || '').toLowerCase(); if (demand.includes('high') || demand.includes('extreme')) return '<span class="pill high">High Demand</span>'; if (item.value == null || item.valueText === '???' || item.valueText === 'Unlisted') return '<span class="pill muted">Unlisted</span>'; if (demand.includes('low')) return '<span class="pill muted">Low Demand</span>'; return '<span class="pill stable">Stable</span>'; }
 function cleanDisplayName(s=''){return String(s).replace(/[\u1cbc\u200b\u200c\u200d\ufeff]/g,'').trim();}
+function accessoryKey(s=''){return String(s).toLowerCase().replace(/neptune'?s?/g,'neptune').replace(/seabeast|sea beast/g,'seabeast').replace(/[^a-z0-9]/g,'')}
 const verifiedPngArtwork=new Set(['accessories-gpm','accessories-abyssal-necklace','accessories-dominus-messor','accessories-gravity-gauntlet','accessories-emperor-cape','accessories-sb-helmet-v2','accessories-drums','accessories-pumpkin-mask','swords-gryphon','misc-items-broom','gamepasses-2x-money','gamepasses-increase-drop-rate','gamepasses-fruit-bag','gamepasses-striker-boat','gamepasses-custom-armament-color','perm-fruits-robux-saturn']);
 const artPath=item=>`item-thumbnails/${item.id}${verifiedPngArtwork.has(item.id)?'.png':'.webp'}`;
 function art(item){return `<img class="item-art" src="./${esc(artPath(item))}" loading="lazy" decoding="async" width="360" height="270" alt="Verified Haze Seas art for ${esc(item.name)}">`;}
