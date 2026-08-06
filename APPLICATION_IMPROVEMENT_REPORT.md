@@ -95,7 +95,7 @@ This approach avoids rewriting the working renderer while providing one removabl
 ## Verification Evidence
 
 - **Pure logic and integration tests:** 22/22 passed with `npm test`.
-- **New requirement-focused browser tests:** 14/14 passed.
+- **New requirement-focused browser tests:** 15/15 passed.
 - **Responsive route matrix:** 34 routes × 8 viewport sizes = **272 route checks**.
 - **Viewport matrix:** 320×568, 375×667, 430×932, 768×1024, 820×1180, 1024×768, 1366×768, and 1920×1080.
 - **Matrix assertions:** no horizontal overflow, no blank routes, no browser errors, no failed requests, no unnamed visible buttons, no images missing `alt`, and no undersized visible mobile controls.
