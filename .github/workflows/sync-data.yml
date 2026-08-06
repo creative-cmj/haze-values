@@ -1,0 +1,112 @@
+name: Sync Haze data
+
+# Keeps bundled snapshots fresh so the in-app Refresh button reloads real updates
+# after GitHub Pages deploys the committed JSON.
+on:
+  schedule:
+    # Every 2 hours (aligned with the client auto-refresh interval)
+    - cron: "20 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_media:
+        description: "Skip downloading new Trello images (faster)"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: haze-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Pull sources and commit snapshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need full history for reliable push when multiple runs queue
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync trade values (Google Sheet + Vaulted Values X)
+        run: python3 tools/sync_value_sources.py --write
+
+      - name: Sync official Trello encyclopedia
+        run: |
+          # Schedule always skips new media downloads for speed/reliability.
+          # Manual runs honor the skip_media input (default true).
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.skip_media }}" = "false" ]; then
+            python3 tools/sync_trello_content.py
+          else
+            python3 tools/sync_trello_content.py --skip-media
+          fi
+
+      - name: Sync Trello item details
+        run: python3 tools/sync_trello_details.py
+
+      - name: Write combined sync meta
+        run: |
+          python3 <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          root = Path(".")
+          data = json.loads((root / "data.json").read_text(encoding="utf-8"))
+          content = json.loads((root / "content.json").read_text(encoding="utf-8"))
+          details = json.loads((root / "trello-details.json").read_text(encoding="utf-8"))
+          now = datetime.now(timezone.utc).isoformat()
+          meta = {
+              "checkedAt": data.get("sync", {}).get("lastChecked") or now,
+              "via": data.get("sync", {}).get("via") or "github-actions",
+              "runUrl": data.get("sync", {}).get("runUrl"),
+              "values": {
+                  "items": len(data.get("items") or []),
+                  "updatedAt": data.get("updatedAt"),
+                  "valueConflicts": (data.get("sync") or {}).get("valueConflicts"),
+              },
+              "content": {
+                  "entries": len(content.get("entries") or []),
+                  "lastChecked": content.get("lastChecked"),
+              },
+              "trelloDetails": {
+                  "items": len((details.get("items") or {})),
+                  "checkedAt": details.get("checkedAt"),
+              },
+          }
+          (root / "sync-meta.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(meta, indent=2))
+          PY
+
+      - name: Commit snapshot updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data.json \
+            content.json \
+            trello-details.json \
+            source-audit.json \
+            sync-meta.json \
+            trello-content-images/ \
+            trello-images/ \
+            item-thumbnails/ \
+            || true
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): sync values and Trello snapshots [skip ci]"
+          # Rebase onto latest main if another sync landed while we worked
+          git pull --rebase origin "${{ github.ref_name }}"
+          git push origin "HEAD:${{ github.ref_name }}"

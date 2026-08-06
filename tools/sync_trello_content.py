@@ -2,6 +2,7 @@
 """Synchronize Haze Atlas with effectively-active official Trello cards."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import urllib.request
@@ -25,8 +26,10 @@ def fetch_json(url: str) -> dict:
     return json.loads(request(url).decode("utf-8"))
 
 
-def attach_art(card: dict, entry: dict) -> None:
+def attach_art(card: dict, entry: dict, *, skip_download: bool = False) -> None:
     if entry.get("image") and (ROOT / entry["image"]).exists():
+        return
+    if skip_download:
         return
     details = fetch_json(
         f"https://trello.com/1/cards/{card['id']}?attachments=true&attachment_fields=name,url,mimeType"
@@ -47,6 +50,13 @@ def attach_art(card: dict, entry: dict) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--skip-media",
+        action="store_true",
+        help="Update card text only; do not download new Trello images (faster CI).",
+    )
+    args = parser.parse_args()
     board = fetch_json(BOARD_URL)
     content = json.loads(CONTENT_PATH.read_text(encoding="utf-8"))
     ignored = set(json.loads(CONFIG_PATH.read_text(encoding="utf-8"))["ignoredTrelloCardIds"])
@@ -83,7 +93,7 @@ def main() -> int:
                 "released": released,
                 "notTradableReason": "Official guide record; not a separate value-list item.",
             }
-            attach_art(card, entry)
+            attach_art(card, entry, skip_download=args.skip_media)
             content["entries"].append(entry)
             entries[card["id"]] = entry
             added.append({"id": card["id"], "name": card["name"], "category": category, "image": entry.get("image")})
@@ -97,7 +107,7 @@ def main() -> int:
             if field != "lastChecked" and entry.get(field) != value:
                 changed_fields[field] = {"before": entry.get(field), "after": value}
             entry[field] = value
-        attach_art(card, entry)
+        attach_art(card, entry, skip_download=args.skip_media)
         if changed_fields:
             entry["lastChecked"] = checked_at
             changes.append({"id": entry["id"], "name": card["name"], "changed": changed_fields})

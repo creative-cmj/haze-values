@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How Haze Atlas Works</title>
+  <meta name="description" content="Plain-language guide to Haze Atlas: what Haze Seas is, how the companion site works, how refresh works, and where data comes from." />
+  <meta name="robots" content="noindex" />
+  <style>
+    :root {
+      --bg: #050c14;
+      --surface: #0b1927;
+      --surface2: #102235;
+      --line: #21394d;
+      --text: #f4f8fb;
+      --muted: #a1b3c2;
+      --cyan: #39d7ef;
+      --gold: #e6bd63;
+      --green: #5fd49a;
+      --pink: #ee759f;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.65 Inter, system-ui, Segoe UI, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 88% -8%, #14364c55, transparent 36%),
+        linear-gradient(180deg, #07111b 0%, var(--bg) 420px);
+      min-height: 100vh;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font: 800 11px/1 Inter, sans-serif;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font: 800 clamp(34px, 6vw, 48px)/1.05 Inter, system-ui, sans-serif;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      margin: 40px 0 12px;
+      font: 700 22px/1.25 Inter, system-ui, sans-serif;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      margin: 22px 0 8px;
+      font: 700 16px/1.3 Inter, system-ui, sans-serif;
+      color: #e8f4fb;
+    }
+    p, li { color: #c8d6e0; }
+    .lede {
+      margin: 0 0 28px;
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+    .toc {
+      display: grid;
+      gap: 8px;
+      padding: 18px 20px;
+      margin: 0 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+    .toc strong {
+      color: var(--text);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .toc a { display: block; padding: 4px 0; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(160deg, var(--surface), #0a1520);
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+    .card p:last-child { margin-bottom: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface2);
+      padding: 14px 16px;
+    }
+    .stat small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .stat b { font-size: 15px; color: var(--text); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 8px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    td strong { color: var(--text); }
+    code, .mono {
+      font: 600 13px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--gold);
+    }
+    code {
+      background: #0a1a28;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1px 6px;
+    }
+    ol, ul { padding-left: 1.25rem; }
+    li { margin: 6px 0; }
+    .flow {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+    .step i {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: #123044;
+      color: var(--cyan);
+      font: 800 13px/1 Inter, sans-serif;
+      font-style: normal;
+    }
+    .step b { display: block; color: var(--text); margin-bottom: 4px; }
+    .step span { color: var(--muted); font-size: 14px; }
+    .callout {
+      border-left: 3px solid var(--cyan);
+      background: #0c2030;
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+    .callout.warn {
+      border-left-color: var(--gold);
+      background: #1a170c;
+    }
+    .callout p { margin: 0; color: #d5e2ea; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font: 700 11px/1 Inter, sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .pill.ok { background: #12382c; color: var(--green); }
+    .pill.muted { background: #1a2a38; color: var(--muted); }
+    .pill.live { background: #123044; color: var(--cyan); }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface2);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .links a:hover { border-color: var(--cyan); color: var(--cyan); }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 28px, 820px); padding-top: 28px; }
+      .lede { font-size: 16px; }
+      th:nth-child(3), td:nth-child(3) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Internal reference · not the live app</p>
+    <h1>How Haze Atlas works</h1>
+    <p class="lede">
+      A plain-language map of this project: what <strong>Haze Seas</strong> is,
+      what this companion site does, how “refresh” actually behaves, and which
+      sources are treated as truth.
+    </p>
+
+    <nav class="toc" aria-label="On this page">
+      <strong>On this page</strong>
+      <a href="#game">1. What is Haze Seas?</a>
+      <a href="#atlas">2. What is Haze Atlas?</a>
+      <a href="#architecture">3. How the website works</a>
+      <a href="#refresh">4. How refresh works</a>
+      <a href="#sources">5. Sources &amp; trust rules</a>
+      <a href="#local">6. What stays on your device</a>
+      <a href="#disclaimer">7. Disclaimer</a>
+    </nav>
+
+    <section id="game">
+      <h2>1. What is Haze Seas?</h2>
+      <p>
+        <strong>Haze Seas</strong> is a Roblox adventure / combat RPG from
+        <strong>[HS] Haze Studios</strong>. It is a One Piece–inspired open-sea
+        experience: islands, fruits (devil fruit powers), swords, races, fighting
+        styles, bosses, sea events, ships, fishing, and long-term mastery grind.
+      </p>
+      <div class="grid">
+        <div class="stat">
+          <small>Platform</small>
+          <b>Roblox</b>
+        </div>
+        <div class="stat">
+          <small>Play link</small>
+          <b><a href="https://www.roblox.com/games/6918802270/Haze-Seas" target="_blank" rel="noopener">Haze Seas on Roblox ↗</a></b>
+        </div>
+        <div class="stat">
+          <small>Official game docs</small>
+          <b><a href="https://trello.com/b/nn8bpTB0/haze-seas-official-trello" target="_blank" rel="noopener">Official Trello ↗</a></b>
+        </div>
+      </div>
+      <div class="card">
+        <p>
+          Players progress through seas, unlock abilities, collect tradeable items,
+          and compete or cooperate around events (storms, superbosses, merchant
+          spawns, and more). Community trading is a big part of the culture—so
+          people need a trustworthy place to look up values, drop routes, and
+          systems.
+        </p>
+      </div>
+    </section>
+
+    <section id="atlas">
+      <h2>2. What is Haze Atlas?</h2>
+      <p>
+        <strong>Haze Atlas</strong> is a <em>fan-made companion website</em> for
+        Haze Seas. It is <strong>not</strong> an official Roblox product and is
+        <strong>not affiliated</strong> with Haze Studios.
+      </p>
+      <p>It packages game knowledge into one fast UI:</p>
+      <ul>
+        <li><strong>Value list</strong> — fruits, swords, accessories, gamepasses, perm fruits</li>
+        <li><strong>Trade tools</strong> — calculator, compare, trade ideas, local history</li>
+        <li><strong>Official guides</strong> — codes, bosses, races, styles, seas, systems</li>
+        <li><strong>Power gallery</strong> — official moveset videos (lazy-loaded)</li>
+        <li><strong>Progression tools</strong> — mastery XP planner, builds, collection (local)</li>
+        <li><strong>Release tracking</strong> — released / unreleased status with confirmed overrides</li>
+      </ul>
+      <div class="callout">
+        <p>
+          Think of Atlas as a chart room next to the game: values from the community
+          market list, gameplay facts from official Trello, stored as static files
+          so the site is fast and hostable on GitHub Pages.
+        </p>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>3. How the website works</h2>
+      <p>
+        Haze Atlas is a <strong>static web app</strong>. There is no login server and
+        no live database behind the public site. The browser loads HTML/CSS/JS plus
+        JSON “snapshots” that were prepared ahead of time.
+      </p>
+
+      <h3>Key files</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>What it holds</th>
+            <th>Used for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>index.html</code></td>
+            <td>App shell (sidebar, top bar, dialogs)</td>
+            <td>UI structure</td>
+          </tr>
+          <tr>
+            <td><code>data.json</code></td>
+            <td>Item values, demand, rarity, PvP/PvE notes</td>
+            <td>Value list &amp; trade math</td>
+          </tr>
+          <tr>
+            <td><code>content.json</code></td>
+            <td>Trello encyclopedia cards (bosses, races, codes…)</td>
+            <td>Guides, systems, release status</td>
+          </tr>
+          <tr>
+            <td><code>trello-details.json</code></td>
+            <td>Per-value-item Trello metadata / art links</td>
+            <td>Item detail panels</td>
+          </tr>
+          <tr>
+            <td><code>mastery-xp.json</code></td>
+            <td>Exact 0–500 UI XP table</td>
+            <td>Mastery calculator</td>
+          </tr>
+          <tr>
+            <td><code>power-media/</code></td>
+            <td>Official ability videos + manifest</td>
+            <td>Power gallery</td>
+          </tr>
+          <tr>
+            <td><code>app-config.json</code></td>
+            <td>Media groups + release overrides</td>
+            <td>Gallery grouping, confirmed releases</td>
+          </tr>
+          <tr>
+            <td><code>source-policy.json</code></td>
+            <td>Which source wins conflicts</td>
+            <td>Human + tooling policy</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Runtime layers (JS)</h3>
+      <div class="flow">
+        <div class="step">
+          <i>1</i>
+          <div>
+            <b><code>browser-api.js</code></b>
+            <span>Loads JSON files via <code>fetch</code> and exposes <code>window.haze</code> (<code>getData</code>, <code>getContent</code>, <code>refresh</code>, …).</span>
+          </div>
+        </div>
+        <div class="step">
+          <i>2</i>
+          <div>
+            <b><code>renderer.js</code></b>
+            <span>Core app: pages, search, favorites, trade, mastery, encyclopedia rendering.</span>
+          </div>
+        </div>
+        <div class="step">
+          <i>3</i>
+          <div>
+            <b><code>enhancements.js</code></b>
+            <span>Companion features: power gallery, builds, collection, release tracker, trade pro.</span>
+          </div>
+        </div>
+        <div class="step">
+          <i>4</i>
+          <div>
+            <b><code>redesign.js</code> + CSS</b>
+            <span>Visual shell: polished sidebar, top bar, dashboard presentation.</span>
+          </div>
+        </div>
+      </div>
+
+      <h3>How data gets into the repo (offline sync)</h3>
+      <p>
+        Maintainers run Python tools under <code>tools/</code> to rebuild snapshots
+        from the live sources, then commit/deploy the updated JSON and media:
+      </p>
+      <ul>
+        <li><code>sync_value_sources.py</code> → trade values into <code>data.json</code></li>
+        <li><code>sync_trello_content.py</code> → encyclopedia into <code>content.json</code></li>
+        <li><code>sync_trello_details.py</code> → per-item Trello details / images</li>
+        <li><code>download_power_media.py</code> → official power videos</li>
+        <li>thumbnail / poster generators for web-friendly art</li>
+      </ul>
+      <p>
+        There is also an optional Firebase checker under <code>functions/</code> that
+        compares the published Atlas snapshots against Trello and the sheet for drift.
+      </p>
+    </section>
+
+    <section id="refresh">
+      <h2>4. How refresh works</h2>
+      <p>
+        The top-bar refresh control is easy to misunderstand. Here is the precise
+        behavior:
+      </p>
+
+      <div class="callout warn">
+        <p>
+          <strong>Refresh does not scrape Trello or Google Sheets live in the browser.</strong>
+          A GitHub Actions workflow (<code>sync-data.yml</code>) pulls sources every
+          ~2 hours, commits updated JSON to the repo, Pages deploys it, and Refresh
+          re-fetches those files with a cache-busting query string.
+        </p>
+      </div>
+
+      <div class="flow">
+        <div class="step">
+          <i>A</i>
+          <div>
+            <b>GitHub Actions produces snapshots</b>
+            <span>
+              Workflow runs <code>sync_value_sources.py --write</code>, Trello content/details syncs,
+              writes <code>sync-meta.json</code>, and commits when anything changed.
+            </span>
+          </div>
+        </div>
+        <div class="step">
+          <i>B</i>
+          <div>
+            <b>What the button does</b>
+            <span>
+              Calls <code>window.haze.refresh()</code> → cache-busted fetch of
+              <code>data.json</code>, <code>content.json</code>, <code>trello-details.json</code>, and mastery.
+              Values/guides in memory are replaced; the status chip updates.
+            </span>
+          </div>
+        </div>
+        <div class="step">
+          <i>C</i>
+          <div>
+            <b>Auto refresh while the tab stays open</b>
+            <span>
+              About every <strong>2 hours</strong>, the app reloads the same way so a
+              long-open tab can pick up a newly deployed Actions snapshot.
+            </span>
+          </div>
+        </div>
+        <div class="step">
+          <i>D</i>
+          <div>
+            <b>Local “changelog” of values</b>
+            <span>
+              When a reloaded snapshot differs from the previous one this browser saw,
+              Atlas records those diffs in <code>localStorage</code> (recent changes drawer).
+              That history is per-device, not a global market feed.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <h3>Status chip (“2h ago”)</h3>
+      <p>
+        The quiet status text in the top bar is a relative timestamp for when this
+        browser last successfully checked / loaded the bundled snapshot—not a live
+        ping of Roblox servers.
+      </p>
+
+      <div class="grid">
+        <div class="stat">
+          <small>Browser refresh</small>
+          <b><span class="pill live">Reloads deployed JSON</span></b>
+        </div>
+        <div class="stat">
+          <small>Maintainer sync</small>
+          <b><span class="pill ok">Updates the snapshot</span></b>
+        </div>
+        <div class="stat">
+          <small>Roblox game API</small>
+          <b><span class="pill muted">Not connected</span></b>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>5. Sources &amp; trust rules</h2>
+      <p>
+        Atlas deliberately separates <em>market estimates</em> from <em>official
+        gameplay facts</em>. Conflict policy lives in <code>source-policy.json</code>.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Role</th>
+            <th>Authority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Official Haze Seas Trello</strong><br />
+              <a href="https://trello.com/b/nn8bpTB0/haze-seas-official-trello" target="_blank" rel="noopener">trello.com/b/nn8bpTB0…</a>
+            </td>
+            <td>Gameplay records, obtainment, bosses, codes, systems, official media</td>
+            <td><strong>Authoritative</strong> for game facts</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Published value spreadsheet</strong><br />
+              <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pubhtml" target="_blank" rel="noopener">Google Sheet (public)</a>
+            </td>
+            <td>Trade values, demand, rarity, PvP/PvE notes used in <code>data.json</code></td>
+            <td><strong>Primary</strong> for values</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Vaulted Values X</strong><br />
+              <a href="https://haze-seas.vaultedvaluesx.com/value-list" target="_blank" rel="noopener">haze-seas.vaultedvaluesx.com</a>
+            </td>
+            <td>Secondary market cross-check / reference</td>
+            <td><strong>Secondary only</strong> — does not override the sheet</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Mastery XP table</strong><br />
+              Bundled as <code>mastery-xp.json</code>
+            </td>
+            <td>Exact UI XP rows 0–500; estimates aligned to official mastery ratios</td>
+            <td>Progression calculator input</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Release overrides</strong><br />
+              In <code>app-config.json</code>
+            </td>
+            <td>Owner-confirmed release status when Trello naming is ambiguous</td>
+            <td>Manual verified overrides</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card">
+        <h3 style="margin-top:0">Conflict policy (short version)</h3>
+        <ul>
+          <li>If two value sources disagree → keep the <strong>Google Sheet</strong> value in Atlas.</li>
+          <li>Vaulted Values X may be used as a cross-check, never as the replacement.</li>
+          <li>If gameplay text disagrees with community rumor → trust <strong>official Trello</strong>.</li>
+        </ul>
+      </div>
+
+      <h3>Community value list caveat</h3>
+      <p>
+        Spreadsheet values are <strong>estimates</strong> based on community trading
+        activity. They are not official Roblox prices and not a guarantee of any deal.
+        Demand moves; always use judgment in-game.
+      </p>
+    </section>
+
+    <section id="local">
+      <h2>6. What stays on your device</h2>
+      <p>
+        Atlas stores personal state in the browser’s <code>localStorage</code> only.
+        Clearing site data or using another browser/device starts fresh.
+      </p>
+      <ul>
+        <li>Favorites</li>
+        <li>Collection marks (owned / wanted / trade)</li>
+        <li>Saved builds and saved trade offers</li>
+        <li>Trade history / recent offers</li>
+        <li>Theme &amp; density settings</li>
+        <li>Local value-change changelog snapshots</li>
+        <li>Nav open/closed preferences</li>
+      </ul>
+      <p>
+        None of that is uploaded to a Haze Atlas server—because the public site is
+        static files.
+      </p>
+    </section>
+
+    <section id="disclaimer">
+      <h2>7. Disclaimer</h2>
+      <div class="card">
+        <p>
+          Haze Atlas is an unofficial fan project for educational and convenience
+          purposes. Roblox® is a trademark of Roblox Corporation. Haze Seas is
+          created by Haze Studios. This page and the companion app do not claim
+          ownership of official art, names, or systems beyond fair use of publicly
+          published community and official documentation sources.
+        </p>
+        <p>
+          Always verify codes, drop rates, and patch changes on the
+          <a href="https://trello.com/b/nn8bpTB0/haze-seas-official-trello" target="_blank" rel="noopener">official Trello</a>
+          before trading or grinding.
+        </p>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Open Haze Atlas app</a>
+        <a href="https://www.roblox.com/games/6918802270/Haze-Seas" target="_blank" rel="noopener">Play Haze Seas</a>
+        <a href="https://trello.com/b/nn8bpTB0/haze-seas-official-trello" target="_blank" rel="noopener">Official Trello</a>
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pubhtml" target="_blank" rel="noopener">Value spreadsheet</a>
+        <a href="source-policy.json">source-policy.json</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        File: <span class="mono">how-it-works.html</span> · open locally or serve next to the app ·
+        marked <span class="mono">noindex</span> so it is not treated as marketing SEO content.
+      </p>
+      <p>Generated as project documentation for the Haze Atlas companion codebase.</p>
+    </footer>
+  </main>
+</body>
+</html>
