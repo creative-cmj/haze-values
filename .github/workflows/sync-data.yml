@@ -38,6 +38,31 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check Vaulted Values X availability
+        run: |
+          python3 <<'PY'
+          import json
+          import urllib.request
+
+          page_url = "https://haze-seas.vaultedvaluesx.com/value-list"
+          api_url = "https://valuevaultx.com/_functions/api/haze-seas"
+          headers = {"User-Agent": "HazeAtlasSourceSync/2.0"}
+
+          page_request = urllib.request.Request(page_url, headers=headers)
+          with urllib.request.urlopen(page_request, timeout=90) as response:
+              page = response.read()
+              if response.status != 200 or not page:
+                  raise RuntimeError(f"Vaulted Values X page check failed: HTTP {response.status}")
+
+          api_request = urllib.request.Request(api_url, headers=headers)
+          with urllib.request.urlopen(api_request, timeout=90) as response:
+              rows = json.loads(response.read().decode("utf-8"))
+              if response.status != 200 or not isinstance(rows, list) or not rows:
+                  raise RuntimeError("Vaulted Values X API returned no item rows")
+
+          print(f"Vaulted Values X healthy: page HTTP 200; API items: {len(rows)}")
+          PY
+
       - name: Sync trade values (Google Sheet + Vaulted Values X)
         run: python3 tools/sync_value_sources.py --write
 
