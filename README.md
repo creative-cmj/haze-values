@@ -1,7 +1,8 @@
 # Haze Atlas — Haze Seas companion
 
-Fan-made static web companion for **[Haze Seas](https://www.roblox.com/games/6918802270/Haze-Seas)** (Roblox).  
-Trade values, official codes, power previews, mastery XP tools, builds, and Trello-backed gameplay guides in one place.
+![Haze Seas Banner](./haze-seas-art.png)
+
+Static browser version of the Haze Seas companion.
 
 **Not affiliated with Roblox or Haze Studios.**
 
