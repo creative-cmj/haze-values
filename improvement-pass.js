@@ -73,9 +73,15 @@
     const controls = document.createElement('div');
     controls.className = 'history-controls';
     controls.innerHTML = '<button class="icon-btn" id="routeBack" aria-label="Go back" title="Back">←</button><button class="icon-btn" id="routeForward" aria-label="Go forward" title="Forward">→</button>';
-    topbar.insertBefore(controls, topbar.querySelector('.search-wrap'));
+    const host = topbar.querySelector('.topbar-left') || topbar;
+    const before = host === topbar ? topbar.querySelector('.search-wrap') : null;
+    if (before) host.insertBefore(controls, before); else host.append(controls);
     controls.querySelector('#routeBack').onclick = () => history.back();
     controls.querySelector('#routeForward').onclick = () => history.forward();
+  }
+
+  function isLiveRoute(route) {
+    return routeCatalog.some(entry => entry.id === route) || [...document.querySelectorAll('#nav [data-page], .sidebar-foot [data-page], .mobile-bottom [data-page]')].some(node => node.dataset.page === route);
   }
 
   function syncRouteToUrl(route, mode = 'push') {
@@ -94,7 +100,7 @@
     if (shared?.filters) state.advancedFilters = shared.filters;
     if (shared?.trade) hydrateTrade(shared.trade);
     const requested = shared?.route || url.searchParams.get('page');
-    if (requested && routeCatalog.some(entry => entry.id === requested)) baseGo(requested);
+    if (requested && isLiveRoute(requested)) baseGo(requested);
     const itemId = url.searchParams.get('item');
     const contentId = url.searchParams.get('guide');
     if (itemId) originalDetail(data.items.find(item => item.id === itemId));
@@ -527,13 +533,12 @@
   function postProcessRoute() {
     const view = document.querySelector('#view'); if (!view) return;
     view.classList.remove('route-transition'); void view.offsetWidth; view.classList.add('route-transition');
-    renderNavigationShortcuts(); installBreadcrumbs(); decorateCardsAndImages(); renderAdvancedFilters(); bindTradeWorkbench(); bindImprovedSettings(); injectHomePersonalization(); installMobileMore(); installAccessibility();
+    renderNavigationShortcuts(); installBreadcrumbs(); installHistoryControls(); decorateCardsAndImages(); renderAdvancedFilters(); bindTradeWorkbench(); bindImprovedSettings(); injectHomePersonalization(); installAccessibility();
   }
 
-  installStartupSkeleton(); applyPreferences(); installHistoryControls();
+  installStartupSkeleton(); applyPreferences();
   const baseRender = render, baseGo = go, originalDetail = detail, originalContentDetail = contentDetail, originalOpenTradePicker = openTradePicker;
-  settingsPage = improvedSettingsPage;
-  enhancedPages.trade = improvedTradePage;
+  // Keep the actively maintained settings and trade pages; this pass augments them after render.
   render = function improvedRender() { baseRender(); postProcessRoute(); };
   window.render = render;
   go = function improvedGo(next, options = {}) { baseGo(next); recordRecentRoute(next); if (!options.fromHistory) syncRouteToUrl(next); };
