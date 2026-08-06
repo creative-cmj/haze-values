@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-08-06T00:43:30.869808+00:00",
+  "via": "local",
+  "runUrl": null,
+  "sources": {
+    "googleSheet": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
+    "vaultedValuesX": "https://haze-seas.vaultedvaluesx.com/value-list",
+    "vaultedApi": "https://valuevaultx.com/_functions/api/haze-seas"
+  },
+  "googleSheet": {
+    "rawRows": 151,
+    "canonicalItems": 146
+  },
+  "vaultedValuesX": {
+    "items": 146
+  },
+  "result": {
+    "items": 146,
+    "valueConflicts": 2,
+    "conflicts": [
+      {
+        "id": "fruits-magma",
+        "name": "MAGMA",
+        "field": "value",
+        "googleSheet": 10000,
+        "vaultedValuesX": 8500
+      },
+      {
+        "id": "misc-items-broom",
+        "name": "Broom",
+        "field": "value",
+        "googleSheet": 200000,
+        "vaultedValuesX": 180000
+      }
+    ]
+  }
+}

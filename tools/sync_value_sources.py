@@ -183,15 +183,35 @@ def main() -> int:
             details["rarity"] = str(current["rarity"]).upper()
         items.append(details)
 
+    via = "github-actions" if __import__("os").environ.get("GITHUB_ACTIONS") == "true" else "local"
+    run_url = ""
+    if via == "github-actions":
+        server = __import__("os").environ.get("GITHUB_SERVER_URL", "https://github.com")
+        repo = __import__("os").environ.get("GITHUB_REPOSITORY", "")
+        run_id = __import__("os").environ.get("GITHUB_RUN_ID", "")
+        if repo and run_id:
+            run_url = f"{server}/{repo}/actions/runs/{run_id}"
+
     output = {
         "source": SHEET_BASE,
         "valueSource": VAULTED_URL,
         "updatedAt": checked_at,
+        "sync": {
+            "status": "Ready",
+            "lastChecked": checked_at,
+            "lastUpdated": checked_at,
+            "via": via,
+            "itemCount": len(items),
+            "valueConflicts": len(conflicts),
+            "runUrl": run_url or None,
+        },
         "sheets": raw_sheets,
         "items": items,
     }
     audit = {
         "checkedAt": checked_at,
+        "via": via,
+        "runUrl": run_url or None,
         "sources": {"googleSheet": SHEET_BASE, "vaultedValuesX": VAULTED_URL, "vaultedApi": VAULTED_API},
         "googleSheet": {"rawRows": len(sheet_items), "canonicalItems": len(sheet)},
         "vaultedValuesX": {"items": len(vaulted)},
@@ -201,6 +221,24 @@ def main() -> int:
     if args.write:
         DATA_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         AUDIT_PATH.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        meta_path = ROOT / "sync-meta.json"
+        meta_path.write_text(
+            json.dumps(
+                {
+                    "checkedAt": checked_at,
+                    "via": via,
+                    "runUrl": run_url or None,
+                    "values": {
+                        "items": len(items),
+                        "valueConflicts": len(conflicts),
+                        "updatedAt": checked_at,
+                    },
+                },
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
     return 0
 
 
