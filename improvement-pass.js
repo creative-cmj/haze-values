@@ -213,7 +213,7 @@
     const groups = queryValue ? Core.groupedSearch(queryValue, searchSources(), 7) : { Items: [], Guides: [], Tools: routeCatalog.slice(0, 7).map(entry => ({ ...entry, stableId: entry.id, score: 1 })) };
     const html = Object.entries(groups).filter(([, records]) => records.length).map(([group, records]) => `<section class="command-group"><h3>${group}</h3>${records.map(record => {
       const isItem = group === 'Items', isGuide = group === 'Guides';
-      const artSource = isItem ? (trello?.items?.[record.id]?.image ? `./item-thumbnails/${encodeURIComponent(record.id)}.webp` : './trello-images/item-placeholder.webp') : isGuide && record.image ? `./${safe(record.image)}` : './assets/haze-atlas-icon.webp';
+      const artSource = isItem ? `./${artPath(record)}` : isGuide && record.image ? `./${safe(record.image)}` : './assets/haze-atlas-icon.webp';
       return `<button class="command-result" role="option" data-command-type="${isItem ? 'item' : isGuide ? 'guide' : 'page'}" data-command-id="${safe(record.stableId)}"><img src="${artSource}" loading="lazy" decoding="async" alt=""><span><b>${highlightMatch(record.name, queryValue)}</b><small>${safe(record.category || group)}</small></span><span>↗</span></button>`;
     }).join('')}</section>`).join('');
     dialog.querySelector('.command-results').innerHTML = html || '<div class="command-empty">No match yet. Try another spelling or browse a category.</div>';
@@ -497,7 +497,7 @@
     const root = document.querySelector('.atlas-dashboard'); if (!root || root.querySelector('.home-personalization')) return;
     const items = (window.recentItems || recentItems || []).slice(0, 5);
     const section = document.createElement('section'); section.className = 'panel home-personalization';
-    section.innerHTML = `<div class="panel-title"><h2>Continue exploring</h2><button data-open-command>Search everything →</button></div>${items.length ? `<div class="compact-value-list">${items.map(item => `<button class="compact-value-row" data-item="${safe(item.id)}"><img src="./item-thumbnails/${encodeURIComponent(item.id)}.webp" loading="lazy" decoding="async" alt=""><span><b>${safe(item.name)}</b><small>Recently viewed · ${safe(item.demand || '—')} demand</small></span><strong>${safe(item.valueText || 'Unlisted')}</strong></button>`).join('')}</div>` : '<p class="muted">Open an item and it will appear here for a faster return trip.</p>'}`;
+    section.innerHTML = `<div class="panel-title"><h2>Continue exploring</h2><button data-open-command>Search everything →</button></div>${items.length ? `<div class="compact-value-list">${items.map(item => `<button class="compact-value-row" data-item="${safe(item.id)}"><img src="./${artPath(item)}" loading="lazy" decoding="async" alt=""><span><b>${safe(item.name)}</b><small>Recently viewed · ${safe(item.demand || '—')} demand</small></span><strong>${safe(item.valueText || 'Unlisted')}</strong></button>`).join('')}</div>` : '<p class="muted">Open an item and it will appear here for a faster return trip.</p>'}`;
     root.append(section); section.querySelector('[data-open-command]').onclick = () => openCommandPalette();
   }
 
