@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "purpose": "Verified source records for value-list items whose live Trello detail mapping does not yet produce a thumbnail.",
+  "items": {
+    "accessories-gpm": {
+      "source": "https://static.wixstatic.com/media/2814ef_81dd3c8bceb64329aa6e11b6e6081c2b~mv2.png",
+      "sourcePage": "https://haze-seas.vaultedvaluesx.com/value-list",
+      "label": "GPM"
+    },
+    "accessories-abyssal-necklace": {
+      "source": "https://trello.com/1/cards/6a155b2c0b1d956ccc135b0e/attachments/6a185c6d68ee78abd44dc1ff/download/image.png",
+      "sourcePage": "https://trello.com/c/xLJm5yrz/332-abyssal-necklace-unreleased",
+      "label": "Abyssal Necklace"
+    },
+    "accessories-dominus-messor": {
+      "source": "https://trello.com/1/cards/6a155b301748a2a076d35be3/attachments/6a185ca4c5cf2821f1c949ce/download/image.png",
+      "sourcePage": "https://trello.com/c/XusUdoY2/333-dominus-messor-unreleased",
+      "label": "Dominus Messor"
+    },
+    "accessories-gravity-gauntlet": {
+      "source": "https://trello.com/1/cards/6a155b334d2de48e327a73ab/attachments/6a185cb4dd4f941f119aae41/download/image.png",
+      "sourcePage": "https://trello.com/c/bB74xiFh/334-gravity-gauntlet-unreleased",
+      "label": "Gravity Gauntlet"
+    },
+    "accessories-emperor-cape": {
+      "source": "https://trello.com/1/cards/6a155b382a00bf0fa1775387/attachments/6a6e1c56c9005d3e42bf4939/download/image.png",
+      "sourcePage": "https://trello.com/c/jdWBDDsC/335-emperor-cape-unreleased",
+      "label": "Emperor Cape"
+    },
+    "accessories-sb-helmet-v2": {
+      "source": "https://trello.com/1/cards/6a155b444f2ad5e21af962dc/attachments/6a185ccb9dcb9923e62d3f84/download/image.png",
+      "sourcePage": "https://trello.com/c/Sb9gjRNN/337-seabeast-helmet-v2",
+      "label": "SB Helmet V2"
+    },
+    "accessories-drums": {
+      "source": "https://trello.com/1/cards/625eac8e5e420b12915b7289/attachments/625eaccca0d9a32519359f2b/download/unknown_(23).png",
+      "sourcePage": "https://trello.com/c/s6WDuT3d/102-thunder-drums",
+      "label": "Drums"
+    },
+    "accessories-pumpkin-mask": {
+      "source": "https://trello.com/1/cards/653ef54c070c61428452e40f/attachments/653ef5523f7a879e1f22412b/download/image.png",
+      "sourcePage": "https://trello.com/c/CnWoQuyP/284-pumpkin-masks",
+      "label": "Pumpkin Mask"
+    },
+    "swords-gryphon": {
+      "source": "https://trello.com/1/cards/6a1561e16ec811fbf1ea0892/attachments/6a1703961f10aa8ce78193e1/download/image.png",
+      "sourcePage": "https://trello.com/c/yyBD0khI/356-gryphon-unreleased",
+      "label": "Gryphon"
+    },
+    "misc-items-broom": {
+      "source": "https://static.wixstatic.com/media/2814ef_559faf3dabb74dd5b623a4f922c44962~mv2.png",
+      "sourcePage": "https://haze-seas.vaultedvaluesx.com/value-list",
+      "label": "Broom"
+    },
+    "gamepasses-2x-money": {
+      "source": "https://trello.com/1/cards/625ad9741af8351dc83ec49e/attachments/625ad9741af8351dc83ec68e/download/d5f7c94378d70b14690890b5f86d6909.png",
+      "sourcePage": "https://trello.com/c/TAblzLHv/60-money-x2",
+      "label": "2x Money"
+    },
+    "gamepasses-increase-drop-rate": {
+      "source": "https://trello.com/1/cards/63a37c15804a7101cd44f929/attachments/63a3b0cc4e8506054c6874ef/download/cccs.PNG",
+      "sourcePage": "https://trello.com/c/Y3VvfS7c/183-increased-drop-chance",
+      "label": "Increase Drop Rate"
+    },
+    "gamepasses-fruit-bag": {
+      "source": "https://trello.com/1/cards/625ea2c0c9d41a8feff04e71/attachments/625ea38f111f660918f93359/download/ddddddd.PNG",
+      "sourcePage": "https://trello.com/c/D9wzLNsO/80-fruit-bag",
+      "label": "Fruit Bag"
+    },
+    "gamepasses-striker-boat": {
+      "source": "https://trello.com/1/cards/625ad9741af8351dc83ec49c/attachments/625ad9741af8351dc83ec686/download/image.png",
+      "sourcePage": "https://trello.com/c/feqcuWlJ/58-striker-boat",
+      "label": "Striker Boat"
+    },
+    "gamepasses-custom-armament-color": {
+      "source": "https://trello.com/1/cards/625ea2be6a9bae5f3eab4260/attachments/625ea38192f2a47473df0174/download/hakii.PNG",
+      "sourcePage": "https://trello.com/c/UYLv4Jjk/79-custom-haki-color",
+      "label": "Custom Armament Color"
+    },
+    "perm-fruits-robux-saturn": {
+      "source": "https://trello.com/1/cards/6a64ae8125ea9d28f5228a6c/attachments/6a64ae8225ea9d28f5228bc6/download/image.png",
+      "sourcePage": "https://trello.com/c/0TKkhlfz/485-saturn",
+      "label": "Saturn"
+    }
+  }
+}

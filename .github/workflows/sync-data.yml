@@ -79,6 +79,9 @@ jobs:
       - name: Sync Trello item details
         run: python3 tools/sync_trello_details.py
 
+      - name: Sync verified item artwork
+        run: python3 tools/sync_item_art.py
+
       - name: Write combined sync meta
         run: |
           python3 <<'PY'
