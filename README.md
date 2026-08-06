@@ -1,5 +1,7 @@
 # Haze / VALUES public website
 
+![Haze Seas Banner](./haze-seas-art.png)
+
 Static browser version of the Haze Seas companion.
 
 ## GitHub Pages publishing
