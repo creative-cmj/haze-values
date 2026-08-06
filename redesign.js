@@ -36,21 +36,264 @@ function rdUniqueItems(){return [...data.items.reduce((map,item)=>(map.has(item.
 function rdChanges(){return rdGet('haze-value-changelog-v4',[])}
 function rdTrackSnapshot(nextData){if(!nextData?.items?.length)return;const previous=rdGet('haze-value-snapshot-v4',null),now=new Date().toISOString(),items=[...nextData.items.reduce((m,x)=>(m.has(x.id)||m.set(x.id,x),m),new Map()).values()],current=Object.fromEntries(items.map(x=>[x.id,{id:x.id,name:x.name,category:x.category,value:x.value,valueText:x.valueText,demand:x.demand,checkedAt:now}]));if(previous){const changes=[];for(const item of items){const old=previous[item.id];if(!old)continue;if(old.value!==item.value||old.valueText!==item.valueText||old.demand!==item.demand){const direction=(item.value||0)>(old.value||0)?'up':(item.value||0)<(old.value||0)?'down':'same';changes.push({id:item.id,name:item.name,category:item.category,previousValue:old.value,previousText:old.valueText||'Unlisted',value:item.value,valueText:item.valueText||'Unlisted',previousDemand:old.demand,demand:item.demand,direction,updatedAt:now})}}if(changes.length){const merged=[...changes,...rdChanges()].slice(0,300);rdSet('haze-value-changelog-v4',merged);rdShowUpdateNotice(changes.length,now)}}rdSet('haze-value-snapshot-v4',current)}
 function rdArt(item){const detail=trello?.items?.[item.id];return detail?.image?`./item-thumbnails/${encodeURIComponent(item.id)}.webp`:'./trello-images/item-placeholder.webp'}
-function rdDashboard(){const items=rdUniqueItems(),listed=items.filter(x=>x.value!=null),changes=rdChanges(),groups=enhanceReady?galleryGroups().toSorted((a,b)=>(b.latest||0)-(a.latest||0)):[],freshGroups=groups.slice(0,6),collectionItems=items.filter(x=>atlasCollection[x.id]?.owned),collectionValue=collectionItems.reduce((sum,x)=>sum+(x.value||0),0),missingBuilds=[...new Set(savedBuilds.flatMap(b=>Object.values(b.parts||{})).filter(Boolean).filter(id=>!atlasCollection[id]?.owned))],wanted=items.filter(x=>atlasCollection[x.id]?.wanted),favoritesOwned=collectionItems.filter(x=>atlasCollection[x.id]?.favorite),snapshotRows=changes.length?changes.slice(0,6):listed.toSorted((a,b)=>(b.value||0)-(a.value||0)).slice(0,6),snapshotTitle=changes.length?'Recently updated values':'Current value snapshot';return `<div class="atlas-dashboard">
-<section class="atlas-hero"><div class="hero-compass" aria-hidden="true"></div><div class="hero-copy"><p class="eyebrow">THE COMPLETE HAZE SEAS COMPANION</p><h1>Haze Atlas</h1><p>Values, official powers, builds, trading tools, and collection tracking—charted in one fast, reliable pirate database.</p><div class="hero-actions"><button class="primary" data-rd-page="items">Explore values</button><button class="secondary" data-rd-page="gallery">View powers</button><button class="secondary" data-rd-page="trade">Trade calculator</button></div></div></section>
-<section class="dashboard-actions" aria-label="Quick navigation">${[['values','items','Values',`${items.length} tracked items`],['power','gallery','Powers',`${mediaManifest.items.length} official videos`],['tool','builds','Build Planner',`${savedBuilds.length} saved builds`],['trade','trade','Trade',`${savedOffers.length} saved offers`]].map(([icon,target,label,meta])=>`<button class="dashboard-action" data-rd-page="${target}">${rdIcon(icon)}<b>${label}</b><small>${meta}</small></button>`).join('')}</section>
+function rdDashboard(){const items=rdUniqueItems(),listed=items.filter(x=>x.value!=null),changes=rdChanges(),groups=enhanceReady?galleryGroups().toSorted((a,b)=>(b.latest||0)-(a.latest||0)):[],freshGroups=groups.slice(0,6),collectionItems=items.filter(x=>atlasCollection[x.id]?.owned),collectionValue=collectionItems.reduce((sum,x)=>sum+(x.value||0),0),missingBuilds=[...new Set(savedBuilds.flatMap(b=>Object.values(b.parts||{})).filter(Boolean).filter(id=>!atlasCollection[id]?.owned))],wanted=items.filter(x=>atlasCollection[x.id]?.wanted),favoritesOwned=collectionItems.filter(x=>atlasCollection[x.id]?.favorite),snapshotRows=changes.length?changes.slice(0,6):listed.toSorted((a,b)=>(b.value||0)-(a.value||0)).slice(0,6),snapshotTitle=changes.length?'Recently updated values':'Current value snapshot';const codes=typeof parseOfficialCodes==='function'?parseOfficialCodes().slice(0,6):[];
+return `<div class="atlas-dashboard">
+<section class="atlas-hero"><div class="hero-compass" aria-hidden="true"></div><div class="hero-copy"><p class="eyebrow">THE COMPLETE HAZE SEAS COMPANION</p><h1>Haze Atlas</h1><p>Values, official powers, codes, builds, trading tools, and collection tracking—charted in one fast, reliable pirate database.</p><div class="hero-actions"><button class="primary" data-rd-page="items">Explore values</button><button class="secondary" data-rd-page="codes">Redeem codes</button><button class="secondary" data-rd-page="trade">Trade calculator</button></div></div></section>
+<section class="dashboard-actions" aria-label="Quick navigation">${[['values','items','Values',`${items.length} tracked items`],['power','gallery','Powers',`${mediaManifest.items.length} official videos`],['ticket','codes','Codes',`${typeof parseOfficialCodes==='function'?parseOfficialCodes().length:0} redeemables`],['trade','trade','Trade',`${savedOffers.length} saved offers`]].map(([icon,target,label,meta])=>`<button class="dashboard-action" data-rd-page="${target}">${rdIcon(icon)}<b>${label}</b><small>${meta}</small></button>`).join('')}</section>
+${codes.length?`<section class="panel codes-strip"><div class="panel-title"><h2>Active codes</h2><button type="button" data-rd-page="codes">View all →</button></div><div class="codes-strip-list">${codes.map((c,i)=>`<article class="code-tile"><div class="code-tile-header"><img src="${rdCodeArt(i)}" alt="" class="code-tile-art" loading="lazy"><div class="code-tile-body"><code class="code-tile-code">${esc(c.code)}</code><p class="code-tile-reward">${esc(c.reward)}</p></div></div><button type="button" class="code-tile-copy" data-copy-code="${esc(c.code)}" aria-label="Copy code ${esc(c.code)}">Copy</button></article>`).join('')}</div><p class="panel-note codes-strip-note">Official Trello · tap <strong>Copy</strong> · redeem in-game via Menu → gift box</p></section>`:''}
 <div class="dashboard-columns"><div class="dashboard-stack"><section class="panel"><div class="panel-title"><h2>${snapshotTitle}</h2><button data-rd-changelog>${changes.length?'Open changelog':'About updates'} →</button></div><div class="compact-value-list">${snapshotRows.map(change=>{const item=items.find(x=>x.id===change.id)||change,isChange='updatedAt'in change;return `<button class="compact-value-row" data-item="${esc(item.id)}"><img loading="lazy" src="${rdArt(item)}" alt=""><span><b>${esc(item.name)}</b><small>${esc(item.category)} · ${esc(item.demand||'Unknown demand')}${isChange?` · ${rdRelative(change.updatedAt).replace('Checked ','')}`:''}</small></span><span><strong>${esc(item.valueText||change.valueText||'Unlisted')}</strong>${isChange?`<small class="value-change ${change.direction}">${esc(change.previousText)} →</small>`:''}</span></button>`}).join('')}</div></section>
 <section class="panel"><div class="panel-title"><h2>Newly added powers</h2><button data-rd-page="gallery">View all →</button></div>${freshGroups.length?`<div class="new-power-strip">${freshGroups.map(g=>`<button class="mini-poster" data-open-media="${esc(g.name)}"><img loading="lazy" src="${rdPoster(g.clips[0])}" alt="${esc(g.name)} power poster"><div><b>${esc(g.name)}</b><small>${esc(g.categories.join(' · '))} · ${g.clips.length} videos</small></div></button>`).join('')}</div>`:'<div class="dashboard-empty">The official power catalog is loading. Its newest movesets will appear here.</div>'}</section></div>
-<aside class="dashboard-stack"><section class="panel"><div class="panel-title"><h2>Your collection</h2><button data-rd-page="collection">Open →</button></div>${collectionItems.length?`<div class="collection-summary"><div><small>Owned</small><strong>${collectionItems.length}</strong></div><div><small>Completion</small><strong>${Math.round(collectionItems.length/items.length*100)}%</strong></div><div><small>Total value</small><strong>${rdFormatValue(collectionValue)}</strong></div><div><small>Favorites</small><strong>${favoritesOwned.length}</strong></div></div><p class="muted">${missingBuilds.length} missing saved-build part${missingBuilds.length===1?'':'s'} · ${wanted.length} trade goal${wanted.length===1?'':'s'}</p>`:`<div class="dashboard-empty"><b>Start charting your inventory.</b><br>Mark items as owned, wanted, or for trade to unlock collection totals and build progress.<br><button class="secondary" data-rd-page="collection" style="margin-top:12px">Start collection</button></div>`}</section>
-<section class="panel"><p class="eyebrow">SOURCE STATUS</p><h2>${esc(data.sync?.status||'Official snapshot ready')}</h2><p class="muted" data-relative-time="${esc(data.sync?.lastChecked||data.updatedAt)}">${rdRelative(data.sync?.lastChecked||data.updatedAt)}</p><button class="secondary" data-rd-refresh>${rdIcon('refresh')} Reload cached snapshot</button></section></aside></div></div>`}
+<aside class="dashboard-stack">
+<section class="panel"><div class="panel-title"><h2>Your collection</h2><button type="button" data-rd-page="collection">Open →</button></div>${collectionItems.length?`<div class="collection-summary"><div><small>Owned</small><strong>${collectionItems.length}</strong></div><div><small>Completion</small><strong>${Math.round(collectionItems.length/items.length*100)}%</strong></div><div><small>Total value</small><strong>${rdFormatValue(collectionValue)}</strong></div><div><small>Favorites</small><strong>${favoritesOwned.length}</strong></div></div><p class="panel-note">${missingBuilds.length} missing saved-build part${missingBuilds.length===1?'':'s'} · ${wanted.length} trade goal${wanted.length===1?'':'s'}</p>`:`<div class="dashboard-empty"><b>Start charting your inventory.</b><p class="panel-note">Mark items as owned, wanted, or for trade to unlock collection totals and build progress.</p><button class="secondary" data-rd-page="collection">Start collection</button></div>`}</section>
+<section class="panel panel-compact"><div class="panel-title"><h2>Official links</h2></div><div class="official-links">${[['Play Haze Seas','https://www.roblox.com/games/6918802270/Haze-Seas'],['Discord','https://discord.gg/hazeseas'],['Trello','https://trello.com/b/nn8bpTB0/haze-seas-official-trello'],['X / Twitter','https://x.com/Haze_Seas']].map(([label,href])=>`<a href="${href}" target="_blank" rel="noopener"><span>${esc(label)}</span><em>↗</em></a>`).join('')}</div></section>
+<section class="panel panel-compact source-status-panel"><div class="panel-title"><h2>Source status</h2></div><div class="source-status-row"><span class="status-live-dot" aria-hidden="true"></span><div><strong>${esc(data.sync?.status||'Snapshot ready')}</strong><p class="panel-note" data-relative-time="${esc(data.sync?.lastChecked||data.updatedAt)}">${rdRelative(data.sync?.lastChecked||data.updatedAt)}</p></div></div><button type="button" class="secondary source-refresh-btn" data-rd-refresh>${rdIcon('refresh')}<span>Reload snapshot</span></button></section>
+</aside></div>
+<footer class="atlas-site-footer" aria-label="About this companion">
+  <div class="footer-notes">
+    <div class="footer-note"><small>Affiliation</small><span>Fan-made companion — not affiliated with Roblox or Haze Studios</span></div>
+    <div class="footer-note"><small>Values</small><span>Community value-list estimates for trading context</span></div>
+    <div class="footer-note"><small>Gameplay</small><span>Official Haze Seas Trello for systems &amp; guides</span></div>
+  </div>
+</footer>
+</div>`}
 
-function rdSidebarButton(pageName,icon,label,badge=''){return `<button data-page="${pageName}" class="nav-item" aria-label="${esc(label)}" title="${esc(label)}">${rdIcon(icon)}<span class="nav-label">${esc(label)}</span>${badge?`<i class="nav-badge" ${pageName==='favorites'?'id="favCount"':''}>${esc(badge)}</i>`:pageName==='favorites'?'<i class="nav-badge" id="favCount">0</i>':''}</button>`}
-function rdSidebar(){const mark=document.querySelector('.brand-mark');if(mark)mark.innerHTML='<img src="assets/haze-atlas-icon.webp" alt="Haze Atlas">';const nav=$('#nav');if(!nav)return;const state=rdGet('haze-nav-groups-v1',{values:true,guide:false,tools:true,personal:true}),groups=[['values','Values',[['fruits','fruit','Fruits'],['accessories','crown','Accessories'],['swords','sword','Weapons'],['misc items','compass','Materials & Other'],['gamepasses','ticket','Gamepasses'],['perm fruits (robux)','fruit','Permanent Fruits'],['updates','clock','Recent Changes']]],['guide','Game Guide',[['gallery','power','Power Gallery'],['content:Races','book','Races'],['content:Fighting Styles','book','Fighting Styles'],['content:Bosses','compass','Bosses'],['content:Sea Events','ship','Sea Events'],['content:Sea 1 Locations','map','Sea 1'],['content:Sea 2 Locations','map','Sea 2'],['content:Sea 3 Locations','map','Sea 3'],['content:Skill Trainers','book','Skill Trainers'],['content:NPCs','compass','NPCs'],['content:Fishing','compass','Fishing'],['content:Ships','ship','Ships'],['releases','clock','Release Tracker'],['news','news','What’s New']]],['tools','Tools',[['builds','tool','Build Planner'],['compare','compare','Compare Items'],['mastery','compass','Mastery XP'],['timers','clock','Boss Timers'],['ideas','trade','Trade Ideas'],['history','clock','Trade History']]],['personal','Personal',[['favorites','heart','Favorites'],['tutorial','book','Trading Guide']]]];nav.innerHTML=`<div class="nav-primary">${rdSidebarButton('home','home','Home')}${rdSidebarButton('items','values','Value List')}${rdSidebarButton('gallery','power','Powers')}${rdSidebarButton('trade','trade','Trade Calculator')}${rdSidebarButton('collection','collection','Collection')}</div>${groups.map(([id,label,links])=>`<section class="nav-group ${state[id]?'open':''}" data-nav-group="${id}"><button class="nav-group-toggle" aria-expanded="${state[id]?'true':'false'}">${label}${rdIcon('chevron')}</button><div class="nav-group-links">${links.map(x=>rdSidebarButton(...x)).join('')}</div></section>`).join('')}`;nav.addEventListener('click',event=>{const toggle=event.target.closest('.nav-group-toggle');if(!toggle)return;event.preventDefault();event.stopPropagation();const section=toggle.closest('.nav-group'),id=section.dataset.navGroup;section.classList.toggle('open');toggle.setAttribute('aria-expanded',section.classList.contains('open'));state[id]=section.classList.contains('open');rdSet('haze-nav-groups-v1',state)});nav.addEventListener('click',event=>{if(event.target.closest('[data-page]')&&innerWidth<=760)rdToggleMobileNav(false)})}
-function rdTopbar(){const bar=document.querySelector('.topbar');if(!bar||bar.dataset.redesigned)return;bar.dataset.redesigned='true';const menu=bar.querySelector('.mobile-menu');menu.innerHTML=rdIcon('menu');menu.setAttribute('aria-label','Open navigation');const search=bar.querySelector('.search-wrap');search.querySelector('span').innerHTML=rdIcon('search');search.querySelector('input').placeholder='Search items, powers, values, and guides…';const mobileSearch=document.createElement('button');mobileSearch.className='icon-btn mobile-search-button';mobileSearch.setAttribute('aria-label','Open search');mobileSearch.innerHTML=rdIcon('search');search.after(mobileSearch);const tools=document.createElement('div');tools.className='top-tools';[bar.querySelector('#refresh'),bar.querySelector('#updated'),bar.querySelector('#notice'),bar.querySelector('[data-page="settings"]')].filter(Boolean).forEach(x=>tools.append(x));bar.append(tools);const refresh=bar.querySelector('#refresh');refresh.innerHTML=rdIcon('refresh')+'<span>Refresh</span>';refresh.setAttribute('aria-label','Reload bundled value snapshot');new MutationObserver(()=>{if(!refresh.querySelector('svg')&&!refresh.disabled)refresh.innerHTML=rdIcon('refresh')+'<span>Refresh</span>'}).observe(refresh,{childList:true});bar.querySelector('#notice').innerHTML=rdIcon('news');bar.querySelector('#notice').setAttribute('aria-label','Open recent value changes');bar.querySelector('#notice').onclick=rdOpenChangelog;bar.querySelector('[data-page="settings"]').innerHTML=rdIcon('user');mobileSearch.onclick=rdOpenSearchSheet;menu.onclick=()=>rdToggleMobileNav(true);bar.querySelector('[data-page="settings"]').onclick=()=>go('settings')}
+function rdSidebarButton(pageName,icon,label,badge=''){const fav=pageName==='favorites',count=String(badge??''),showBadge=count!==''&&count!=='0';return `<button type="button" data-page="${pageName}" class="nav-item" aria-label="${esc(label)}" title="${esc(label)}"><span class="nav-icon">${rdIcon(icon)}</span><span class="nav-label">${esc(label)}</span>${fav||showBadge?`<i class="nav-badge${showBadge?'':' is-empty'}" ${fav?'id="favCount"':''}>${showBadge?esc(count):''}</i>`:''}</button>`}
+function rdLinkIsActive(pageName){return pageName===page||(typeof page==='string'&&pageName===page)}
+function rdSidebar(){const mark=document.querySelector('.brand-mark');if(mark)mark.innerHTML='<img src="assets/haze-atlas-icon.webp" alt="" width="32" height="32">';const collapse=$('#collapse');if(collapse){collapse.innerHTML=rdIcon('chevron');collapse.setAttribute('aria-label','Collapse sidebar');collapse.title='Collapse sidebar';collapse.classList.add('nav-collapse-btn')}
+const reopen=$('#sidebarToggle');if(reopen){reopen.innerHTML=rdIcon('menu');reopen.setAttribute('aria-label','Expand sidebar')}
+const nav=$('#nav');if(!nav)return;
+const favCount=typeof favorites!=='undefined'&&Array.isArray(favorites)?String(favorites.length):'';
+const groups=[
+  ['browse','Browse values',[
+    ['fruits','fruit','Fruits'],
+    ['swords','sword','Weapons'],
+    ['accessories','crown','Accessories'],
+    ['misc items','compass','Materials'],
+    ['gamepasses','ticket','Gamepasses'],
+    ['perm fruits (robux)','fruit','Perm fruits'],
+    ['updates','clock','Value changes']
+  ]],
+  ['world','World & guide',[
+    ['codes','ticket','Codes'],
+    ['systems','book','Game systems'],
+    ['content:Bosses','compass','Bosses'],
+    ['content:Sea Events','ship','Sea events'],
+    ['content:Races','user','Races'],
+    ['content:Fighting Styles','sword','Fighting styles'],
+    ['content:Sea 1 Locations','map','Sea 1'],
+    ['content:Sea 2 Locations','map','Sea 2'],
+    ['content:Sea 3 Locations','map','Sea 3'],
+    ['content:NPCs','user','NPCs'],
+    ['content:Skill Trainers','book','Skill trainers'],
+    ['content:Fishing','compass','Fishing'],
+    ['content:Ships','ship','Ships'],
+    ['releases','clock','Release tracker'],
+    ['news','news','What’s new']
+  ]],
+  ['tools','Tools',[
+    ['builds','tool','Build planner'],
+    ['mastery','compass','Mastery XP'],
+    ['compare','compare','Compare'],
+    ['timers','clock','Boss timers'],
+    ['ideas','trade','Trade ideas'],
+    ['history','clock','Trade history']
+  ]],
+  ['you','You',[
+    ['favorites','heart','Favorites',favCount],
+    ['tutorial','book','Trading guide']
+  ]]
+];
+const defaults={browse:true,world:false,tools:false,you:false};
+const state={...defaults,...rdGet('haze-nav-groups-v2',{})};
+// Keep the section that owns the current page open so users never land “lost”.
+for(const [id,,links] of groups){if(links.some(([pageName])=>rdLinkIsActive(pageName)))state[id]=true}
+nav.innerHTML=`
+  <div class="nav-section nav-primary-section">
+    <p class="nav-section-label">Main</p>
+    <div class="nav-primary">
+      ${rdSidebarButton('home','home','Home')}
+      ${rdSidebarButton('items','values','Values')}
+      ${rdSidebarButton('gallery','power','Powers')}
+      ${rdSidebarButton('trade','trade','Trade')}
+      ${rdSidebarButton('collection','collection','Collection')}
+    </div>
+  </div>
+  ${groups.map(([id,label,links])=>`
+    <section class="nav-group ${state[id]?'open':''}" data-nav-group="${id}">
+      <button type="button" class="nav-group-toggle" aria-expanded="${state[id]?'true':'false'}">
+        <span class="nav-group-title">${esc(label)}</span>
+        <span class="nav-group-meta">${links.length}</span>
+        <span class="nav-group-chevron" aria-hidden="true">${rdIcon('chevron')}</span>
+      </button>
+      <div class="nav-group-links" role="group" aria-label="${esc(label)}">
+        ${links.map(([pageName,icon,labelText,badge])=>rdSidebarButton(pageName,icon,labelText,badge||'')).join('')}
+      </div>
+    </section>`).join('')}
+`;
+if(!nav.dataset.navBound){
+  nav.dataset.navBound='true';
+  nav.addEventListener('click',event=>{
+    const toggle=event.target.closest('.nav-group-toggle');
+    if(toggle){
+      event.preventDefault();
+      event.stopPropagation();
+      const section=toggle.closest('.nav-group');
+      const id=section.dataset.navGroup;
+      const open=!section.classList.contains('open');
+      section.classList.toggle('open',open);
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+      const next={...rdGet('haze-nav-groups-v2',defaults),[id]:open};
+      rdSet('haze-nav-groups-v2',next);
+      return;
+    }
+    if(event.target.closest('[data-page]')&&innerWidth<=820)rdToggleMobileNav(false);
+  });
+}
+const foot=document.querySelector('.sidebar-foot');
+if(foot&&!foot.dataset.polished){
+  foot.dataset.polished='true';
+  foot.innerHTML=`
+    <div class="sidebar-foot-inner">
+      <button type="button" data-page="settings" class="nav-item nav-settings" aria-label="Settings" title="Settings">
+        <span class="nav-icon">${rdIcon('settings')}</span>
+        <span class="nav-label">Settings</span>
+      </button>
+      <p class="nav-source-note">Values · community list<br>Guides · official Trello</p>
+    </div>`;
+  foot.querySelector('[data-page="settings"]').onclick=()=>go('settings');
+}
+rdSyncNavigation()}
+function rdPaintRefresh(){const refresh=$('#refresh');if(!refresh)return;const busy=refresh.classList.contains('is-busy')||refresh.disabled;refresh.className='topbar-btn topbar-btn-icon';refresh.type='button';refresh.setAttribute('aria-label',busy?'Checking for updates…':'Reload value snapshot');refresh.title=busy?'Checking…':'Reload snapshot';refresh.innerHTML=`${rdIcon('refresh')}<span class="sr-only">${busy?'Checking':'Refresh'}</span>`}
+function rdCompactRelative(value){
+  if(!value)return 'Ready';
+  const seconds=Math.max(0,Math.floor((Date.now()-new Date(value).getTime())/1000));
+  if(seconds<45)return 'Just now';
+  if(seconds<3600)return `${Math.floor(seconds/60)}m ago`;
+  if(seconds<86400)return `${Math.floor(seconds/3600)}h ago`;
+  return `${Math.floor(seconds/86400)}d ago`;
+}
+function rdPaintStatus(){const updated=$('#updated');if(!updated)return;const when=data?.sync?.lastChecked||data?.updatedAt||'';updated.removeAttribute('data-relative-time');updated.className='topbar-status';const label=rdCompactRelative(when);updated.innerHTML=`<span class="topbar-status-dot" aria-hidden="true"></span><span class="topbar-status-text">${esc(label)}</span>`;updated.title=when?`Last checked ${new Date(when).toLocaleString()}`:'Data status'}
+function rdTopbar(){
+  const bar=document.querySelector('.topbar');
+  if(!bar||bar.dataset.redesigned)return;
+  bar.dataset.redesigned='true';
+
+  // Preserve live nodes the app already wires up.
+  const menu=bar.querySelector('.mobile-menu');
+  const search=bar.querySelector('.search-wrap');
+  const refresh=bar.querySelector('#refresh');
+  const updated=bar.querySelector('#updated');
+  const notice=bar.querySelector('#notice');
+  const settings=bar.querySelector('[data-page="settings"]');
+
+  // Symmetric shell: left rail | centered search | right actions
+  const left=document.createElement('div');
+  left.className='topbar-left';
+  const center=document.createElement('div');
+  center.className='topbar-center';
+  const right=document.createElement('div');
+  right.className='topbar-right';
+  const tools=document.createElement('div');
+  tools.className='top-tools';
+  tools.setAttribute('role','toolbar');
+  tools.setAttribute('aria-label','App actions');
+
+  menu.className='topbar-btn topbar-btn-icon mobile-menu';
+  menu.type='button';
+  menu.innerHTML=rdIcon('menu');
+  menu.setAttribute('aria-label','Open navigation');
+  menu.title='Menu';
+
+  const mobileSearch=document.createElement('button');
+  mobileSearch.type='button';
+  mobileSearch.className='topbar-btn topbar-btn-icon mobile-search-button';
+  mobileSearch.setAttribute('aria-label','Open search');
+  mobileSearch.title='Search';
+  mobileSearch.innerHTML=rdIcon('search');
+
+  search.classList.add('topbar-search');
+  const searchIcon=search.querySelector('span')||document.createElement('span');
+  searchIcon.className='search-icon';
+  searchIcon.innerHTML=rdIcon('search');
+  if(!searchIcon.parentElement)search.prepend(searchIcon);
+  const input=search.querySelector('input');
+  input.placeholder='Search values, powers, codes, guides…';
+  input.setAttribute('aria-label','Search Haze Atlas');
+  const clear=search.querySelector('#clearSearch');
+  if(clear){
+    clear.className='search-clear';
+    clear.type='button';
+    clear.setAttribute('aria-label','Clear search');
+    clear.innerHTML='×';
+  }
+  // Subtle desktop shortcut chip
+  let kbd=search.querySelector('.search-kbd');
+  if(!kbd){
+    kbd=document.createElement('kbd');
+    kbd.className='search-kbd';
+    kbd.textContent=navigator.platform?.toLowerCase().includes('mac')?'⌘K':'Ctrl K';
+    search.append(kbd);
+  }
+
+  refresh.className='topbar-btn topbar-btn-icon';
+  notice.className='topbar-btn topbar-btn-icon';
+  notice.type='button';
+  notice.innerHTML=rdIcon('news');
+  notice.setAttribute('aria-label','Recent value changes');
+  notice.title='Recent changes';
+  settings.className='topbar-btn topbar-btn-icon';
+  settings.type='button';
+  settings.innerHTML=rdIcon('settings');
+  settings.setAttribute('aria-label','Settings');
+  settings.title='Settings';
+
+  left.append(menu,mobileSearch);
+  center.append(search);
+  // Status sits outside the icon cluster so the right rail stays balanced.
+  tools.append(refresh,notice,settings);
+  right.append(updated,tools);
+
+  bar.replaceChildren(left,center,right);
+  rdPaintRefresh();
+  rdPaintStatus();
+
+  // Keep refresh icon stable when legacy refresh() rewrites button content.
+  new MutationObserver(()=>{
+    if(!refresh.querySelector('svg'))rdPaintRefresh();
+  }).observe(refresh,{childList:true,characterData:true,subtree:true});
+
+  // Hide clear until there is text; hide kbd while typing.
+  const syncSearchChrome=()=>{
+    const has=!!input.value;
+    search.classList.toggle('has-value',has);
+    search.classList.toggle('is-focused',document.activeElement===input);
+  };
+  input.addEventListener('input',syncSearchChrome);
+  input.addEventListener('focus',syncSearchChrome);
+  input.addEventListener('blur',syncSearchChrome);
+  syncSearchChrome();
+
+  notice.onclick=rdOpenChangelog;
+  settings.onclick=()=>go('settings');
+  mobileSearch.onclick=rdOpenSearchSheet;
+  menu.onclick=()=>rdToggleMobileNav(true);
+}
 function rdToggleMobileNav(open){let backdrop=document.querySelector('#mobileNavBackdrop');if(!backdrop){backdrop=document.createElement('button');backdrop.id='mobileNavBackdrop';backdrop.setAttribute('aria-label','Close navigation');document.body.append(backdrop);backdrop.onclick=()=>rdToggleMobileNav(false)}document.body.classList.toggle('mobile-nav-open',open);backdrop.hidden=!open}
 function rdMobileBottom(){const bottom=document.querySelector('.mobile-bottom');if(!bottom)return;const icons={home:'home',items:'values',gallery:'power',trade:'trade',collection:'collection'};bottom.querySelectorAll('[data-page]').forEach(button=>{const label=button.querySelector('span')?.textContent||button.dataset.page;button.innerHTML=rdIcon(icons[button.dataset.page])+
 `<span>${esc(label)}</span>`;button.setAttribute('aria-label',label);button.classList.toggle('active',button.dataset.page===page)})}
-function rdSyncNavigation(){document.querySelectorAll('#nav [data-page],.mobile-bottom [data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));const refresh=$('#refresh');if(refresh&&!refresh.querySelector('svg'))refresh.innerHTML=rdIcon('refresh')+'<span>Refresh</span>';const updated=$('#updated');if(updated){const when=data?.sync?.lastChecked||data?.updatedAt;updated.dataset.relativeTime=when||'';updated.textContent=rdRelative(when);updated.title=when?new Date(when).toLocaleString():''}}
+function rdSyncNavigation(){document.querySelectorAll('#nav [data-page],.sidebar-foot [data-page],.mobile-bottom [data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));
+// Ensure the section that owns the active page is expanded so the active item is visible.
+document.querySelectorAll('#nav .nav-group').forEach(section=>{
+  const owns=[...section.querySelectorAll('[data-page]')].some(el=>el.dataset.page===page);
+  if(owns&&!section.classList.contains('open')){
+    section.classList.add('open');
+    section.querySelector('.nav-group-toggle')?.setAttribute('aria-expanded','true');
+  }
+});
+const badge=$('#favCount');
+if(badge){const n=typeof favorites!=='undefined'?favorites.length:0;badge.textContent=n||'';badge.classList.toggle('is-empty',!n)}
+rdPaintRefresh();
+rdPaintStatus()}
 
 function rdShowUpdateNotice(count,when){if(!count)return;const signature=`${when}:${count}`;if(rdGet('haze-update-dismissed-v1','')===signature)return;document.querySelector('#redesignNotice')?.remove();const notice=document.createElement('aside');notice.id='redesignNotice';notice.dataset.signature=signature;notice.setAttribute('role','status');notice.innerHTML=`<span class="notice-icon">${rdIcon('refresh')}</span><span class="notice-copy"><b>${count} value${count===1?'':'s'} updated</b><small>${rdRelative(when)}</small></span><span class="notice-actions"><button data-rd-changelog>View changes</button><button class="notice-dismiss" aria-label="Dismiss update notification">×</button></span>`;($('#view')||document.body).prepend(notice);notice.querySelector('[data-rd-changelog]').onclick=rdOpenChangelog;notice.querySelector('.notice-dismiss').onclick=()=>{rdSet('haze-update-dismissed-v1',signature);notice.remove()}}
 function rdToast(message){if(/^Updated:/i.test(message))return;const el=$('#toast');if(!el)return;el.textContent=message;el.classList.add('show');clearTimeout(rdToast.timer);rdToast.timer=setTimeout(()=>el.classList.remove('show'),3600)}
@@ -86,7 +329,26 @@ function rdCreateViewer(){const dialog=document.createElement('dialog');dialog.i
 function rdViewerStep(delta){const dialog=document.querySelector('#mediaViewer');if(!dialog?.open)return;const index=Number(dialog.dataset.index),name=dialog.dataset.name,count=relatedClips(name).length,next=index+delta;if(next>=0&&next<count)rdOpenViewer(name,next)}
 function rdOpenSearchSheet(){let dialog=document.querySelector('#globalSearchSheet');if(!dialog){dialog=document.createElement('dialog');dialog.id='globalSearchSheet';dialog.className='gallery-filter-sheet';dialog.setAttribute('aria-label','Haze Atlas controls');document.body.append(dialog)}dialog.innerHTML=`<div class="sheet-handle"></div><header class="sheet-head"><h2>Search Haze Atlas</h2><button class="drawer-close" aria-label="Close search">×</button></header><div class="sheet-controls"><input id="mobileGlobalSearch" placeholder="Search items, powers, values, and guides…" aria-label="Search Haze Atlas"><button class="primary" id="showMobileSearchResults">Show results</button></div>`;dialog.querySelector('.drawer-close').onclick=()=>dialog.close();const input=dialog.querySelector('input');input.oninput=()=>{const desktop=$('#search');desktop.value=input.value;desktop.dispatchEvent(new Event('input',{bubbles:true}))};dialog.querySelector('#showMobileSearchResults').onclick=()=>dialog.close();dialog.showModal();requestAnimationFrame(()=>input.focus())}
 
-function rdBind(){document.querySelectorAll('[data-rd-page]').forEach(button=>button.onclick=()=>go(button.dataset.rdPage));document.querySelectorAll('[data-rd-refresh]').forEach(button=>button.onclick=()=>$('#refresh')?.click());document.querySelectorAll('[data-rd-changelog]').forEach(button=>button.onclick=rdOpenChangelog);document.querySelectorAll('[data-open-media]').forEach(button=>button.onclick=()=>rdOpenViewer(button.dataset.openMedia));document.querySelectorAll('[data-gallery-view]').forEach(button=>button.onclick=()=>{featureState.galleryView=button.dataset.galleryView;rdSet('haze-gallery-view-v1',featureState.galleryView);render()});document.querySelectorAll('[data-clear-gallery-filter]').forEach(button=>button.onclick=()=>{const key=button.dataset.clearGalleryFilter;if(key==='category')featureState.galleryCategory='all';if(key==='fresh')featureState.galleryFresh='all';if(key==='videos')featureState.galleryVideoMin=0;if(key==='collection')featureState.galleryCollection='all';featureState.galleryPage=1;render()});if($('#clearGalleryFilters'))$('#clearGalleryFilters').onclick=()=>{Object.assign(featureState,{galleryCategory:'all',galleryFresh:'all',galleryVideoMin:0,galleryCollection:'all',galleryPage:1});render()};if($('#mobileGalleryFilters'))$('#mobileGalleryFilters').onclick=rdOpenFilterSheet;if($('#gallerySearch'))$('#gallerySearch').oninput=e=>{featureState.galleryQuery=e.target.value;featureState.galleryPage=1;clearTimeout(rdBind.searchTimer);rdBind.searchTimer=setTimeout(()=>{render();const next=$('#gallerySearch');next?.focus();next?.setSelectionRange(next.value.length,next.value.length)},180)};if($('#galleryVideoMin'))$('#galleryVideoMin').onchange=e=>{featureState.galleryVideoMin=Number(e.target.value);featureState.galleryPage=1;render()};if($('#galleryCollection'))$('#galleryCollection').onchange=e=>{featureState.galleryCollection=e.target.value;featureState.galleryPage=1;render()};rdSyncNavigation()}
+function rdBind(){document.querySelectorAll('[data-rd-page]').forEach(button=>button.onclick=()=>go(button.dataset.rdPage));document.querySelectorAll('[data-rd-refresh]').forEach(button=>button.onclick=()=>$('#refresh')?.click());document.querySelectorAll('[data-rd-changelog]').forEach(button=>button.onclick=rdOpenChangelog);document.querySelectorAll('[data-copy-code]').forEach(button=>button.onclick=async event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    const code=button.dataset.copyCode;
+    try{
+      await navigator.clipboard.writeText(code);
+      const original=button.textContent;
+      button.classList.add('is-copied');
+      button.textContent=button.classList.contains('code-tile-copy')||button.classList.contains('code-card-copy')?'Copied':'✓';
+      rdToast(`Copied ${code}`);
+      clearTimeout(button._copyTimer);
+      button._copyTimer=setTimeout(()=>{button.classList.remove('is-copied');button.textContent=original||'Copy';},1600);
+    }catch{rdToast('Could not copy code')}
+  });document.querySelectorAll('[data-open-media]').forEach(button=>button.onclick=()=>rdOpenViewer(button.dataset.openMedia));document.querySelectorAll('[data-gallery-view]').forEach(button=>button.onclick=()=>{featureState.galleryView=button.dataset.galleryView;rdSet('haze-gallery-view-v1',featureState.galleryView);render()});document.querySelectorAll('[data-clear-gallery-filter]').forEach(button=>button.onclick=()=>{const key=button.dataset.clearGalleryFilter;if(key==='category')featureState.galleryCategory='all';if(key==='fresh')featureState.galleryFresh='all';if(key==='videos')featureState.galleryVideoMin=0;if(key==='collection')featureState.galleryCollection='all';featureState.galleryPage=1;render()});if($('#clearGalleryFilters'))$('#clearGalleryFilters').onclick=()=>{Object.assign(featureState,{galleryCategory:'all',galleryFresh:'all',galleryVideoMin:0,galleryCollection:'all',galleryPage:1});render()};if($('#mobileGalleryFilters'))$('#mobileGalleryFilters').onclick=rdOpenFilterSheet;if($('#gallerySearch'))$('#gallerySearch').oninput=e=>{featureState.galleryQuery=e.target.value;featureState.galleryPage=1;clearTimeout(rdBind.searchTimer);rdBind.searchTimer=setTimeout(()=>{render();const next=$('#gallerySearch');next?.focus();next?.setSelectionRange(next.value.length,next.value.length)},180)};if($('#galleryVideoMin'))$('#galleryVideoMin').onchange=e=>{featureState.galleryVideoMin=Number(e.target.value);featureState.galleryPage=1;render()};if($('#galleryCollection'))$('#galleryCollection').onchange=e=>{featureState.galleryCollection=e.target.value;featureState.galleryPage=1;render()};rdSyncNavigation()}
 
-function rdInstall(){rdSidebar();rdTopbar();setTimeout(rdMobileBottom,0);const originalRefresh=window.haze.refresh.bind(window.haze);window.haze.refresh=async(...args)=>{const result=await originalRefresh(...args);setTimeout(()=>rdTrackSnapshot({...result,items:typeof normalizedItems==='function'?normalizedItems(result.items):result.items}),0);return result};toast=rdToast;home=rdDashboard;powerGalleryPage=rdPowerGallery;if(typeof enhancedPages==='object')enhancedPages.gallery=rdPowerGallery;openMediaViewer=rdOpenViewer;createMediaViewer=rdCreateViewer;const previousRender=render;render=function(){previousRender();rdBind();rdMobileBottom()};window.render=render;const timer=setInterval(()=>{if(typeof data==='object'&&data?.items?.length&&typeof trello==='object'){clearInterval(timer);rdSyncNavigation();render();rdTrackSnapshot(data);setInterval(()=>document.querySelectorAll('[data-relative-time]').forEach(el=>el.textContent=rdRelative(el.dataset.relativeTime)),60000)}},50)}
+function rdInstall(){rdSidebar();rdTopbar();setTimeout(rdMobileBottom,0);const originalRefresh=window.haze.refresh.bind(window.haze);window.haze.refresh=async(...args)=>{const result=await originalRefresh(...args);const payload=result?.data?result.data:result;setTimeout(()=>rdTrackSnapshot({...payload,items:typeof normalizedItems==='function'?normalizedItems(payload.items||[]):payload.items}),0);return result};toast=rdToast;home=rdDashboard;powerGalleryPage=rdPowerGallery;if(typeof enhancedPages==='object')enhancedPages.gallery=rdPowerGallery;openMediaViewer=rdOpenViewer;createMediaViewer=rdCreateViewer;const previousRender=render;render=function(){previousRender();rdBind();rdMobileBottom()};window.render=render;const timer=setInterval(()=>{if(typeof data==='object'&&data?.items?.length&&typeof trello==='object'){clearInterval(timer);rdSyncNavigation();render();rdTrackSnapshot(data);setInterval(()=>{
+        document.querySelectorAll('[data-relative-time]').forEach(el=>{
+          if(el.id==='updated'||el.classList.contains('topbar-status'))return;
+          el.textContent=rdRelative(el.dataset.relativeTime);
+        });
+        rdPaintStatus();
+      },60000)}},50)}
 document.addEventListener('DOMContentLoaded',rdInstall);
