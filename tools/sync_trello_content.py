@@ -59,7 +59,11 @@ def main() -> int:
     args = parser.parse_args()
     board = fetch_json(BOARD_URL)
     content = json.loads(CONTENT_PATH.read_text(encoding="utf-8"))
-    ignored = set(json.loads(CONFIG_PATH.read_text(encoding="utf-8"))["ignoredTrelloCardIds"])
+    # The static Pages build may not include the optional Functions checker config.
+    # No config means no deliberate card exclusions.
+    ignored = set()
+    if CONFIG_PATH.exists():
+        ignored = set(json.loads(CONFIG_PATH.read_text(encoding="utf-8")).get("ignoredTrelloCardIds", []))
     list_rows = {item["id"]: item for item in board["lists"]}
     entries = {entry["id"].removeprefix("trello-"): entry for entry in content["entries"]}
     checked_at = datetime.now(timezone.utc).isoformat()
@@ -101,6 +105,9 @@ def main() -> int:
         expected = {
             "name": card["name"], "category": category, "description": card.get("desc", ""),
             "source": entry.get("source") or f"https://trello.com/c/{card['shortLink']}",
+            # An active card renamed to remove “Unreleased” must update the visible
+            # release state too; otherwise a stale false flag survives a content sync.
+            "released": released,
         }
         changed_fields = {}
         for field, value in expected.items():

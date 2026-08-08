@@ -35,12 +35,12 @@
       "source":"https://trello.com/c/sM9lkRzG"
     },
     {
-      "id":"trello-6a454f9401d90e50fc3f8878",
+      "id":"trello-6a7712629487df2ed6123ba7",
       "name":"Cthulhu Boss",
-      "status":"unreleased",
-      "confirmedAt":"2026-08-04",
-      "reason":"The current official Trello card explicitly identifies this boss as unreleased.",
-      "source":"https://trello.com/c/o2K8C9Lc"
+      "status":"released",
+      "confirmedAt":"2026-08-08",
+      "reason":"The current official Trello board has active Cthulhu Boss records with summon steps, behavior, drops, and titles; the old Unreleased card is archived.",
+      "source":"https://trello.com/c/cvUhUmiz/489-cthulhu-boss"
     }
   ]
 }
