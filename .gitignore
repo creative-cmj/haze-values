@@ -1,2 +1,6 @@
+dist/
 node_modules/
-functions/node_modules/
+*.apk
+*.aab
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json

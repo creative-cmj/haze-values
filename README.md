@@ -94,6 +94,37 @@ See `source-policy.json`:
 2. **Settings → Pages** → Deploy from `main` / `/(root)`
 3. Optional: submit the live URL to Google Search Console
 
+## Android app (Capacitor)
+
+The repository includes a native Android wrapper with package ID `com.creativecmj.hazeatlas` and app name **Haze Atlas**. It bundles the same static app data, artwork, and tools for offline use.
+
+### Build an installable debug APK
+
+1. Install Android Studio and complete its SDK setup (Android SDK Platform + Build-Tools).
+2. Open a new terminal in this repository.
+3. Run:
+
+```bash
+npm install
+npm run sync:android
+cd android
+./gradlew assembleDebug
+```
+
+The APK will be at:
+
+```text
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+To open the native Android project in Android Studio:
+
+```bash
+npm run open:android
+```
+
+`npm run sync:android` always stages the current web files into `dist/` and copies them into the Android project. Run it after changing site code or data before making an APK.
+
 ## Disclaimer
 
 Values are community estimates, not official prices. Always verify codes and drop rates on the official Trello before trading or grinding.

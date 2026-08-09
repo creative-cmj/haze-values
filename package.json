@@ -1,0 +1,18 @@
+{
+  "name": "haze-atlas-android",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Android Capacitor wrapper for Haze Atlas.",
+  "scripts": {
+    "build:android-web": "python3 tools/build_android_web.py",
+    "sync:android": "npm run build:android-web && cap sync android",
+    "open:android": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/core": "8.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.0"
+  }
+}
