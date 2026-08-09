@@ -100,9 +100,15 @@ The repository includes a native Android wrapper with package ID `com.creativecm
 
 ### Build an installable debug APK
 
-1. Install Android Studio and complete its SDK setup (Android SDK Platform + Build-Tools).
-2. Open a new terminal in this repository.
-3. Run:
+1. Install **JDK 21** (Capacitor 8 / Android Gradle requires Java 21) and Android Studio.
+2. In Android Studio’s SDK Manager, install **Android SDK Platform 36**, **Android SDK Build-Tools 36.0.0**, and **Android SDK Platform-Tools**.
+3. Open a new terminal in this repository. Verify Java 21 is active:
+
+```bash
+java -version
+```
+
+4. Build the app:
 
 ```bash
 npm install
