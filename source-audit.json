@@ -3,6 +3,7 @@
   "via": "github-actions",
   "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31412808702",
   "sources": {
+    "primary": "googleSheet",
     "googleSheet": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
     "vaultedValuesX": "https://haze-seas.vaultedvaluesx.com/value-list",
     "vaultedApi": "https://valuevaultx.com/_functions/api/haze-seas"
@@ -17,6 +18,7 @@
   "result": {
     "items": 146,
     "valueConflicts": 2,
+    "sourceConflicts": 2,
     "conflicts": [
       {
         "id": "fruits-magma",
@@ -33,5 +35,17 @@
         "vaultedValuesX": 180000
       }
     ]
+  },
+  "history": {
+    "snapshots": 1,
+    "latestObservedAt": "2026-08-09T14:55:18.097434+00:00",
+    "latestChangeSummary": {
+      "total": 0,
+      "up": 0,
+      "down": 0,
+      "same": 0,
+      "added": 0,
+      "removed": 0
+    }
   }
 }

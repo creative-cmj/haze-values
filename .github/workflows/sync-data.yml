@@ -102,6 +102,8 @@ jobs:
                   "items": len(data.get("items") or []),
                   "updatedAt": data.get("updatedAt"),
                   "valueConflicts": (data.get("sync") or {}).get("valueConflicts"),
+                  "sourceConflicts": (data.get("sync") or {}).get("sourceConflicts"),
+                  "historySnapshots": (data.get("sync") or {}).get("historySnapshots"),
               },
               "content": {
                   "entries": len(content.get("entries") or []),
@@ -126,6 +128,8 @@ jobs:
             trello-details.json \
             source-audit.json \
             sync-meta.json \
+            value-history.json \
+            value-changes.json \
             trello-content-images/ \
             trello-images/ \
             item-thumbnails/ \

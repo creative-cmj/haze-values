@@ -5,7 +5,17 @@
   "values": {
     "items": 146,
     "updatedAt": "2026-08-10T17:12:02.326252+00:00",
-    "valueConflicts": 2
+    "valueConflicts": 2,
+    "sourceConflicts": 2,
+    "historySnapshots": 1,
+    "latestChangeSummary": {
+      "total": 0,
+      "up": 0,
+      "down": 0,
+      "same": 0,
+      "added": 0,
+      "removed": 0
+    }
   },
   "content": {
     "entries": 323,

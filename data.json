@@ -1,6 +1,6 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
-  "valueSource": "https://haze-seas.vaultedvaluesx.com/value-list",
+  "valueSource": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "updatedAt": "2026-08-10T17:12:02.326252+00:00",
   "sync": {
     "status": "Ready",
@@ -9,7 +9,9 @@
     "via": "github-actions",
     "itemCount": 146,
     "valueConflicts": 2,
-    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31412808702"
+    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31412808702",
+    "sourceConflicts": 2,
+    "historySnapshots": 1
   },
   "sheets": {
     "Overview": [
@@ -3401,7 +3403,25 @@
       "pvp": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pve": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "sourceLabel": "Dragon",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-gum",
@@ -3415,7 +3435,25 @@
       "pvp": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
       "pve": "BAD (G2) - DECENT (G4) - GOOD (G5)",
       "sourceLabel": "Gum",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 80000,
+          "valueText": "80,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 80000,
+          "valueText": "80,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-electricity",
@@ -3429,7 +3467,25 @@
       "pvp": "GOOD (BASE)",
       "pve": "GOOD (BASE)",
       "sourceLabel": "Electricity",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-saturn",
@@ -3443,7 +3499,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Saturn",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 55000,
+          "valueText": "55,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 55000,
+          "valueText": "55,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-phoenix",
@@ -3457,7 +3531,25 @@
       "pvp": "GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pve": "DECENT (HYBIRD) - DECENT (FULL FORM)",
       "sourceLabel": "Phoenix",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-okuchi",
@@ -3471,7 +3563,25 @@
       "pvp": "GOOD (BASE) - GOOD (FULL FORM)",
       "pve": "DECENT (BASE) - GOOD (FULL FORM)",
       "sourceLabel": "Okuchi",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 35000,
+          "valueText": "35,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 35000,
+          "valueText": "35,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-tremor",
@@ -3485,7 +3595,25 @@
       "pvp": "DECENT",
       "pve": "BEST",
       "sourceLabel": "Tremor",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-darkness",
@@ -3499,7 +3627,25 @@
       "pvp": "GOOD",
       "pve": "BEST",
       "sourceLabel": "Darkness",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-dough",
@@ -3513,21 +3659,59 @@
       "pvp": "DECENT",
       "pve": "BAD",
       "sourceLabel": "Dough",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-magma",
       "name": "MAGMA",
       "category": "Fruits",
       "rarity": "LEGENDARY",
-      "valueText": "8,500",
-      "value": 8500,
+      "valueText": "10,000",
+      "value": 10000,
       "demand": "MEDIUM",
       "dragons": "",
       "pvp": "GOOD",
       "pve": "GOOD",
       "sourceLabel": "Magma",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 10000,
+          "valueText": "10,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": false,
+        "conflictFields": [
+          "value"
+        ],
+        "vaultedValueDelta": -1500
+      },
+      "sourceConflict": true
     },
     {
       "id": "fruits-venom",
@@ -3541,7 +3725,25 @@
       "pvp": "GOOD",
       "pve": "VERY GOOD",
       "sourceLabel": "Venom",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-wolf",
@@ -3555,7 +3757,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "Wolf",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-leopard",
@@ -3569,7 +3789,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "Leopard",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-shadow",
@@ -3583,7 +3821,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Shadow",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 7500,
+          "valueText": "7,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 7500,
+          "valueText": "7,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-magnet",
@@ -3597,7 +3853,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Magnet",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 3500,
+          "valueText": "3,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 3500,
+          "valueText": "3,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-soul",
@@ -3611,63 +3885,153 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Soul",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 3000,
+          "valueText": "3,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 3000,
+          "valueText": "3,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-light",
       "name": "LIGHT",
       "category": "Fruits",
       "rarity": "RARE",
-      "valueText": "1,000",
+      "valueText": "1000",
       "value": 1000,
       "demand": "LOW",
       "dragons": "",
       "pvp": "DECENT",
       "pve": "DECENT",
       "sourceLabel": "Light",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 1000,
+          "valueText": "1,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-ice",
       "name": "ICE",
       "category": "Fruits",
       "rarity": "RARE",
-      "valueText": "1,000",
+      "valueText": "1000",
       "value": 1000,
       "demand": "LOW",
       "dragons": "",
       "pvp": "DECENT",
       "pve": "DECENT",
       "sourceLabel": "Ice",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 1000,
+          "valueText": "1,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-buddha",
       "name": "BUDDHA",
       "category": "Fruits",
       "rarity": "UNCOMMON",
-      "valueText": "1,000",
+      "valueText": "1000",
       "value": 1000,
       "demand": "LOW",
       "dragons": "",
       "pvp": "BAD",
       "pve": "VERY GOOD (BEGINNER)",
       "sourceLabel": "Buddha",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 1000,
+          "valueText": "1,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-gas",
       "name": "GAS",
       "category": "Fruits",
       "rarity": "RARE",
-      "valueText": "1,000",
+      "valueText": "1000",
       "value": 1000,
       "demand": "LOW",
       "dragons": "",
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Gas",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 1000,
+          "valueText": "1,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-gravity",
@@ -3681,7 +4045,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Gravity",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-snow",
@@ -3695,7 +4077,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Snow",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-string",
@@ -3709,7 +4109,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "String",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-love",
@@ -3723,7 +4141,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Love",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-flame",
@@ -3737,7 +4173,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Flame",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-operation",
@@ -3751,7 +4205,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Operation",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-smoke",
@@ -3765,7 +4237,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Smoke",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-mammoth",
@@ -3779,7 +4269,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Mammoth",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-sand",
@@ -3793,7 +4301,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Sand",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-paw",
@@ -3807,7 +4333,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Paw",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-barrier",
@@ -3821,7 +4365,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Barrier",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 150,
+          "valueText": "150",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 150,
+          "valueText": "150",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-spin",
@@ -3835,7 +4397,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Spin",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-bomb",
@@ -3849,7 +4429,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Bomb",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-circus",
@@ -3863,7 +4461,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Circus",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-spike",
@@ -3877,7 +4493,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Spike",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "fruits-vanish",
@@ -3891,7 +4525,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Vanish",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-night-necklace",
@@ -3905,7 +4557,25 @@
       "pvp": "Best",
       "pve": "Good",
       "sourceLabel": "Night Necklace",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1500000,
+          "valueText": "1,500,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1500000,
+          "valueText": "1,500,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-gpm",
@@ -3919,7 +4589,25 @@
       "pvp": "Good",
       "pve": "Good",
       "sourceLabel": "GPM",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-abyssal-necklace",
@@ -3933,7 +4621,25 @@
       "pvp": "???",
       "pve": "???",
       "sourceLabel": "Abyssal Necklace",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-dominus-messor",
@@ -3947,7 +4653,25 @@
       "pvp": "???",
       "pve": "???",
       "sourceLabel": "Dominus Messor",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-gravity-gauntlet",
@@ -3961,7 +4685,25 @@
       "pvp": "Decent",
       "pve": "Bad",
       "sourceLabel": "Gravity Gauntlet",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-emperor-cape",
@@ -3975,7 +4717,25 @@
       "pvp": "???",
       "pve": "???",
       "sourceLabel": "Emperor Cape",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-dragon-horns",
@@ -3989,7 +4749,25 @@
       "pvp": "Good",
       "pve": "Best",
       "sourceLabel": "Dragon Horns",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-sb-helmet-v2",
@@ -4003,7 +4781,25 @@
       "pvp": "Good",
       "pve": "Bad",
       "sourceLabel": "SB Helmet V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-dough-scarf",
@@ -4017,7 +4813,25 @@
       "pvp": "Best",
       "pve": "Best",
       "sourceLabel": "Dough Scarf",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-night-hat",
@@ -4031,7 +4845,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "Night Hat",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-green-cloak",
@@ -4045,7 +4877,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "Green Cloak",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-ice-crown",
@@ -4059,7 +4909,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "Ice Crown",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-seabeast-armor-v2",
@@ -4073,7 +4941,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "SB Armor V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-venom-crown",
@@ -4087,7 +4973,25 @@
       "pvp": "Decent",
       "pve": "Bad",
       "sourceLabel": "Venom Crown",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-tremor-cloak",
@@ -4101,7 +5005,25 @@
       "pvp": "Good",
       "pve": "Good",
       "sourceLabel": "Tremor Cloak",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-neptune-crown",
@@ -4115,7 +5037,25 @@
       "pvp": "Good",
       "pve": "Bad",
       "sourceLabel": "Neptune Crown",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-drums",
@@ -4129,7 +5069,25 @@
       "pvp": "Decent",
       "pve": "Decent",
       "sourceLabel": "Drums",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-coded-mask",
@@ -4143,7 +5101,25 @@
       "pvp": "Decent",
       "pve": "Bad",
       "sourceLabel": "Coded Mask",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-green-bandana",
@@ -4157,7 +5133,25 @@
       "pvp": "Decent",
       "pve": "Bad",
       "sourceLabel": "Green Bandana",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-blue-scarf",
@@ -4171,7 +5165,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "Blue Scarf",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-pearl-necklace",
@@ -4185,7 +5197,25 @@
       "pvp": "Decent",
       "pve": "Good",
       "sourceLabel": "Pearl Necklace",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-snake-earrings",
@@ -4199,7 +5229,25 @@
       "pvp": "Good",
       "pve": "Good",
       "sourceLabel": "Snake Earrings",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-pumpkin-mask",
@@ -4213,7 +5261,25 @@
       "pvp": "Decent",
       "pve": "Bad",
       "sourceLabel": "Pumpkin Mask",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-seabeast-helmet",
@@ -4227,7 +5293,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "SB Helmet",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-oversized-helmet",
@@ -4241,7 +5325,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Oversized Helmet",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-seabeast-armor",
@@ -4255,7 +5357,25 @@
       "pvp": "Decent",
       "pve": "Decent",
       "sourceLabel": "Seabeast Armor",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-black-shades",
@@ -4269,7 +5389,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Black Shades",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-sleeping-mask",
@@ -4283,7 +5421,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Sleeping Mask",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-glasses",
@@ -4297,7 +5453,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Glasses",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-monkey-crown",
@@ -4311,7 +5485,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Monkey Crown",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-iron-jaw",
@@ -4325,7 +5517,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Iron Jaw",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-gold-pauldrons",
@@ -4339,7 +5549,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Gold Pauldrons",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-eyepatch",
@@ -4353,7 +5581,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Eyepatch",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-clown-nose",
@@ -4367,7 +5613,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Clown Nose",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "accessories-warden-hat",
@@ -4381,7 +5645,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Warden Hat",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-krampus-scythe",
@@ -4395,7 +5677,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Krampus Scythe",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-dual-axe",
@@ -4409,7 +5709,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Dual Axe",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-dual-dark-blade",
@@ -4423,7 +5741,25 @@
       "pvp": "???",
       "pve": "???",
       "sourceLabel": "Dual DarkBlade",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-dark-blade",
@@ -4437,7 +5773,25 @@
       "pvp": "Good",
       "pve": "Decent",
       "sourceLabel": "DarkBlade V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-dark-blade-v2",
@@ -4451,7 +5805,25 @@
       "pvp": "Best",
       "pve": "Decent",
       "sourceLabel": "DarkBlade",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-ace",
@@ -4465,7 +5837,25 @@
       "pvp": "???",
       "pve": "???",
       "sourceLabel": "Ace",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-3-sword-style",
@@ -4479,7 +5869,25 @@
       "pvp": "Good",
       "pve": "Bad",
       "sourceLabel": "3 Sword Style",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-3-sword-style-v2",
@@ -4493,7 +5901,25 @@
       "pvp": "Best",
       "pve": "Bad",
       "sourceLabel": "3 Sword Style V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-gryphon",
@@ -4507,7 +5933,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "Gryphon",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-zenith",
@@ -4521,7 +5965,25 @@
       "pvp": "Ok",
       "pve": "Bad",
       "sourceLabel": "Zenith",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-dough-trident",
@@ -4535,7 +5997,25 @@
       "pvp": "Good",
       "pve": "Bad",
       "sourceLabel": "Dough Trident",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-seabeast-hammer-v2",
@@ -4549,7 +6029,25 @@
       "pvp": "Ok",
       "pve": "Bad",
       "sourceLabel": "SeaBeast Hammer V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-mace-v2",
@@ -4563,7 +6061,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Mace V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-bisento-v2",
@@ -4577,7 +6093,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Bisento V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-2-sword-style-v2",
@@ -4591,7 +6125,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "2 Sword Style V2",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-enma",
@@ -4605,7 +6157,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Enma",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-shusui",
@@ -4619,7 +6189,25 @@
       "pvp": "Ok",
       "pve": "Bad",
       "sourceLabel": "Shusui",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-raiu",
@@ -4633,7 +6221,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Raiu",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-bisento",
@@ -4647,7 +6253,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Bisento",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-2-sword-style",
@@ -4661,7 +6285,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "2 Sword Style",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-golden-staff",
@@ -4675,7 +6317,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Golden Staff",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-seabeast-hammer",
@@ -4689,7 +6349,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "SeaBeast Hammer",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-operation-blade",
@@ -4703,7 +6381,25 @@
       "pvp": "Ok",
       "pve": "Bad",
       "sourceLabel": "Operation Blade",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-soul-cane",
@@ -4717,7 +6413,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Soul Cane",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-mace",
@@ -4731,7 +6445,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Mace",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-pipe",
@@ -4745,7 +6477,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Pipe",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-fishman-trident",
@@ -4759,7 +6509,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Fishman Trident",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-shark-blade",
@@ -4773,7 +6541,25 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Shark Blade",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "swords-katana",
@@ -4787,21 +6573,59 @@
       "pvp": "Bad",
       "pve": "Bad",
       "sourceLabel": "Katana",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": null
+      },
+      "sourceConflict": false
     },
     {
       "id": "misc-items-broom",
       "name": "Broom",
       "category": "Misc Items",
       "rarity": "COMMON",
-      "valueText": "180,000",
-      "value": 180000,
+      "valueText": "200,000",
+      "value": 200000,
       "demand": "HIGH",
       "dragons": "1 DRAGON + ADDS",
       "pvp": "-----",
       "pve": "-----",
       "sourceLabel": "-----",
-      "robux": ""
+      "robux": "",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "HIGH",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 180000,
+          "valueText": "180,000",
+          "demand": "HIGH",
+          "rarity": "COMMON"
+        },
+        "matched": false,
+        "conflictFields": [
+          "value"
+        ],
+        "vaultedValueDelta": -20000
+      },
+      "sourceConflict": true
     },
     {
       "id": "gamepasses-fruit-notifier",
@@ -4815,7 +6639,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "FRUIT NOTIFIER",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "MEDIUM",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "MEDIUM",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-dark-blade",
@@ -4829,7 +6671,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "DARK BLADE",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-vip",
@@ -4843,7 +6703,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "VIP",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-2x-money",
@@ -4857,7 +6735,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "2x MONEY",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-increase-drop-rate",
@@ -4871,7 +6767,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "INCREASE DROP RATE",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-fruit-bag",
@@ -4885,7 +6799,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "N/A",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-striker-boat",
@@ -4899,7 +6831,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "STRIKER BOAT",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "MEDIUM",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "MEDIUM",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-coffin-boat",
@@ -4913,7 +6863,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "COFFIN BOAT",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "gamepasses-custom-armament-color",
@@ -4927,7 +6895,25 @@
       "pvp": "",
       "pve": "",
       "sourceLabel": "N/A",
-      "robux": "Region Based"
+      "robux": "Region Based",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 65000,
+          "valueText": "65,000",
+          "demand": "LOW",
+          "rarity": ""
+        },
+        "vaultedValuesX": {
+          "value": 65000,
+          "valueText": "65,000",
+          "demand": "LOW",
+          "rarity": ""
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-dragon",
@@ -4941,7 +6927,25 @@
       "pvp": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "pve": "BAD (BASE) - GOOD (HYBIRD) - GOOD (FULL FORM)",
       "sourceLabel": "Dragon",
-      "robux": "2,999 ROBUX"
+      "robux": "2,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1300000,
+          "valueText": "1,300,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1300000,
+          "valueText": "1,300,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-saturn",
@@ -4955,7 +6959,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Saturn",
-      "robux": "2,499 ROBUX"
+      "robux": "2,499 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1100000,
+          "valueText": "1,100,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1100000,
+          "valueText": "1,100,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-okuchi",
@@ -4969,7 +6991,25 @@
       "pvp": "GOOD (BASE) - GOOD (FULL FORM)",
       "pve": "DECENT (BASE) - GOOD (FULL FORM)",
       "sourceLabel": "Okuchi",
-      "robux": "2,899 ROBUX"
+      "robux": "2,899 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-electricity",
@@ -4983,7 +7023,25 @@
       "pvp": "DECENT (BASE) - GOOD (AWAKENED)",
       "pve": "GOOD (BASE) - GOOD (AWAKENED)",
       "sourceLabel": "Electricity",
-      "robux": "2,499 ROBUX"
+      "robux": "2,499 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-gum",
@@ -4997,7 +7055,25 @@
       "pvp": "BAD (BASE) - DECENT (G4) - GOOD (G5)",
       "pve": "BAD (G2) - DECENT (G4) - GOOD (G5)",
       "sourceLabel": "Gum",
-      "robux": "2,499 ROBUX"
+      "robux": "2,499 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 1200000,
+          "valueText": "1,200,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 1200000,
+          "valueText": "1,200,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-phoenix",
@@ -5011,7 +7087,25 @@
       "pvp": "GOOD (HYBIRD) - DECENT (FULL FORM)",
       "pve": "GOOD (HYBIRD) - DECENT (FULL FORM)",
       "sourceLabel": "Phoenix",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 800000,
+          "valueText": "800,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 800000,
+          "valueText": "800,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-tremor",
@@ -5025,7 +7119,25 @@
       "pvp": "DECENT",
       "pve": "BEST",
       "sourceLabel": "Tremor",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-darkness",
@@ -5039,7 +7151,25 @@
       "pvp": "GOOD",
       "pve": "BEST",
       "sourceLabel": "Darkness",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-dough",
@@ -5053,7 +7183,25 @@
       "pvp": "DECENT",
       "pve": "BAD",
       "sourceLabel": "Dough",
-      "robux": "2,399 ROBUX"
+      "robux": "2,399 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 900000,
+          "valueText": "900,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL"
+        },
+        "vaultedValuesX": {
+          "value": 900000,
+          "valueText": "900,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-venom",
@@ -5067,7 +7215,25 @@
       "pvp": "GOOD",
       "pve": "VERY GOOD",
       "sourceLabel": "Venom",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-magma",
@@ -5081,7 +7247,25 @@
       "pvp": "GOOD",
       "pve": "GOOD",
       "sourceLabel": "Magma",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-wolf",
@@ -5095,7 +7279,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "Wolf",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-leopard",
@@ -5109,7 +7311,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "Leopard",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-shadow",
@@ -5123,7 +7343,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Shadow",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-magnet",
@@ -5137,7 +7375,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Magnet",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-soul",
@@ -5151,7 +7407,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Soul",
-      "robux": "1,999 ROBUX"
+      "robux": "1,999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 500000,
+          "valueText": "500,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "vaultedValuesX": {
+          "value": 500000,
+          "valueText": "500,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-light",
@@ -5165,7 +7439,25 @@
       "pvp": "DECENT",
       "pve": "DECENT",
       "sourceLabel": "Light",
-      "robux": "1,499 ROBUX"
+      "robux": "1,499 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-ice",
@@ -5179,7 +7471,25 @@
       "pvp": "DECENT",
       "pve": "DECENT",
       "sourceLabel": "Ice",
-      "robux": "1,699 ROBUX"
+      "robux": "1,699 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-buddha",
@@ -5193,7 +7503,25 @@
       "pvp": "BAD",
       "pve": "VERY GOOD (BEGINNER)",
       "sourceLabel": "Buddha",
-      "robux": "899 ROBUX"
+      "robux": "899 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-gas",
@@ -5207,7 +7535,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Gas",
-      "robux": "1,399 ROBUX"
+      "robux": "1,399 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-gravity",
@@ -5221,7 +7567,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Gravity",
-      "robux": "1,099 ROBUX"
+      "robux": "1,099 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-snow",
@@ -5235,7 +7599,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Snow",
-      "robux": "699 ROBUX"
+      "robux": "699 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-string",
@@ -5249,7 +7631,25 @@
       "pvp": "GOOD",
       "pve": "DECENT",
       "sourceLabel": "String",
-      "robux": "799 ROBUX"
+      "robux": "799 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-love",
@@ -5263,7 +7663,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Love",
-      "robux": "1,299 ROBUX"
+      "robux": "1,299 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-flame",
@@ -5277,7 +7695,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Flame",
-      "robux": "1,299 ROBUX"
+      "robux": "1,299 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-operation",
@@ -5291,7 +7727,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Operation",
-      "robux": "1,399 ROBUX"
+      "robux": "1,399 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "vaultedValuesX": {
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "LOW",
+          "rarity": "RARE"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-smoke",
@@ -5305,7 +7759,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Smoke",
-      "robux": "649 ROBUX"
+      "robux": "649 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-mammoth",
@@ -5319,7 +7791,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Mammoth",
-      "robux": "999 ROBUX"
+      "robux": "999 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-sand",
@@ -5333,7 +7823,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Sand",
-      "robux": "699 ROBUX"
+      "robux": "699 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-paw",
@@ -5347,7 +7855,25 @@
       "pvp": "BAD",
       "pve": "DECENT",
       "sourceLabel": "Paw",
-      "robux": "699 ROBUX"
+      "robux": "699 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "vaultedValuesX": {
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-barrier",
@@ -5361,7 +7887,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Barrier",
-      "robux": "1,399 ROBUX"
+      "robux": "1,399 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-spin",
@@ -5375,7 +7919,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Spin",
-      "robux": "95 ROBUX"
+      "robux": "95 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-bomb",
@@ -5389,7 +7951,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Bomb",
-      "robux": "55 ROBUX"
+      "robux": "55 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-circus",
@@ -5403,7 +7983,25 @@
       "pvp": "DECENT",
       "pve": "GOOD",
       "sourceLabel": "Circus",
-      "robux": "95 ROBUX"
+      "robux": "95 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-spike",
@@ -5417,7 +8015,25 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Spike",
-      "robux": "35 ROBUX"
+      "robux": "35 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 30000,
+          "valueText": "30,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 30000,
+          "valueText": "30,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     },
     {
       "id": "perm-fruits-robux-vanish",
@@ -5431,7 +8047,26 @@
       "pvp": "BAD",
       "pve": "BAD",
       "sourceLabel": "Vanish",
-      "robux": "95 ROBUX"
+      "robux": "95 ROBUX",
+      "sourceValues": {
+        "googleSheet": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "vaultedValuesX": {
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON"
+        },
+        "matched": true,
+        "conflictFields": [],
+        "vaultedValueDelta": 0
+      },
+      "sourceConflict": false
     }
-  ]
+  ],
+  "crossCheckSource": "https://haze-seas.vaultedvaluesx.com/value-list"
 }

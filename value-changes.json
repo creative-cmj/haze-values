@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09T14:55:18.097434+00:00",
+  "observedAt": "2026-08-09T14:55:18.097434+00:00",
+  "previousObservedAt": null,
+  "changed": true,
+  "summary": {
+    "total": 0,
+    "up": 0,
+    "down": 0,
+    "same": 0,
+    "added": 0,
+    "removed": 0
+  },
+  "changes": []
+}

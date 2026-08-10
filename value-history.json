@@ -1,0 +1,3966 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09T14:55:18.097434+00:00",
+  "retention": 180,
+  "sources": {
+    "primary": "googleSheet",
+    "googleSheet": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
+    "vaultedValuesX": "https://haze-seas.vaultedvaluesx.com/value-list",
+    "vaultedApi": "https://valuevaultx.com/_functions/api/haze-seas"
+  },
+  "snapshots": [
+    {
+      "observedAt": "2026-08-09T14:55:18.097434+00:00",
+      "itemCount": 146,
+      "fingerprint": "e79254b0dacaf02432c41e76c88eee2e33446ba4a6639236c994bf47389d2bcb",
+      "items": [
+        {
+          "id": "accessories-abyssal-necklace",
+          "name": "Abyssal Necklace",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-black-shades",
+          "name": "Black Shades",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-blue-scarf",
+          "name": "Blue Scarf",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-clown-nose",
+          "name": "Clown Nose",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-coded-mask",
+          "name": "Coded Mask",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-dominus-messor",
+          "name": "Dominus Messor",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-dough-scarf",
+          "name": "Dough Scarf",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-dragon-horns",
+          "name": "Dragon Horns",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-drums",
+          "name": "Drums",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-emperor-cape",
+          "name": "Emperor Cape",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-eyepatch",
+          "name": "Eyepatch",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-glasses",
+          "name": "Glasses",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-gold-pauldrons",
+          "name": "Gold Pauldrons",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-gpm",
+          "name": "GPM",
+          "category": "Accessories",
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-gravity-gauntlet",
+          "name": "Gravity Gauntlet",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-green-bandana",
+          "name": "Green Bandana",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-green-cloak",
+          "name": "Green Cloak",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-ice-crown",
+          "name": "Ice Crown",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-iron-jaw",
+          "name": "Iron Jaw",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-monkey-crown",
+          "name": "Monkey Crown",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-neptune-crown",
+          "name": "Neptune Crown",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-night-hat",
+          "name": "Night Hat",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-night-necklace",
+          "name": "Night Necklace",
+          "category": "Accessories",
+          "value": 1500000,
+          "valueText": "1,500,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1500000,
+              "valueText": "1,500,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1500000,
+              "valueText": "1,500,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-oversized-helmet",
+          "name": "Oversized Helmet",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-pearl-necklace",
+          "name": "Pearl Necklace",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-pumpkin-mask",
+          "name": "Pumpkin Mask",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-sb-helmet-v2",
+          "name": "SB Helmet V2",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-seabeast-armor",
+          "name": "Seabeast Armor",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-seabeast-armor-v2",
+          "name": "Seabeast Armor V2",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-seabeast-helmet",
+          "name": "Seabeast Helmet",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-sleeping-mask",
+          "name": "Sleeping Mask",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-snake-earrings",
+          "name": "Snake Earrings",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-tremor-cloak",
+          "name": "Tremor Cloak",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-venom-crown",
+          "name": "Venom Crown",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "accessories-warden-hat",
+          "name": "Warden Hat",
+          "category": "Accessories",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-barrier",
+          "name": "BARRIER",
+          "category": "Fruits",
+          "value": 150,
+          "valueText": "150",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 150,
+              "valueText": "150",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 150,
+              "valueText": "150",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-bomb",
+          "name": "BOMB",
+          "category": "Fruits",
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-buddha",
+          "name": "BUDDHA",
+          "category": "Fruits",
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000,
+              "valueText": "1000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 1000,
+              "valueText": "1,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-circus",
+          "name": "CIRCUS",
+          "category": "Fruits",
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-darkness",
+          "name": "DARKNESS",
+          "category": "Fruits",
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-dough",
+          "name": "DOUGH",
+          "category": "Fruits",
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "LOW",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "LOW",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-dragon",
+          "name": "DRAGON",
+          "category": "Fruits",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-electricity",
+          "name": "ELECTRICITY",
+          "category": "Fruits",
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 60000,
+              "valueText": "60,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 60000,
+              "valueText": "60,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-flame",
+          "name": "FLAME",
+          "category": "Fruits",
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300,
+              "valueText": "300",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300,
+              "valueText": "300",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-gas",
+          "name": "GAS",
+          "category": "Fruits",
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000,
+              "valueText": "1000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 1000,
+              "valueText": "1,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-gravity",
+          "name": "GRAVITY",
+          "category": "Fruits",
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-gum",
+          "name": "GUM",
+          "category": "Fruits",
+          "value": 80000,
+          "valueText": "80,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 80000,
+              "valueText": "80,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 80000,
+              "valueText": "80,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-ice",
+          "name": "ICE",
+          "category": "Fruits",
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000,
+              "valueText": "1000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 1000,
+              "valueText": "1,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-leopard",
+          "name": "LEOPARD",
+          "category": "Fruits",
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-light",
+          "name": "LIGHT",
+          "category": "Fruits",
+          "value": 1000,
+          "valueText": "1000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000,
+              "valueText": "1000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 1000,
+              "valueText": "1,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-love",
+          "name": "LOVE",
+          "category": "Fruits",
+          "value": 300,
+          "valueText": "300",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300,
+              "valueText": "300",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300,
+              "valueText": "300",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-magma",
+          "name": "MAGMA",
+          "category": "Fruits",
+          "value": 10000,
+          "valueText": "10,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 10000,
+              "valueText": "10,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": false,
+            "conflictFields": [
+              "value"
+            ],
+            "vaultedValueDelta": -1500
+          },
+          "sourceConflict": true
+        },
+        {
+          "id": "fruits-magnet",
+          "name": "MAGNET",
+          "category": "Fruits",
+          "value": 3500,
+          "valueText": "3,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 3500,
+              "valueText": "3,500",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 3500,
+              "valueText": "3,500",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-mammoth",
+          "name": "MAMMOTH",
+          "category": "Fruits",
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-okuchi",
+          "name": "OKUCHI",
+          "category": "Fruits",
+          "value": 35000,
+          "valueText": "35,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 35000,
+              "valueText": "35,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 35000,
+              "valueText": "35,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-operation",
+          "name": "OPERATION",
+          "category": "Fruits",
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-paw",
+          "name": "PAW",
+          "category": "Fruits",
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-phoenix",
+          "name": "PHOENIX",
+          "category": "Fruits",
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-sand",
+          "name": "SAND",
+          "category": "Fruits",
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-saturn",
+          "name": "SATURN",
+          "category": "Fruits",
+          "value": 55000,
+          "valueText": "55,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 55000,
+              "valueText": "55,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 55000,
+              "valueText": "55,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-shadow",
+          "name": "SHADOW",
+          "category": "Fruits",
+          "value": 7500,
+          "valueText": "7,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 7500,
+              "valueText": "7,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 7500,
+              "valueText": "7,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-smoke",
+          "name": "SMOKE",
+          "category": "Fruits",
+          "value": 100,
+          "valueText": "100",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 100,
+              "valueText": "100",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-snow",
+          "name": "SNOW",
+          "category": "Fruits",
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-soul",
+          "name": "SOUL",
+          "category": "Fruits",
+          "value": 3000,
+          "valueText": "3,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 3000,
+              "valueText": "3,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 3000,
+              "valueText": "3,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-spike",
+          "name": "SPIKE",
+          "category": "Fruits",
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-spin",
+          "name": "SPIN",
+          "category": "Fruits",
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-string",
+          "name": "STRING",
+          "category": "Fruits",
+          "value": 500,
+          "valueText": "500",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 500,
+              "valueText": "500",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-tremor",
+          "name": "TREMOR",
+          "category": "Fruits",
+          "value": 15000,
+          "valueText": "15,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 15000,
+              "valueText": "15,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-vanish",
+          "name": "VANISH",
+          "category": "Fruits",
+          "value": 50,
+          "valueText": "50",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 50,
+              "valueText": "50",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-venom",
+          "name": "VENOM",
+          "category": "Fruits",
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "fruits-wolf",
+          "name": "WOLF",
+          "category": "Fruits",
+          "value": 8500,
+          "valueText": "8,500",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 8500,
+              "valueText": "8,500",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-2x-money",
+          "name": "2x MONEY",
+          "category": "Gamepasses",
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-coffin-boat",
+          "name": "COFFIN BOAT",
+          "category": "Gamepasses",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-custom-armament-color",
+          "name": "Custom Armament Color",
+          "category": "Gamepasses",
+          "value": 65000,
+          "valueText": "65,000",
+          "demand": "LOW",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 65000,
+              "valueText": "65,000",
+              "demand": "LOW",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 65000,
+              "valueText": "65,000",
+              "demand": "LOW",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-dark-blade",
+          "name": "DARK BLADE",
+          "category": "Gamepasses",
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "HIGH",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 200000,
+              "valueText": "200,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 200000,
+              "valueText": "200,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-fruit-bag",
+          "name": "FRUIT BAG",
+          "category": "Gamepasses",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "HIGH",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-fruit-notifier",
+          "name": "FRUIT NOTIFIER",
+          "category": "Gamepasses",
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "MEDIUM",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "MEDIUM",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "MEDIUM",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-increase-drop-rate",
+          "name": "INCREASE DROP RATE",
+          "category": "Gamepasses",
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "HIGH",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-striker-boat",
+          "name": "STRIKER BOAT",
+          "category": "Gamepasses",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "MEDIUM",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "MEDIUM",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "MEDIUM",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "gamepasses-vip",
+          "name": "VIP",
+          "category": "Gamepasses",
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": "",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "vaultedValuesX": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "HIGH",
+              "rarity": ""
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "misc-items-broom",
+          "name": "Broom",
+          "category": "Misc Items",
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "HIGH",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 200000,
+              "valueText": "200,000",
+              "demand": "HIGH",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 180000,
+              "valueText": "180,000",
+              "demand": "HIGH",
+              "rarity": "COMMON"
+            },
+            "matched": false,
+            "conflictFields": [
+              "value"
+            ],
+            "vaultedValueDelta": -20000
+          },
+          "sourceConflict": true
+        },
+        {
+          "id": "perm-fruits-robux-barrier",
+          "name": "BARRIER",
+          "category": "Perm Fruits (Robux)",
+          "value": 60000,
+          "valueText": "60,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 60000,
+              "valueText": "60,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 60000,
+              "valueText": "60,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-bomb",
+          "name": "BOMB",
+          "category": "Perm Fruits (Robux)",
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-buddha",
+          "name": "BUDDHA",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-circus",
+          "name": "CIRCUS",
+          "category": "Perm Fruits (Robux)",
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-darkness",
+          "name": "DARKNESS",
+          "category": "Perm Fruits (Robux)",
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-dough",
+          "name": "DOUGH",
+          "category": "Perm Fruits (Robux)",
+          "value": 900000,
+          "valueText": "900,000",
+          "demand": "LOW",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 900000,
+              "valueText": "900,000",
+              "demand": "LOW",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 900000,
+              "valueText": "900,000",
+              "demand": "LOW",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-dragon",
+          "name": "DRAGON",
+          "category": "Perm Fruits (Robux)",
+          "value": 1300000,
+          "valueText": "1,300,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1300000,
+              "valueText": "1,300,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1300000,
+              "valueText": "1,300,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-electricity",
+          "name": "ELECTRICITY",
+          "category": "Perm Fruits (Robux)",
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000000,
+              "valueText": "1,000,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1000000,
+              "valueText": "1,000,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-flame",
+          "name": "FLAME",
+          "category": "Perm Fruits (Robux)",
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-gas",
+          "name": "GAS",
+          "category": "Perm Fruits (Robux)",
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-gravity",
+          "name": "GRAVITY",
+          "category": "Perm Fruits (Robux)",
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 400000,
+              "valueText": "400,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 400000,
+              "valueText": "400,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-gum",
+          "name": "GUM",
+          "category": "Perm Fruits (Robux)",
+          "value": 1200000,
+          "valueText": "1,200,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1200000,
+              "valueText": "1,200,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1200000,
+              "valueText": "1,200,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-ice",
+          "name": "ICE",
+          "category": "Perm Fruits (Robux)",
+          "value": 400000,
+          "valueText": "400,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 400000,
+              "valueText": "400,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 400000,
+              "valueText": "400,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-leopard",
+          "name": "LEOPARD",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-light",
+          "name": "LIGHT",
+          "category": "Perm Fruits (Robux)",
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-love",
+          "name": "LOVE",
+          "category": "Perm Fruits (Robux)",
+          "value": 300000,
+          "valueText": "300,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 300000,
+              "valueText": "300,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-magma",
+          "name": "MAGMA",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-magnet",
+          "name": "MAGNET",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-mammoth",
+          "name": "MAMMOTH",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-okuchi",
+          "name": "OKUCHI",
+          "category": "Perm Fruits (Robux)",
+          "value": 1000000,
+          "valueText": "1,000,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1000000,
+              "valueText": "1,000,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1000000,
+              "valueText": "1,000,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-operation",
+          "name": "OPERATION",
+          "category": "Perm Fruits (Robux)",
+          "value": 200000,
+          "valueText": "200,000",
+          "demand": "LOW",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 200000,
+              "valueText": "200,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": 200000,
+              "valueText": "200,000",
+              "demand": "LOW",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-paw",
+          "name": "PAW",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-phoenix",
+          "name": "PHOENIX",
+          "category": "Perm Fruits (Robux)",
+          "value": 800000,
+          "valueText": "800,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 800000,
+              "valueText": "800,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 800000,
+              "valueText": "800,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-sand",
+          "name": "SAND",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-saturn",
+          "name": "SATURN",
+          "category": "Perm Fruits (Robux)",
+          "value": 1100000,
+          "valueText": "1,100,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 1100000,
+              "valueText": "1,100,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 1100000,
+              "valueText": "1,100,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-shadow",
+          "name": "SHADOW",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-smoke",
+          "name": "SMOKE",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-snow",
+          "name": "SNOW",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-soul",
+          "name": "SOUL",
+          "category": "Perm Fruits (Robux)",
+          "value": 500000,
+          "valueText": "500,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 500000,
+              "valueText": "500,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 500000,
+              "valueText": "500,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-spike",
+          "name": "SPIKE",
+          "category": "Perm Fruits (Robux)",
+          "value": 30000,
+          "valueText": "30,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 30000,
+              "valueText": "30,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 30000,
+              "valueText": "30,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-spin",
+          "name": "SPIN",
+          "category": "Perm Fruits (Robux)",
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-string",
+          "name": "STRING",
+          "category": "Perm Fruits (Robux)",
+          "value": 130000,
+          "valueText": "130,000",
+          "demand": "LOW",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": 130000,
+              "valueText": "130,000",
+              "demand": "LOW",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-tremor",
+          "name": "TREMOR",
+          "category": "Perm Fruits (Robux)",
+          "value": 700000,
+          "valueText": "700,000",
+          "demand": "HIGH",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 700000,
+              "valueText": "700,000",
+              "demand": "HIGH",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-vanish",
+          "name": "VANISH",
+          "category": "Perm Fruits (Robux)",
+          "value": 45000,
+          "valueText": "45,000",
+          "demand": "LOW",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": 45000,
+              "valueText": "45,000",
+              "demand": "LOW",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-venom",
+          "name": "VENOM",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "LOW",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "LOW",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "perm-fruits-robux-wolf",
+          "name": "WOLF",
+          "category": "Perm Fruits (Robux)",
+          "value": 600000,
+          "valueText": "600,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 600000,
+              "valueText": "600,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-2-sword-style",
+          "name": "2 Sword Style",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-2-sword-style-v2",
+          "name": "2 Sword Style V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-3-sword-style",
+          "name": "3 Sword Style",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-3-sword-style-v2",
+          "name": "3 Sword Style V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-ace",
+          "name": "Ace",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-bisento",
+          "name": "Bisento",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-bisento-v2",
+          "name": "Bisento V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-dark-blade",
+          "name": "Dark Blade",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-dark-blade-v2",
+          "name": "Dark Blade V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-dough-trident",
+          "name": "Dough Trident",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-dual-axe",
+          "name": "Dual Axe",
+          "category": "Swords",
+          "value": 150000,
+          "valueText": "150,000",
+          "demand": "MEDIUM",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": 150000,
+              "valueText": "150,000",
+              "demand": "MEDIUM",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-dual-dark-blade",
+          "name": "Dual Dark Blade",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-enma",
+          "name": "Enma",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-fishman-trident",
+          "name": "Fishman Trident",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-golden-staff",
+          "name": "Golden Staff",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-gryphon",
+          "name": "Gryphon",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-katana",
+          "name": "Katana",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-krampus-scythe",
+          "name": "Krampus Scythe",
+          "category": "Swords",
+          "value": 260000,
+          "valueText": "260,000",
+          "demand": "HIGH",
+          "rarity": "MYTHICAL",
+          "sourceValues": {
+            "googleSheet": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "vaultedValuesX": {
+              "value": 260000,
+              "valueText": "260,000",
+              "demand": "HIGH",
+              "rarity": "MYTHICAL"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": 0
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-mace",
+          "name": "Mace",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-mace-v2",
+          "name": "Mace V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-operation-blade",
+          "name": "Operation Blade",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-pipe",
+          "name": "Pipe",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-raiu",
+          "name": "Raiu",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-seabeast-hammer",
+          "name": "Seabeast Hammer",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-seabeast-hammer-v2",
+          "name": "Seabeast Hammer V2",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-shark-blade",
+          "name": "Shark Blade",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "COMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "COMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-shusui",
+          "name": "Shusui",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "RARE",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "RARE"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-soul-cane",
+          "name": "Soul Cane",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "UNCOMMON",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "UNCOMMON"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        },
+        {
+          "id": "swords-zenith",
+          "name": "Zenith",
+          "category": "Swords",
+          "value": null,
+          "valueText": "???",
+          "demand": "???",
+          "rarity": "LEGENDARY",
+          "sourceValues": {
+            "googleSheet": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "vaultedValuesX": {
+              "value": null,
+              "valueText": "???",
+              "demand": "???",
+              "rarity": "LEGENDARY"
+            },
+            "matched": true,
+            "conflictFields": [],
+            "vaultedValueDelta": null
+          },
+          "sourceConflict": false
+        }
+      ]
+    }
+  ]
+}
