@@ -1,17 +1,18 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "valueSource": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
-  "updatedAt": "2026-08-10T17:12:02.326252+00:00",
+  "crossCheckSource": "https://haze-seas.vaultedvaluesx.com/value-list",
+  "updatedAt": "2026-08-10T19:20:49.804496+00:00",
   "sync": {
     "status": "Ready",
-    "lastChecked": "2026-08-10T17:12:02.326252+00:00",
-    "lastUpdated": "2026-08-10T17:12:02.326252+00:00",
+    "lastChecked": "2026-08-10T19:20:49.804496+00:00",
+    "lastUpdated": "2026-08-10T19:20:49.804496+00:00",
     "via": "github-actions",
     "itemCount": 146,
     "valueConflicts": 2,
-    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31412808702",
     "sourceConflicts": 2,
-    "historySnapshots": 1
+    "historySnapshots": 2,
+    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31423604778"
   },
   "sheets": {
     "Overview": [
@@ -4630,9 +4631,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -4662,9 +4663,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -4694,9 +4695,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -4726,9 +4727,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -4758,9 +4759,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4790,9 +4791,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4822,9 +4823,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4854,9 +4855,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4886,9 +4887,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4918,9 +4919,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4950,9 +4951,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -4982,9 +4983,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -5014,9 +5015,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5046,9 +5047,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5078,9 +5079,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5110,9 +5111,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5142,9 +5143,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5174,9 +5175,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5206,9 +5207,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5238,9 +5239,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5270,9 +5271,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -5302,9 +5303,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -5334,9 +5335,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -5366,9 +5367,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -5398,9 +5399,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5430,9 +5431,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5462,9 +5463,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5494,9 +5495,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5526,9 +5527,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5558,9 +5559,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5590,9 +5591,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5622,9 +5623,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5654,9 +5655,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -5750,9 +5751,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5782,9 +5783,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5814,9 +5815,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5846,9 +5847,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5878,9 +5879,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5910,9 +5911,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5942,9 +5943,9 @@
           "rarity": "MYTHICAL"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "MYTHICAL"
         },
         "matched": true,
@@ -5974,9 +5975,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6006,9 +6007,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6038,9 +6039,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6070,9 +6071,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6102,9 +6103,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6134,9 +6135,9 @@
           "rarity": "LEGENDARY"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "LEGENDARY"
         },
         "matched": true,
@@ -6166,9 +6167,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6198,9 +6199,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6230,9 +6231,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6262,9 +6263,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6294,9 +6295,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6326,9 +6327,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6358,9 +6359,9 @@
           "rarity": "RARE"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "RARE"
         },
         "matched": true,
@@ -6390,9 +6391,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -6422,9 +6423,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -6454,9 +6455,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -6486,9 +6487,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -6518,9 +6519,9 @@
           "rarity": "UNCOMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "UNCOMMON"
         },
         "matched": true,
@@ -6550,9 +6551,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -6582,9 +6583,9 @@
           "rarity": "COMMON"
         },
         "vaultedValuesX": {
-          "value": null,
-          "valueText": "???",
-          "demand": "???",
+          "value": -2,
+          "valueText": "-2",
+          "demand": "",
           "rarity": "COMMON"
         },
         "matched": true,
@@ -8067,6 +8068,5 @@
       },
       "sourceConflict": false
     }
-  ],
-  "crossCheckSource": "https://haze-seas.vaultedvaluesx.com/value-list"
+  ]
 }
