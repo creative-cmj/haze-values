@@ -1,15 +1,15 @@
 {
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "valueSource": "https://haze-seas.vaultedvaluesx.com/value-list",
-  "updatedAt": "2026-08-10T09:51:17.626098+00:00",
+  "updatedAt": "2026-08-10T11:28:23.547083+00:00",
   "sync": {
     "status": "Ready",
-    "lastChecked": "2026-08-10T09:51:17.626098+00:00",
-    "lastUpdated": "2026-08-10T09:51:17.626098+00:00",
+    "lastChecked": "2026-08-10T11:28:23.547083+00:00",
+    "lastUpdated": "2026-08-10T11:28:23.547083+00:00",
     "via": "github-actions",
     "itemCount": 146,
     "valueConflicts": 2,
-    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31376499446"
+    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/31383632484"
   },
   "sheets": {
     "Overview": [
