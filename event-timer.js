@@ -11,17 +11,18 @@
   const MAX_CAPTURED_AT_MS = Date.UTC(2100, 0, 1);
   const MAX_SERVER_ELAPSED_MS = 365 * 24 * 60 * 60 * 1000;
 
-  // Player-verified Storm timing: its first start is at server elapsed time 2:35.
-  // Storm is active for 10m, then its 2h35m reset starts, so starts are 2h45m apart.
+  // Official Trello: "Every 2H 35M a storm occurs ... for exactly 10 minutes."
+  // The missed 65:50 prediction confirms this is a 2h35m start-to-start cadence.
+  // First player-observed phase is server elapsed 2:35.
   const EVENT_CONFIGS = Object.freeze({
     storm: Object.freeze({
       id: 'storm',
       name: 'Storm',
       firstStartServerElapsedMs: 155 * 60 * 1000,
-      cooldownAfterEndMs: 155 * 60 * 1000,
-      intervalMs: 165 * 60 * 1000,
       durationMs: 10 * 60 * 1000,
-      sourceLabel: 'Haze Seas player-verified Storm schedule',
+      cooldownAfterEndMs: 145 * 60 * 1000,
+      intervalMs: 155 * 60 * 1000,
+      sourceLabel: 'Official Haze Seas Trello Storm timing',
       sourceUrl: 'https://trello.com/c/tA9P4FBA/452-storm'
     })
   });
