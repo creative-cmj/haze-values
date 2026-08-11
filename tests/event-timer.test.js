@@ -5,11 +5,11 @@ const timer = require('../event-timer');
 const capturedAt = Date.UTC(2026, 0, 1, 0, 0, 0);
 const settings = { version: 2, configId: 'storm', capturedAtMs: capturedAt, serverElapsedMs: 0 };
 
-test('uses the fixed 2h35m server-time cadence with a ten-minute Storm window', () => {
+test('uses the fixed server-time first Storm at 2:35, then resets 2h35m after the window ends', () => {
   const config = timer.getConfig('storm');
   assert.equal(config.firstStartServerElapsedMs, 155 * 60 * 1000);
-  assert.equal(config.cooldownAfterEndMs, 145 * 60 * 1000);
-  assert.equal(config.intervalMs, 155 * 60 * 1000);
+  assert.equal(config.cooldownAfterEndMs, 155 * 60 * 1000);
+  assert.equal(config.intervalMs, 165 * 60 * 1000);
   assert.equal(config.durationMs, 10 * 60 * 1000);
 
   const beforeFirst = timer.eventState(settings, capturedAt + 154 * 60 * 1000 + 59_999);
@@ -22,12 +22,12 @@ test('uses the fixed 2h35m server-time cadence with a ten-minute Storm window', 
 
   const closed = timer.eventState(settings, capturedAt + 165 * 60 * 1000);
   assert.equal(closed.active, false);
-  assert.equal(closed.nextStartMs, capturedAt + 310 * 60 * 1000);
+  assert.equal(closed.nextStartMs, capturedAt + 320 * 60 * 1000);
 });
 
 test('expresses upcoming starts in server elapsed time rather than device wall-clock time', () => {
   const starts = timer.upcomingStarts(settings, capturedAt, 10 * 60 * 60 * 1000);
-  assert.deepEqual(starts.map(timestamp => timer.formatServerElapsed(timer.serverElapsedAt(settings, timestamp))), ['2:35', '5:10', '7:45']);
+  assert.deepEqual(starts.map(timestamp => timer.formatServerElapsed(timer.serverElapsedAt(settings, timestamp))), ['2:35', '5:20', '8:05']);
 });
 
 test('converts a current server elapsed time to the fixed schedule without a storm observation', () => {
