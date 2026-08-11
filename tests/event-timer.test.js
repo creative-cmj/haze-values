@@ -25,6 +25,11 @@ test('uses the fixed server-time first storm at 2:35, then waits 2h35m after it 
   assert.equal(closed.nextStartMs, capturedAt + 320 * 60 * 1000);
 });
 
+test('expresses upcoming starts in server elapsed time rather than device wall-clock time', () => {
+  const starts = timer.upcomingStarts(settings, capturedAt, 10 * 60 * 60 * 1000);
+  assert.deepEqual(starts.map(timestamp => timer.formatServerElapsed(timer.serverElapsedAt(settings, timestamp))), ['2:35', '5:20', '8:05']);
+});
+
 test('converts a current server elapsed time to the fixed schedule without a storm observation', () => {
   const config = timer.getConfig('storm');
   const atTwoHours = timer.settingsFromServerElapsed('storm', capturedAt, 120 * 60 * 1000);
