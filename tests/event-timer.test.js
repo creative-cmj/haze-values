@@ -5,16 +5,17 @@ const timer = require('../event-timer');
 const anchor = Date.UTC(2026, 0, 1, 0, 0, 0);
 const settings = { version: 1, configId: 'storm', anchorMs: anchor };
 
-test('uses the verified 2h35m cadence and ten-minute active window', () => {
+test('waits 2h35m after the ten-minute storm ends before the next start', () => {
   const config = timer.getConfig('storm');
-  assert.equal(config.intervalMs, 155 * 60 * 1000);
+  assert.equal(config.cooldownAfterEndMs, 155 * 60 * 1000);
+  assert.equal(config.intervalMs, 165 * 60 * 1000);
   assert.equal(config.durationMs, 10 * 60 * 1000);
   const active = timer.eventState(settings, anchor + 10 * 60 * 1000 - 1);
   assert.equal(active.active, true);
   assert.equal(active.remainingMs, 1);
   const closed = timer.eventState(settings, anchor + 10 * 60 * 1000);
   assert.equal(closed.active, false);
-  assert.equal(closed.nextStartMs, anchor + config.intervalMs);
+  assert.equal(closed.nextStartMs, anchor + 165 * 60 * 1000);
 });
 
 test('calculates from timestamps rather than accumulated countdown state', () => {

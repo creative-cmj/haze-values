@@ -11,12 +11,14 @@
   const MAX_ANCHOR_MS = Date.UTC(2100, 0, 1);
 
   // Source: bundled Official Haze Seas Trello snapshot, Storm card (tA9P4FBA/452-storm).
-  // The card states: "Every 2H 35M ... for exactly 10 minutes."
+  // Player-verified behavior: the 2h35m reset begins when the 10-minute Storm ends.
+  // Therefore the start-to-start cycle is 2h45m, not 2h35m.
   const EVENT_CONFIGS = Object.freeze({
     storm: Object.freeze({
       id: 'storm',
       name: 'Storm',
-      intervalMs: 155 * 60 * 1000,
+      cooldownAfterEndMs: 155 * 60 * 1000,
+      intervalMs: 165 * 60 * 1000,
       durationMs: 10 * 60 * 1000,
       sourceLabel: 'Official Haze Seas Trello — Storm',
       sourceUrl: 'https://trello.com/c/tA9P4FBA/452-storm'
