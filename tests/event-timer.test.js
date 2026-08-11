@@ -2,43 +2,66 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const timer = require('../event-timer');
 
-const anchor = Date.UTC(2026, 0, 1, 0, 0, 0);
-const settings = { version: 1, configId: 'storm', anchorMs: anchor };
+const capturedAt = Date.UTC(2026, 0, 1, 0, 0, 0);
+const settings = { version: 2, configId: 'storm', capturedAtMs: capturedAt, serverElapsedMs: 0 };
 
-test('waits 2h35m after the ten-minute storm ends before the next start', () => {
+test('uses the fixed server-time first storm at 2:35, then waits 2h35m after it ends', () => {
   const config = timer.getConfig('storm');
+  assert.equal(config.firstStartServerElapsedMs, 155 * 60 * 1000);
   assert.equal(config.cooldownAfterEndMs, 155 * 60 * 1000);
   assert.equal(config.intervalMs, 165 * 60 * 1000);
   assert.equal(config.durationMs, 10 * 60 * 1000);
-  const active = timer.eventState(settings, anchor + 10 * 60 * 1000 - 1);
+
+  const beforeFirst = timer.eventState(settings, capturedAt + 154 * 60 * 1000 + 59_999);
+  assert.equal(beforeFirst.active, false);
+  assert.equal(beforeFirst.nextStartMs, capturedAt + 155 * 60 * 1000);
+
+  const active = timer.eventState(settings, capturedAt + 165 * 60 * 1000 - 1);
   assert.equal(active.active, true);
   assert.equal(active.remainingMs, 1);
-  const closed = timer.eventState(settings, anchor + 10 * 60 * 1000);
+
+  const closed = timer.eventState(settings, capturedAt + 165 * 60 * 1000);
   assert.equal(closed.active, false);
-  assert.equal(closed.nextStartMs, anchor + 165 * 60 * 1000);
+  assert.equal(closed.nextStartMs, capturedAt + 320 * 60 * 1000);
+});
+
+test('converts a current server elapsed time to the fixed schedule without a storm observation', () => {
+  const config = timer.getConfig('storm');
+  const atTwoHours = timer.settingsFromServerElapsed('storm', capturedAt, 120 * 60 * 1000);
+  const state = timer.eventState(atTwoHours, capturedAt);
+  assert.equal(state.nextStartMs, capturedAt + 35 * 60 * 1000);
+  assert.equal(timer.serverElapsedAt(atTwoHours, capturedAt + 30 * 60 * 1000), 150 * 60 * 1000);
+  assert.equal(timer.formatServerElapsed(155 * 60 * 1000), '2:35');
+  assert.equal(timer.parseServerElapsed('2:35'), 155 * 60 * 1000);
+  assert.equal(timer.parseServerElapsed('25:07'), (25 * 60 + 7) * 60 * 1000);
+  assert.equal(timer.parseServerElapsed('2:60'), null);
+  assert.equal(config.id, 'storm');
 });
 
 test('calculates from timestamps rather than accumulated countdown state', () => {
   const config = timer.getConfig('storm');
+  const anchor = capturedAt + config.firstStartServerElapsedMs;
   const lateTick = anchor + 3 * config.intervalMs + config.durationMs + 17_321;
   const state = timer.eventState(settings, lateTick);
   assert.equal(state.nextStartMs, anchor + 4 * config.intervalMs);
   assert.equal(state.remainingMs, config.intervalMs - config.durationMs - 17_321);
 });
 
-test('returns all upcoming starts in a horizon and groups local display dates', () => {
+test('returns all upcoming starts in a horizon and groups device display dates', () => {
   const config = timer.getConfig('storm');
+  const anchor = capturedAt + config.firstStartServerElapsedMs;
   const starts = timer.upcomingStarts(settings, anchor + 1, 5 * config.intervalMs);
-  assert.deepEqual(starts, [1,2,3,4,5].map(n => anchor + n * config.intervalMs));
+  assert.deepEqual(starts, [1, 2, 3, 4, 5].map(n => anchor + n * config.intervalMs));
   const grouped = timer.groupSchedule(starts, 'en-US');
   assert.ok(grouped.length >= 1);
   assert.equal(grouped.flatMap(group => group.events).length, starts.length);
 });
 
-test('rejects corrupt, wrong-version, and unknown-config saved values', () => {
-  assert.equal(timer.validateSaved({ version: 2, configId: 'storm', anchorMs: anchor }), null);
-  assert.equal(timer.validateSaved({ version: 1, configId: 'unknown', anchorMs: anchor }), null);
-  assert.equal(timer.validateSaved({ version: 1, configId: 'storm', anchorMs: 'now' }), null);
+test('rejects corrupt, old-version, and invalid server-time settings', () => {
+  assert.equal(timer.validateSaved({ version: 1, configId: 'storm', anchorMs: capturedAt }), null);
+  assert.equal(timer.validateSaved({ version: 2, configId: 'unknown', capturedAtMs: capturedAt, serverElapsedMs: 0 }), null);
+  assert.equal(timer.validateSaved({ version: 2, configId: 'storm', capturedAtMs: 'now', serverElapsedMs: 0 }), null);
+  assert.equal(timer.validateSaved({ version: 2, configId: 'storm', capturedAtMs: capturedAt, serverElapsedMs: -1 }), null);
 });
 
 test('round-trips only validated versioned local storage settings', () => {
