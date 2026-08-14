@@ -111,7 +111,9 @@
 
   function parseServerElapsed(value) {
     const match = typeof value === 'string' && value.trim().match(/^(\d{1,4}):([0-5]\d)$/);
-    return match ? (Number(match[1]) * 60 + Number(match[2])) * 60 * 1000 : null;
+    if (!match) return null;
+    const elapsedMs = (Number(match[1]) * 60 + Number(match[2])) * 60 * 1000;
+    return isServerElapsed(elapsedMs) ? elapsedMs : null;
   }
 
   function formatServerElapsed(ms) {

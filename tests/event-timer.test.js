@@ -40,6 +40,9 @@ test('converts a current server elapsed time to the fixed schedule without a sto
   assert.equal(timer.parseServerElapsed('2:35'), 155 * 60 * 1000);
   assert.equal(timer.parseServerElapsed('25:07'), (25 * 60 + 7) * 60 * 1000);
   assert.equal(timer.parseServerElapsed('2:60'), null);
+  assert.equal(timer.parseServerElapsed('8760:00'), 365 * 24 * 60 * 60 * 1000);
+  assert.equal(timer.parseServerElapsed('8760:01'), null);
+  assert.equal(timer.parseServerElapsed('9999:59'), null);
   assert.equal(config.id, 'storm');
 });
 
