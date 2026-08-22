@@ -155,13 +155,10 @@ if(foot&&!foot.dataset.polished){
   foot.dataset.polished='true';
   foot.innerHTML=`
     <div class="sidebar-foot-inner">
-      <button type="button" data-page="settings" class="nav-item nav-settings" aria-label="Settings" title="Settings">
-        <span class="nav-icon">${rdIcon('settings')}</span>
-        <span class="nav-label">Settings</span>
-      </button>
+
       <p class="nav-source-note">Values · community list<br>Guides · official Trello</p>
     </div>`;
-  foot.querySelector('[data-page="settings"]').onclick=()=>go('settings');
+
 }
 rdSyncNavigation()}
 function rdPaintRefresh(){const refresh=$('#refresh');if(!refresh)return;const busy=refresh.classList.contains('is-busy')||refresh.disabled;refresh.className='topbar-btn topbar-btn-icon';refresh.type='button';refresh.setAttribute('aria-label',busy?'Checking for updates…':'Reload value snapshot');refresh.title=busy?'Checking…':'Reload snapshot';refresh.innerHTML=`${rdIcon('refresh')}<span class="sr-only">${busy?'Checking':'Refresh'}</span>`}
@@ -185,7 +182,6 @@ function rdTopbar(){
   const refresh=bar.querySelector('#refresh');
   const updated=bar.querySelector('#updated');
   const notice=bar.querySelector('#notice');
-  const settings=bar.querySelector('[data-page="settings"]');
 
   // Symmetric shell: left rail | centered search | right actions
   const left=document.createElement('div');
@@ -242,16 +238,11 @@ function rdTopbar(){
   notice.innerHTML=rdIcon('news');
   notice.setAttribute('aria-label','Recent value changes');
   notice.title='Recent changes';
-  settings.className='topbar-btn topbar-btn-icon';
-  settings.type='button';
-  settings.innerHTML=rdIcon('settings');
-  settings.setAttribute('aria-label','Settings');
-  settings.title='Settings';
 
   left.append(menu,mobileSearch);
   center.append(search);
   // Status sits outside the icon cluster so the right rail stays balanced.
-  tools.append(refresh,notice,settings);
+  tools.append(refresh,notice);
   right.append(updated,tools);
 
   bar.replaceChildren(left,center,right);
@@ -275,7 +266,6 @@ function rdTopbar(){
   syncSearchChrome();
 
   notice.onclick=rdOpenChangelog;
-  settings.onclick=()=>go('settings');
   mobileSearch.onclick=rdOpenSearchSheet;
   menu.onclick=()=>rdToggleMobileNav(true);
 }

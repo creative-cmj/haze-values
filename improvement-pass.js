@@ -30,7 +30,7 @@
     ['trade', 'Trade Calculator', 'Tools'], ['compare', 'Compare Items', 'Tools'], ['builds', 'Build Planner', 'Tools'],
     ['mastery', 'Mastery XP', 'Tools'], ['timers', 'Boss Timers', 'Tools'], ['releases', 'Release Tracker', 'Tools'],
     ['collection', 'Collection', 'Personal'], ['favorites', 'Favorite Items', 'Personal'],
-    ['history', 'Trade History', 'Personal'], ['settings', 'Settings', 'Personal'],
+    ['history', 'Trade History', 'Personal'],
   ].map(([id, name, category]) => ({ id, name, category, aliases: [] }));
   const categoryRoutes = new Set(['items', 'fruits', 'accessories', 'swords', 'misc items', 'gamepasses', 'perm fruits (robux)']);
   const state = {
@@ -504,7 +504,7 @@
   function openMobileMore() {
     let dialog = document.querySelector('#mobileMore');
     if (!dialog) { dialog = document.createElement('dialog'); dialog.id = 'mobileMore'; dialog.className = 'mobile-more-sheet'; dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); }); document.body.append(dialog); }
-    const routes = ['search', 'compare', 'builds', 'mastery', 'timers', 'favorites', 'history', 'settings'];
+    const routes = ['search', 'compare', 'builds', 'mastery', 'timers', 'favorites', 'history'];
     dialog.innerHTML = `<div class="sheet-handle"></div><header class="sheet-head"><h2>More</h2><button class="drawer-close" data-more-close aria-label="Close more menu">×</button></header><div class="mobile-more-grid">${routes.map(route => `<button ${route === 'search' ? 'data-mobile-search' : `data-mobile-route="${route}"`}><b>${route === 'search' ? 'Search' : safe(routeLabel(route))}</b><small>${route === 'search' ? 'Everything' : safe(routeCategory(route))}</small></button>`).join('')}</div>`;
     dialog.querySelector('[data-more-close]').onclick = () => dialog.close(); dialog.querySelector('[data-mobile-search]').onclick = () => { dialog.close(); openCommandPalette(); };
     dialog.querySelectorAll('[data-mobile-route]').forEach(button => button.onclick = () => { dialog.close(); go(button.dataset.mobileRoute); });
