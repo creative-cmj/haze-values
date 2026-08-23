@@ -1,6 +1,6 @@
 {
   "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-  "checkedAt": "2026-08-23T16:45:52.745383+00:00",
+  "checkedAt": "2026-08-23T18:51:18.811612+00:00",
   "items": {
     "fruits-dragon": {
       "title": "Dragon",
@@ -715,12 +715,12 @@
     },
     "swords-operation-blade": {
       "title": "Operation Blade",
-      "description": "# Sold by Magma Minion for 250k$.\n\n---\n\n## Z: Injection Shot. (sword lvl 50)\n\n![](https://gyazo.com/342d72d043984f75a0a4b901d96f1f94.gif)\n\n## X: Electric Discharge. (sword lvl 150)\n\n‌\n\n![](https://gyazo.com/320c5a5aef8be013da1e11f816fe8547.gif)\n\n‌",
+      "description": "# Sold by Magma Minion for 250k$. (Currently Unobtainable till Re-Work) - Seller Removed\n\n---\n\n## Z: Injection Shot. (sword lvl 50)\n\n![342d72d043984f75a0a4b901d96f1f94.gif](https://gyazo.com/342d72d043984f75a0a4b901d96f1f94.gif)\n\n## X: Electric Discharge. (sword lvl 150)\n\n‌\n\n![320c5a5aef8be013da1e11f816fe8547.gif](https://gyazo.com/320c5a5aef8be013da1e11f816fe8547.gif)",
       "list": "Swords",
       "url": "https://trello.com/c/cM6Q6U0g/208-operation-blade",
       "image": "trello-images/swords-operation-blade.png",
       "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-      "lastChecked": "2026-08-05T22:12:36.505608+00:00"
+      "lastChecked": "2026-08-23T18:51:18.811612+00:00"
     },
     "swords-soul-cane": {
       "title": "Soul Cane",
@@ -4136,7 +4136,7 @@
     },
     {
       "id": "63c604eda5628502c0438d3a",
-      "title": "Magma Minion",
+      "title": "Magma Minion (Currently Removed)",
       "description": "### Hidden on Half Hot Island.\n\n---\n\n### Sells Operation Blade for 250k$.\n\n---\n\n###  Must break a wall to pass through and talk to NPC\n\n![](https://cdn.discordapp.com/attachments/1056978700635226142/1064299733314703442/image.png)\n\n‌",
       "list": "Misc NPCS",
       "url": "https://trello.com/c/6liuxUDJ/211-magma-minion",
@@ -4156,7 +4156,7 @@
           "mime": ""
         }
       ],
-      "checkedAt": "2026-08-05T22:25:11.066126+00:00"
+      "checkedAt": "2026-08-23T18:51:18.811612+00:00"
     },
     {
       "id": "63d3afde71cbf68b33c0d12a",
