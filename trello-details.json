@@ -1,6 +1,6 @@
 {
   "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-  "checkedAt": "2026-08-28T18:47:38.136094+00:00",
+  "checkedAt": "2026-08-29T02:50:31.792088+00:00",
   "items": {
     "fruits-dragon": {
       "title": "Dragon",
@@ -6130,7 +6130,7 @@
     {
       "id": "6a4167004cbd99c2a6f82b1b",
       "title": "Storm",
-      "description": "Every 2H 35M a storm occurs in sea 2 and sea 3 for exactly 10 minutes\n\n‌\n\nWithin this 10 min Zenith Boss will spawn in Shadow Island (underground) - required for Zenith Sword (3SS quest) and Race V2 Quest.\n\n‌\n\nIn sea 3 storm will play a key role in Ghostship and Cthulhu boss.\n\n‌\n\n‌\n\n‌\n\n**Ghost Ship Spawn Method (UNRELEASED)**\n\nGreen ghost alatar will appear in the sea 3 (location near starter island) during storm (every 2H 35M)\n\n> You must sacrifice 20 points worth of fruits to summon ghost ship.\n>\n> Common Fruits = 1 points\n>\n> Uncommon = 3 points\n>\n> Rare = 5 points\n>\n> Legendary = 15 points\n>\n> Mythic = 20 (instant spawn)\n\n‌\n\n> Spawn Message: “A phantom ship rises from the abyss…”\n\n‌\n\n‌\n\n‌\n\n**Cthulhu Endgame Boss** (UNRELEASED)\n\nLevel 10,000 Boss (two health bars)\n\nCthulu Spawned via prismatic shard during the storm window [every 2H 35M].\n\nPrismatic Shard must be crafted via Doran the Forge using 5 mythical materials (phantom lantern, dragon heart, seabeast heart, raijin core, saturn’s ring)\n\nThis boss does NOT have a 20 minute despawn timer like the other bosses. It roams infinitely until death.\n\nThe shard must be fed to a whirlpool in the sea that appears during storm.\n\n**Upon summon:**\n\n- Ocean becomes nearly black\n- Forced nighttime begins. Until his death.\n- Screen distortion affects all players for X seconds\n\n> Server Message: “Something ancient has awakened beneath the sea…”",
+      "description": "Every 2H 35M a storm occurs in sea 2 and sea 3 for exactly 10 minutes\n\n‌\n\nWithin this 10 min Zenith Boss will spawn in Shadow Island (underground) - required for Zenith Sword (3SS quest) and Race V2 Quest.\n\n‌\n\nIn sea 3 storm will play a key role in Ghostship and Cthulhu boss.\n\n‌\n\n‌\n\n‌\n\n**Ghost Ship Spawn Method**\n\nGreen ghost alatar will appear in the sea 3 (location near starter island) during storm (every 2H 35M)\n\n> You must sacrifice 20 points worth of fruits to summon ghost ship.\n>\n> Common Fruits = 1 points\n>\n> Uncommon = 3 points\n>\n> Rare = 5 points\n>\n> Legendary = 15 points\n>\n> Mythic = 20 (instant spawn)\n\n‌\n\n> Spawn Message: “A phantom ship rises from the abyss…”\n\n‌\n\n‌\n\n‌\n\n**Cthulhu**\n\nLevel 15,000 Boss (two health bars)\n\nCthulu Spawned via prismatic shard during the storm window [every 2H 35M].\n\nPrismatic Shard must be crafted via Doran the Forge using 5 mythical materials (phantom lantern, dragon heart, seabeast heart, raijin core, saturn’s ring)\n\nThis boss does NOT have a 20 minute despawn timer like the other bosses. It roams infinitely until death.\n\nThe shard must be fed to a whirlpool in the sea that appears during storm.\n\n**Upon summon:**\n\n- Ocean becomes nearly black\n- Forced nighttime begins. Until his death.\n- Screen distortion affects all players for X seconds\n\n> Server Message: “Something ancient has awakened beneath the sea…”",
       "list": "Sea Events",
       "url": "https://trello.com/c/tA9P4FBA/452-storm",
       "attachments": [
@@ -6142,7 +6142,7 @@
           "mime": ""
         }
       ],
-      "checkedAt": "2026-08-05T22:25:11.066126+00:00"
+      "checkedAt": "2026-08-29T02:50:31.792088+00:00"
     },
     {
       "id": "6a439969823b77dac6a6cec4",
