@@ -2,17 +2,17 @@
   "source": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "valueSource": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR13VPAyegTk7IIY7bjc22p0MjeCclNdbK4TsEiAPcoSfObTfZcWZAXxOq3eeIrGd2zHDeTddApGark/pub",
   "crossCheckSource": "https://haze-seas.vaultedvaluesx.com/value-list",
-  "updatedAt": "2026-08-30T22:48:27.672587+00:00",
+  "updatedAt": "2026-08-31T05:43:30.024594+00:00",
   "sync": {
     "status": "Ready",
-    "lastChecked": "2026-08-30T22:48:27.672587+00:00",
-    "lastUpdated": "2026-08-30T22:48:27.672587+00:00",
+    "lastChecked": "2026-08-31T05:43:30.024594+00:00",
+    "lastUpdated": "2026-08-31T05:43:30.024594+00:00",
     "via": "github-actions",
     "itemCount": 146,
     "valueConflicts": 2,
     "sourceConflicts": 2,
     "historySnapshots": 2,
-    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/33340117972"
+    "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/33361528322"
   },
   "sheets": {
     "Overview": [
