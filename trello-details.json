@@ -1,6 +1,6 @@
 {
   "source": "https://trello.com/b/nn8bpTB0/haze-seas-official-trello",
-  "checkedAt": "2026-10-14T23:17:05.267622+00:00",
+  "checkedAt": "2026-10-15T04:48:47.305723+00:00",
   "items": {
     "fruits-dragon": {
       "title": "Dragon",
@@ -4735,7 +4735,7 @@
     {
       "id": "6a47ad5a5d9153f433d913a9",
       "title": "Data Reset Button",
-      "description": "## Located on the second floor of the Tavern in Sea 1: [Starter Island](https://trello.com/c/mGHUJmTP \"‌\")\n\n---\n\n## Resets your Data\n\n## Pressing this button will permanently erase your progress: Levels, Mastery, Haki, Honor and Materials\n\n## You will keep your Fruits, Swords, Fighting Styles, Race, Accessories, Bounty",
+      "description": "## Located on the second floor of the Tavern in Sea 1: [Starter Island](https://trello.com/c/mGHUJmTP \"‌\")\n\n---\n\n## Resets your Data\n\n## Pressing this button will permanently erase your progress: Levels, Mastery, Haki, Honor, Materials & Items\n\n## You will keep your Fruits, Swords, Fighting Styles, Race, Accessories, Bounty",
       "list": "Misc Items",
       "url": "https://trello.com/c/zBh9FapJ/463-data-reset-button",
       "attachments": [
@@ -4747,7 +4747,7 @@
           "mime": ""
         }
       ],
-      "checkedAt": "2026-10-14T23:17:05.267622+00:00"
+      "checkedAt": "2026-10-15T04:48:47.305723+00:00"
     },
     {
       "id": "6a156612998a18a86e8a99d6",
