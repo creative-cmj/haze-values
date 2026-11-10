@@ -1,20 +1,20 @@
 {
-  "checkedAt": "2026-11-10T12:43:41.029659+00:00",
+  "checkedAt": "2026-11-10T20:52:14.160609+00:00",
   "via": "github-actions",
-  "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/42818176297",
+  "runUrl": "https://github.com/creative-cmj/haze-values/actions/runs/42899427366",
   "values": {
     "items": 146,
-    "updatedAt": "2026-11-10T12:43:41.029659+00:00",
+    "updatedAt": "2026-11-10T20:52:14.160609+00:00",
     "valueConflicts": 2,
     "sourceConflicts": 2,
     "historySnapshots": 2
   },
   "content": {
     "entries": 329,
-    "lastChecked": "2026-11-10T12:43:58.127199+00:00"
+    "lastChecked": "2026-11-10T20:52:26.672604+00:00"
   },
   "trelloDetails": {
     "items": 130,
-    "checkedAt": "2026-11-10T12:43:59.498087+00:00"
+    "checkedAt": "2026-11-10T20:52:27.749404+00:00"
   }
 }
